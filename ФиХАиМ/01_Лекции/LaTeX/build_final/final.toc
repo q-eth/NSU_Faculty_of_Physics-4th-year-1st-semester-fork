@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\contentsline {part}{Семестр 1. Последний рубеж}{2}{section*.2}%
+\contentsline {chapter}{\numberline {1}Энергетические уровни атомов с одним электроном}{3}{chapter.1}%
+\contentsline {section}{\numberline {1}Электронвольт}{3}{section.1.1}%
+\contentsline {section}{\numberline {2}Волновые функции водородоподобного атома}{4}{section.1.2}%
+\contentsline {section}{\numberline {3}Частоты переходов}{4}{section.1.3}%
+\contentsline {subsection}{Формула Бальмера}{5}{subsection*.3}%
+\contentsline {section}{\numberline {4}Релятивистская зависимость энергии от импульса}{5}{section.1.4}%
+\contentsline {section}{\numberline {5}Спин-орбитальная связь}{6}{section.1.5}%
+\contentsline {subsection}{Среднее значение $1/r^3$}{6}{subsection*.4}%
+\contentsline {section}{\numberline {6}Дарвиновская поправка}{6}{section.1.6}%
+\contentsline {section}{\numberline {7}Изотопический сдвиг}{7}{section.1.7}%
+\contentsline {subsection}{Постоянная Ридберга}{7}{subsection*.5}%

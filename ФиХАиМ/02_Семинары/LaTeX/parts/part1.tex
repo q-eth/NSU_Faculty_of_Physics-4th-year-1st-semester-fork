@@ -1,0 +1,428 @@
+% !TeX root = part01.tex
+
+\documentclass[../final.tex]{subfiles}
+
+\begin{document}
+
+% ============================================================
+% Практическое занятие 1
+% ============================================================
+
+\practice{1}{01.09.2026}{Классические и квантовые модели атома}
+
+
+% ============================================================
+% Задача 1. Модель Томсона
+% ============================================================
+
+\section*{Задача 1. Модель Томсона}
+
+
+% ------------------------------------------------------------
+% Условие
+% ------------------------------------------------------------
+
+    \rtxt{3}{\textbf{Условие:}}
+    Согласно модели Томсона, найти радиус атома водорода и длину волны
+    испускаемого им света, если энергия ионизации равна
+    %
+    \begin{equation*}
+        I = 13.6\,\text{эВ}.
+    \end{equation*}
+
+% ------------------------------------------------------------
+% Модель Томсона
+% ------------------------------------------------------------
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \includegraphics[
+        width=0.42\linewidth
+    ]{image/practice_01/thomson_model.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Модель Томсона для атома водорода.
+        Положительный заряд равномерно распределён по объёму сферы
+        радиуса $r_a$, электрон расположен в центре.
+    }
+    \label{fig:thomson_model}
+\end{rbox}
+
+
+В модели Томсона положительный заряд атома равномерно распределён
+по объёму шара радиуса $r_a$. Поэтому плотность заряда равна
+%
+\begin{equation*}
+    \rho
+    =
+    \frac{e}{\frac{4}{3}\pi r_a^3}.
+\end{equation*}
+
+Работаем в системе \rtxt{3}{СГС}, поэтому уравнение Пуассона имеет вид
+%
+\begin{equation*}
+    \Delta\varphi(r)
+    =
+    -4\pi\rho(r).
+\end{equation*}
+
+Внутри атома, при $0\leq r\leq r_a$,
+%
+\begin{equation*}
+    \Delta\varphi
+    =
+    -4\pi
+    \frac{e}{\frac{4}{3}\pi r_a^3}
+    =
+    -\frac{3e}{r_a^3}.
+\end{equation*}
+
+При сферической симметрии
+%
+\begin{equation*}
+    \Delta\varphi
+    =
+    \frac{1}{r^2}
+    \frac{d}{dr}
+    \left(
+        r^2\frac{d\varphi}{dr}
+    \right),
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    \frac{1}{r^2}
+    \frac{d}{dr}
+    \left(
+        r^2\frac{d\varphi}{dr}
+    \right)
+    =
+    -\frac{3e}{r_a^3}.
+\end{equation*}
+
+После интегрирования
+%
+\begin{equation*}
+    \varphi_1(r)
+    =
+    -\frac{er^2}{2r_a^3}
+    +
+    \frac{C_1}{r}
+    +
+    C_2.
+\end{equation*}
+
+Потенциал должен оставаться конечным при $r=0$, следовательно,
+%
+\begin{equation*}
+    C_1=0,
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    \varphi_1(r)
+    =
+    -\frac{er^2}{2r_a^3}
+    +
+    C_2.
+\end{equation*}
+
+Снаружи атома, при $r\geq r_a$,
+%
+\begin{equation*}
+    \Delta\varphi=0,
+\end{equation*}
+%
+откуда
+%
+\begin{equation*}
+    \varphi_2(r)
+    =
+    -\frac{C_3}{r}
+    +
+    C_4.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    \varphi(\infty)=0,
+\end{equation*}
+%
+имеем
+%
+\begin{equation*}
+    C_4=0.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Сшивка решений
+% ------------------------------------------------------------
+
+\subsection*{Сшивка решений}
+
+На границе шара потенциал непрерывен:
+%
+\begin{equation*}
+    \varphi_1(r_a)=\varphi_2(r_a),
+\end{equation*}
+%
+то есть
+%
+\begin{equation*}
+    -\frac{e}{2r_a}+C_2
+    =
+    -\frac{C_3}{r_a}.
+\end{equation*}
+
+Кроме того, непрерывна производная потенциала:
+%
+\begin{equation*}
+    \varphi_1'(r_a)=\varphi_2'(r_a).
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    -\frac{e}{r_a^2}
+    =
+    \frac{C_3}{r_a^2},
+\end{equation*}
+%
+откуда
+%
+\begin{equation*}
+    C_3=-e.
+\end{equation*}
+
+Тогда
+%
+\begin{equation*}
+    C_2=\frac{3e}{2r_a}.
+\end{equation*}
+
+Таким образом, потенциал внутри атома имеет вид
+
+\[
+    \varphi(r)
+    =
+    \frac{e}{r_a}
+    \left(
+        \frac{3}{2}
+        -
+        \frac{r^2}{2r_a^2}
+    \right).
+\]
+
+В частности,
+%
+\begin{equation*}
+    \varphi(0)
+    =
+    \frac{3e}{2r_a},
+    \qquad
+    \varphi(\infty)=0.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Энергия ионизации
+% ------------------------------------------------------------
+
+Энергия ионизации равна работе, необходимой для удаления электрона
+из центра атома на бесконечность:
+%
+\begin{equation*}
+    I
+    =
+    e\bigl(
+        \varphi(0)-\varphi(\infty)
+    \bigr).
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    I
+    =
+    \frac{3e^2}{2r_a}.
+\end{equation*}
+
+Отсюда
+
+\[
+    r_a
+    =
+    \frac{3e^2}{2I}.
+\]
+
+Положительная ионизация:
+
+\begin{equation*}
+    I
+    =
+    e\bigl(
+        \varphi(0)-\varphi(\infty)
+    \bigr).
+\end{equation*}
+
+Численно
+%
+\begin{align*}
+    r_a
+    &=
+    \frac{3}{2}
+    \frac{(4.8\cdot10^{-10})^2}
+         {13.6\cdot1.6\cdot10^{-12}}
+    \\[3pt]
+    &\approx
+    1.59\cdot10^{-8}\,\text{см}
+    =
+    1.59\,\text{\AA}.
+\end{align*}
+
+
+% ============================================================
+% Длина волны излучения
+% ============================================================
+
+\subsection*{Длина волны излучения}
+
+Внутри равномерно заряженного шара
+%
+\begin{equation*}
+    \mathbf E(r)
+    =
+    -\nabla\varphi
+    =
+    \frac{e}{r_a^3}\mathbf r.
+\end{equation*}
+
+На электрон действует сила
+%
+\begin{equation*}
+    \mathbf F
+    =
+    -e\mathbf E,
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    m\ddot{\mathbf r}
+    =
+    -\frac{e^2}{r_a^3}\mathbf r.
+\end{equation*}
+
+Таким образом, сила пропорциональна смещению и направлена к центру:
+электрон совершает \rtxt{3}{гармонические колебания}.
+
+Уравнение движения можно записать как
+%
+\begin{equation*}
+    \ddot{\mathbf r}
+    +
+    \frac{e^2}{mr_a^3}\mathbf r
+    =
+    0.
+\end{equation*}
+
+Следовательно,
+
+
+\[
+    \omega
+    =
+    \sqrt{
+        \frac{e^2}{mr_a^3}
+    }.
+\]
+
+
+Длина волны испускаемого света равна
+%
+\begin{equation*}
+    \lambda
+    =
+    \frac{2\pi c}{\omega}.
+\end{equation*}
+
+Поэтому
+
+\[
+    \lambda
+    =
+    \frac{2\pi c}{e}
+    \sqrt{mr_a^3}.
+\]
+
+Подставляя
+%
+\begin{equation*}
+    c
+    =
+    3\cdot10^{10}\,
+    \frac{\text{см}}{\text{с}},
+    \qquad
+    m
+    =
+    9.11\cdot10^{-28}\,\text{г},
+    \qquad
+    r_a
+    =
+    1.59\cdot10^{-8}\,\text{см},
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    \lambda
+    =
+    \frac{2\pi\cdot3\cdot10^{10}}
+         {4.8\cdot10^{-10}}
+    \sqrt{
+        9.11\cdot10^{-28}
+        \left(
+            1.59\cdot10^{-8}
+        \right)^3
+    }.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    \lambda
+    \approx
+    23.75\cdot10^{-6}\,\text{см}
+    \approx
+    237.5\,\text{нм}.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Ответ
+% ------------------------------------------------------------
+
+    \textbf{Ответ:}
+    %
+    \begin{equation*}
+        r_a
+        \approx
+        1.59\,\text{\AA},
+        \qquad
+        \lambda
+        \approx
+        237.5\,\text{нм}.
+    \end{equation*}
+
+\end{document}
