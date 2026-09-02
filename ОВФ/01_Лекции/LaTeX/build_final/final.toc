@@ -1,0 +1,14 @@
+\babel@toc {russian}{}\relax 
+\contentsline {part}{Семестр 1. Последний рубеж}{2}{section*.2}%
+\contentsline {chapter}{\numberline {1}Представление чисел в ЭВМ}{3}{chapter.1}%
+\contentsline {section}{\numberline {1}Целые числа}{3}{section.1.1}%
+\contentsline {subsection}{Двоичное кодирование}{3}{subsection*.3}%
+\contentsline {subsection}{Отрицательные числа и дополнительный код}{4}{subsection*.4}%
+\contentsline {section}{\numberline {2}Числа с плавающей точкой}{4}{section.1.2}%
+\contentsline {subsection}{Фиксированная и плавающая точка}{4}{subsection*.5}%
+\contentsline {subsection}{Нормализованная форма}{5}{subsection*.6}%
+\contentsline {subsection}{Формат IEEE 754}{5}{subsection*.7}%
+\contentsline {subsection}{Одинарная точность: \texttt {float}}{6}{subsection*.8}%
+\contentsline {subsection}{Денормализованные числа}{7}{subsection*.9}%
+\contentsline {subsection}{Специальные значения}{7}{subsection*.10}%
+\contentsline {subsection}{Машинная точность}{8}{subsection*.11}%

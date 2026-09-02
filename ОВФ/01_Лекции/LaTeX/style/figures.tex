@@ -1,0 +1,96 @@
+% ============================================================
+% style/figures.tex
+%
+% Изображения и раскладки без декоративных рамок.
+% ============================================================
+
+% ------------------------------------------------------------
+% 1. Простая команда для вставки изображения
+% ------------------------------------------------------------
+
+\NewDocumentCommand{\rimg}{O{0.90\linewidth} O{} m}{%
+    \includegraphics[
+        width=#1,
+        keepaspectratio,
+        #2
+    ]{#3}%
+}
+
+
+% ------------------------------------------------------------
+% 2. Базовые стили для rfig
+% ------------------------------------------------------------
+%
+% ВАЖНО:
+%   внутри \tcbset нельзя оставлять пустые строки между ключами.
+%   Поэтому здесь список ключей записан плотно.
+
+\tcbset{%
+    rfigbase/.style={%
+        enhanced,%
+        width=\linewidth,%
+        colback=rbg,%
+        colframe=rbg,%
+        coltext=rtext,%
+        boxrule=0pt,%
+        frame hidden,%
+        sharp corners,%
+        left=0pt,%
+        right=0pt,%
+        top=0pt,%
+        bottom=0pt,%
+        boxsep=0pt,%
+        before skip=0pt,%
+        after skip=0pt,%
+        fonttitle=\bfseries,%
+        coltitle=rtext,%
+        colbacktitle=rbg,%
+        center title,%
+        toptitle=0pt,%
+        bottomtitle=8pt%
+    },%
+    rfigtype/r/.style={%
+        sidebyside,%
+        lefthand width=0.56\linewidth,%
+        righthand width=0.36\linewidth,%
+        sidebyside gap=0.06\linewidth,%
+        lower separated=false%
+    },%
+    rfigtype/l/.style={%
+        sidebyside,%
+        lefthand width=0.36\linewidth,%
+        righthand width=0.56\linewidth,%
+        sidebyside gap=0.06\linewidth,%
+        lower separated=false%
+    },%
+    rfigtype/c/.style={%
+        sidebyside=false,%
+        halign=center,%
+        halign lower=center,%
+        lower separated=false%
+    },%
+    rfigtype/one/.style={%
+    },%
+    rfigtype/grid/.style={%
+    }%
+}
+
+
+% ------------------------------------------------------------
+% 3. Универсальная среда rfig
+% ------------------------------------------------------------
+%
+% Использование:
+%
+%   \begin{rfig}{r}{Название}
+%       Текст слева.
+%       \tcblower
+%       Картинка справа.
+%   \end{rfig}
+
+\NewTColorBox{rfig}{O{} m m}{%
+    rfigbase,%
+    rfigtype/#2,%
+    title={#3},%
+    #1%
+}
