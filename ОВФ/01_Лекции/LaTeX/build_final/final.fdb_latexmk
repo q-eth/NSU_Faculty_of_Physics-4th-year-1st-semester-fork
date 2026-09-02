@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788358322.35367 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/final.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.pdf" "final" 1788358330.91532 0
+["pdflatex"] 1788362386.01381 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/final.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.pdf" "final" 1788362394.9458 0
   "C:/Users/Влад/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1780236955 367663 0b2063c86a3ec4b6ffeff0c569eb665b ""
   "C:/Users/Влад/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1778839001 3308 eee81981029f67083258db36df06e523 ""
   "C:/Users/Влад/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1779994633 3304 6a543c07045572737981351171e0505e ""
@@ -435,12 +435,12 @@
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1773584792 2269 91cd03da61ab1da00145ba8a81560051 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1773584792 20785 8db5f0a2b2ce96dda9fac87ccab29449 ""
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.aux" 1788358330 2156 92625847a077c36db9604d8c3f75a970 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.out" 1788358330 888 c609ac2426730db1f5eb2294a5b98687 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.toc" 1788358330 1240 0029ab6ae92f6d3b67ec46ebc867bbeb "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/final.tex" 1788272903 1189 44210e454ff527b4a03e5070d930591b ""
-  "image/chapter1.png" 1788272783 1662159 c2d986216b7e9c034e2f9390ff432f98 ""
-  "parts/part1.tex" 1788357609 16239 101acd0b0b0bf1f5fe93c39eae31902e ""
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.aux" 1788362394 2117 e7e47d5c3476b7f75e0f5f610ad2d1b3 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.out" 1788362394 888 c609ac2426730db1f5eb2294a5b98687 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/build_final/final.toc" 1788362394 1201 3c7ed065530411b2481d79fd89aa9281 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ОВФ/01_Лекции/LaTeX/final.tex" 1788362384 1176 25bd5a98b1a334691436289b959c1dbd ""
+  "image/chapter1.png" 1788362302 2122632 489381f461cb54788c661db968179264 ""
+  "parts/part1.tex" 1788362327 16200 9beb76ffa5ad9b11d3fa96d35a1391c4 ""
   "style/boxes.tex" 1780326361 4811 f347a5095aaeb94a48954b5d16cba9b7 ""
   "style/colors.tex" 1787747667 7009 5dbc675840dc8eba7aeb12469a17c8d7 ""
   "style/commands.tex" 1780231537 9437 050546ea08d1f21bf008096b7fd394db ""

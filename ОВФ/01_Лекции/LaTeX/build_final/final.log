@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2678,11 +2678,11 @@ l.52 \newpage
               [1
 
 ]
-<image/chapter1.png, id=83, 1275.76625pt x 1242.6425pt>
+<image/chapter1.png, id=83, 1453.43pt x 1090.0725pt>
 File: image/chapter1.png Graphic file (type png)
 <use image/chapter1.png>
 Package pdftex.def Info: image/chapter1.png  used on input line 54.
-(pdftex.def)             Requested size: 317.07614pt x 308.83958pt.
+(pdftex.def)             Requested size: 452.9679pt x 339.71536pt.
  [2
 
  <./image/chapter1.png>] (parts/part1.tex
@@ -2747,7 +2747,7 @@ a/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/Users/Вл
 super/sftt0800.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/cm-super/sftt1200.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ОВ
-Ф\01_Лекции\LaTeX\build_final\final.pdf" (10 pages, 2421519 bytes).
+Ф\01_Лекции\LaTeX\build_final\final.pdf" (10 pages, 2464696 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)

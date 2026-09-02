@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  1 SEP 2026 22:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 22:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2677,7 +2677,7 @@ l.52 \newpage
               [1
 
 ]
-<image/chapter1.png, id=108, 1275.76625pt x 1242.6425pt>
+<image/chapter1.png, id=88, 1275.76625pt x 1242.6425pt>
 File: image/chapter1.png Graphic file (type png)
 <use image/chapter1.png>
 Package pdftex.def Info: image/chapter1.png  used on input line 54.
@@ -2697,44 +2697,47 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: 000D50C4ABD36E9F21DF00AF712E79CD;2475.
+(rerunfilecheck)             Checksum: 02710CA17461136CE2C12485EF54616F;1342.
  ) 
 Here is how much of TeX's memory you used:
- 61787 strings out of 467871
- 1455786 string characters out of 5416924
- 2205382 words of memory out of 5000000
- 89375 multiletter control sequences out of 15000+600000
+ 61669 strings out of 467871
+ 1453530 string characters out of 5416924
+ 2202382 words of memory out of 5000000
+ 89296 multiletter control sequences out of 15000+600000
  648370 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,10n,110p,1312b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,10n,110p,1312b,1284s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Влад/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
-/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/Влад/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/Влад/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/Вл�
-�д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/
-Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx35
-83.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
-uper/sfcc1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/cm-super/sfrm1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/cm-super/sfrm1440.pfb><C:/Users/Влад/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/Users/Влад/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1440.pfb><C:/Users/Вла�
-�/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1728.pfb>
+ic/amsfonts/cm/cmbx8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Us
+ers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Влад/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/В�
+�ад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C
+:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx
+1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm
+-super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/cm-super/sfbx3583.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Users/Влад/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/Влад/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/Вл�
+�д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/
+Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti14
+40.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
+uper/sfti1728.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\Фи
-ХАиМ\01_Лекции\LaTeX\build_final\final.pdf" (8 pages, 2371661 bytes).
+ХАиМ\01_Лекции\LaTeX\build_final\final.pdf" (8 pages, 2374441 bytes).
 
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

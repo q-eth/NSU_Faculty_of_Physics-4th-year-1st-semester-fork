@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788338371.12136 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.pdf" "part1" 1788338384.03367 0
+["pdflatex"] 1788362220.13565 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.pdf" "part1" 1788362229.89571 0
   "../final.tex" 1788272903 1189 44210e454ff527b4a03e5070d930591b ""
   "../style/boxes.tex" 1780326361 4811 f347a5095aaeb94a48954b5d16cba9b7 ""
   "../style/colors.tex" 1787747667 7009 5dbc675840dc8eba7aeb12469a17c8d7 ""
@@ -50,9 +50,11 @@
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1247596666 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
+  "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1247596666 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -435,9 +437,9 @@
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/packages.tex" 1780331028 9305 b7c23d3ad8b15e19c32f9a0eb37b6674 ""
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/page-style.tex" 1780217322 3848 9d58d3d31cb8dabfa9f55fffb260ffbb ""
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/style.tex" 1780225090 369 355ddbe6eab2d953f16c6f1e0883cf2f ""
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux" 1788338383 2008 c278d67d879278a287b1bfb53158ad85 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.out" 1788338383 2218 56fbf9f952ab17d0e59e19dc6de4e672 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" 1788338358 12963 b278c56cfa2caf72e8ab001a3ac5c266 ""
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux" 1788362229 1938 8eaae5101ccbd26443c9903b582015c4 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.out" 1788362229 1085 553b7be30c73e35104650be29b8f17a6 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" 1788362209 13032 a23e99b38252ac1f7982f85046c437f6 ""
   (generated)
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux"
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.log"
