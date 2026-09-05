@@ -1,0 +1,289 @@
+% ============================================================
+% style/headings.tex
+%
+% Оформление стандартных заголовков документа.
+%
+% Дополнительная цель файла:
+%   не засорять дерево структуры LaTeX Workshop служебными строками
+%   из \titleformat и \titlespacing.
+%
+% Поэтому стандартные команды заголовков внутри настроек вызываются
+% через \csname ...\endcsname, а не напрямую.
+% ============================================================
+
+
+% ------------------------------------------------------------
+% 1. Глубина нумерации и оглавления
+% ------------------------------------------------------------
+%
+% secnumdepth=1:
+%   - главы нумеруются;
+%   - разделы нумеруются;
+%   - подразделы не нумеруются.
+%
+% tocdepth=1:
+%   - в оглавление попадают главы и разделы;
+%   - подразделы в оглавление не попадают.
+
+\setcounter{secnumdepth}{1}
+\setcounter{tocdepth}{1}
+
+
+% ------------------------------------------------------------
+% 2. Внутренние имена для numberless-форматов titlesec
+% ------------------------------------------------------------
+%
+% titlesec для заголовков без номера использует синтаксис:
+%
+%   name=<команда>,numberless
+%
+% Чтобы LaTeX Workshop не принимал служебные настройки за настоящие
+% заголовки документа, имена команд собираются через \csname.
+
+\expandafter\edef\csname rPartName\endcsname{%
+    \expandafter\string\csname part\endcsname%
+}
+
+\expandafter\edef\csname rChapterName\endcsname{%
+    \expandafter\string\csname chapter\endcsname%
+}
+
+\expandafter\edef\csname rSectionName\endcsname{%
+    \expandafter\string\csname section\endcsname%
+}
+
+\expandafter\edef\csname rSubsectionName\endcsname{%
+    \expandafter\string\csname subsection\endcsname%
+}
+
+\expandafter\edef\csname rSubsubsectionName\endcsname{%
+    \expandafter\string\csname subsubsection\endcsname%
+}
+
+
+% ------------------------------------------------------------
+% 3. Нумерация задач внутри главы
+% ------------------------------------------------------------
+%
+% По умолчанию в report было бы:
+%
+%   1.1, 1.2, 1.3
+%
+% Здесь будет:
+%
+%   1, 2, 3
+%
+% При новой главе счётчик разделов сбрасывается автоматически.
+
+\expandafter\renewcommand\csname thesection\endcsname{%
+    \arabic{section}%
+}
+
+
+% ------------------------------------------------------------
+% 4. Оформление частей
+% ------------------------------------------------------------
+
+\expandafter\titleformat\expandafter{\csname part\endcsname}[display]
+    {\thispagestyle{empty}\normalfont\centering\color{rtext}}
+    {
+        {\Large\bfseries Часть \thepart}
+    }
+    {1.2em}
+    {
+        \Huge\bfseries
+    }
+    []
+
+\expandafter\titlespacing\expandafter*\expandafter{\csname part\endcsname}
+    {0pt}
+    {0.26\textheight}
+    {0pt}
+
+
+% ------------------------------------------------------------
+% 5. Оформление глав
+% ------------------------------------------------------------
+%
+% Вид:
+%
+%                                   Глава 1
+%
+%                              Название главы
+%
+% Номер главы справа, название ниже.
+% Линия между номером и названием не используется.
+
+\expandafter\titleformat\expandafter{\csname chapter\endcsname}[display]
+    {\normalfont\filleft\color{rtext}}
+    {
+        {\Large\bfseries Глава \thechapter}
+    }
+    {0.5em}
+    {
+        \Huge\bfseries
+    }
+    []
+
+\expandafter\titlespacing\expandafter*\expandafter{\csname chapter\endcsname}
+    {0pt}
+    {-4mm}
+    {14mm}
+
+
+% ------------------------------------------------------------
+% 6. Оформление глав без номера
+% ------------------------------------------------------------
+
+\titleformat{name=\rChapterName,numberless}[display]
+    {\normalfont\filleft\color{rtext}}
+    {}
+    {0pt}
+    {
+        \Huge\bfseries
+    }
+    []
+
+\titlespacing*{name=\rChapterName,numberless}
+    {0pt}
+    {-4mm}
+    {14mm}
+
+
+% ------------------------------------------------------------
+% 7. Подпись под главой
+% ------------------------------------------------------------
+%
+% Использование в документе:
+%
+%   \rsubtitle{Первый контакт}
+%
+% Это не структурная команда, а декоративная подпись.
+
+\NewDocumentCommand{\rsubtitle}{m}{%
+    \vspace{-10mm}%
+    \begin{flushright}
+        {\large\itshape\color{rtext}#1}%
+    \end{flushright}%
+    \vspace{8mm}%
+}
+
+
+% ------------------------------------------------------------
+% 8. Оформление разделов
+% ------------------------------------------------------------
+%
+% Использование в документе:
+%
+%   раздел = задача
+%
+% Автонумерация:
+%
+%   1 Задача
+%   2 Задача
+%   3 Задача
+
+\expandafter\titleformat\expandafter{\csname section\endcsname}[hang]
+    {\normalfont\Large\bfseries\color{rtext}}
+    {
+        \csname thesection\endcsname
+    }
+    {0.8em}
+    {}
+    []
+
+\expandafter\titlespacing\expandafter*\expandafter{\csname section\endcsname}
+    {0pt}
+    {1.8\baselineskip}
+    {0.75\baselineskip}
+
+
+% ------------------------------------------------------------
+% 9. Оформление разделов без номера
+% ------------------------------------------------------------
+
+\titleformat{name=\rSectionName,numberless}[hang]
+    {\normalfont\Large\bfseries\color{rtext}}
+    {}
+    {0pt}
+    {}
+    []
+
+\titlespacing*{name=\rSectionName,numberless}
+    {0pt}
+    {1.8\baselineskip}
+    {0.75\baselineskip}
+
+
+% ------------------------------------------------------------
+% 10. Оформление подразделов
+% ------------------------------------------------------------
+%
+% Формат runin означает, что заголовок идёт в одну строку
+% с последующим текстом.
+%
+% Пример визуального вида:
+%
+%   Условие -- здесь начинается текст условия.
+
+\expandafter\titleformat\expandafter{\csname subsection\endcsname}[block]
+    {\normalfont\bfseries\color{rtext}}
+    {}
+    {0pt}
+    {}
+
+\expandafter\titlespacing\expandafter*\expandafter{\csname subsection\endcsname}
+    {0pt}
+    {0.8\baselineskip}
+    {0.35\baselineskip}
+
+
+% ------------------------------------------------------------
+% 11. Оформление подразделов без номера
+% ------------------------------------------------------------
+
+\titleformat{name=\rSubsectionName,numberless}[block]
+    {\normalfont\bfseries\color{rtext}}
+    {}
+    {0pt}
+    {}
+
+\titlespacing*{name=\rSubsectionName,numberless}
+    {0pt}
+    {0.8\baselineskip}
+    {0.35\baselineskip}
+
+% ------------------------------------------------------------
+% 12. Оформление малых внутренних заголовков
+% ------------------------------------------------------------
+%
+% Они тоже идут в строку с последующим текстом, но набираются курсивом.
+
+\expandafter\titleformat\expandafter{\csname subsubsection\endcsname}[block]
+    {\normalfont\itshape\color{rtext}}
+    {}
+    {0pt}
+    {}
+    []
+
+\expandafter\titlespacing\expandafter*\expandafter{\csname subsubsection\endcsname}
+    {0pt}
+    {0.6\baselineskip}
+    {0.45em}
+
+
+% ------------------------------------------------------------
+% 13. Оформление малых внутренних заголовков без номера
+% ------------------------------------------------------------
+
+\titleformat{name=\rSubsubsectionName,numberless}[block]
+    {\normalfont\itshape\color{rtext}}
+    {}
+    {0pt}
+    {}
+    [  ]
+
+\titlespacing*{name=\rSubsubsectionName,numberless}
+    {0pt}
+    {0.6\baselineskip}
+    {0.45em}

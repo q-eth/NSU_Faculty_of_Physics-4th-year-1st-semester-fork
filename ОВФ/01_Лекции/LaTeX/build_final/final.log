@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 22:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  5 SEP 2026 11:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2678,20 +2678,25 @@ l.52 \newpage
               [1
 
 ]
-<image/chapter1.png, id=83, 1453.43pt x 1090.0725pt>
+<image/chapter1.png, id=111, 1453.43pt x 1090.0725pt>
 File: image/chapter1.png Graphic file (type png)
 <use image/chapter1.png>
 Package pdftex.def Info: image/chapter1.png  used on input line 54.
 (pdftex.def)             Requested size: 452.9679pt x 339.71536pt.
  [2
 
- <./image/chapter1.png>] (parts/part1.tex
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+ <./image/chapter1.png>] (parts/cheat_sheet.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 0.
 [3
 
 
-] [4] [5{C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-sup
-er/cm-super-ts1.enc}]
+] [4] [5] [6] [7] [8]) [9] (parts/part1.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+[10
+
+
+] [11] [12{C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-s
+uper/cm-super-ts1.enc}]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
 358.
 
@@ -2700,7 +2705,7 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 358.
-[6] [7] [8]) [9]
+[13] [14] [15]) [16]
 (c:/Users\Влад\Documents\Курс 4 Семестр 1\ОВФ\01_Лекции
 \LaTeX\build_final\final.aux)
  ***********
@@ -2708,14 +2713,14 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: C609AC2426730DB1F5EB2294A5B98687;888.
+(rerunfilecheck)             Checksum: 0BE68E9412AE1F531CCB97FF532E65CA;2198.
  ) 
 Here is how much of TeX's memory you used:
- 61723 strings out of 467871
- 1454534 string characters out of 5416924
- 2203382 words of memory out of 5000000
- 89329 multiletter control sequences out of 15000+600000
- 649637 words of font info for 88 fonts, out of 8000000 for 9000
+ 61809 strings out of 467871
+ 1456016 string characters out of 5416924
+ 2212382 words of memory out of 5000000
+ 89361 multiletter control sequences out of 15000+600000
+ 653432 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,13n,110p,1306b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
@@ -2747,9 +2752,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/Users/Вл
 super/sftt0800.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/cm-super/sftt1200.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ОВ
-Ф\01_Лекции\LaTeX\build_final\final.pdf" (10 pages, 2464696 bytes).
+Ф\01_Лекции\LaTeX\build_final\final.pdf" (17 pages, 2507310 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
