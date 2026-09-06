@@ -1,0 +1,196 @@
+% ============================================================
+% style/colors.tex
+%
+% Цветовые палитры и смысловые алиасы темы.
+%
+% Идея файла:
+%   1. Сначала задаются исходные палитры цветов.
+%   2. Затем вводятся смысловые алиасы r..., которые используются
+%      в остальных стилевых файлах.
+%
+% Важно:
+%   p1--p9, red1--red12, myblue и т.д. — это базовые цвета.
+%   rbg, rtext, rframe, rc1--rc20 — это цвета текущего оформления.
+% ============================================================
+
+
+% ------------------------------------------------------------
+% 1. Physics Updated: синяя палитра p1--p9
+% ------------------------------------------------------------
+
+\definecolor{p1}{HTML}{caf0f8}
+\definecolor{p2}{HTML}{ade8f4}
+\definecolor{p3}{HTML}{90e0ef}
+\definecolor{p4}{HTML}{48cae4}
+\definecolor{p5}{HTML}{00b4d8}
+\definecolor{p6}{HTML}{0096c7}
+\definecolor{p7}{HTML}{0077b6}
+\definecolor{p8}{HTML}{023e8a}
+\definecolor{p9}{HTML}{03045e}
+
+
+% ------------------------------------------------------------
+% 2. Основные цвета страницы
+% ------------------------------------------------------------
+%
+% pag    — главный тёмный фон страницы.
+% pagtwo — дополнительный тёмный оттенок для второстепенных элементов.
+
+\definecolor{pag}{HTML}{293133}
+\definecolor{pagtwo}{HTML}{3E4547}
+
+
+% ------------------------------------------------------------
+% 3. Material-like цвета из Physics Updated
+% ------------------------------------------------------------
+
+\definecolor{myred}{HTML}{f44336}
+\definecolor{mypink}{HTML}{e81e63}
+\definecolor{mypurple}{HTML}{9c27b0}
+\definecolor{mydeeppurple}{HTML}{673ab7}
+\definecolor{myindigo}{HTML}{3f51b5}
+\definecolor{myblue}{HTML}{2196f3}
+\definecolor{mylightblue}{HTML}{03a9f4}
+\definecolor{mycyan}{HTML}{00bcd4}
+\definecolor{myteal}{HTML}{009688}
+\definecolor{mygreen}{HTML}{4caf50}
+\definecolor{mylightgreen}{HTML}{8bc34a}
+\definecolor{mylime}{HTML}{cddc39}
+\definecolor{myyellow}{HTML}{ffeb3b}
+\definecolor{myamber}{HTML}{ffc107}
+\definecolor{myorange}{HTML}{ff9800}
+\definecolor{mydeeporange}{HTML}{ff5722}
+\definecolor{mybrown}{HTML}{795548}
+\definecolor{mygray}{HTML}{9e9e9e}
+\definecolor{mybluegray}{HTML}{607d8b}
+
+
+% ------------------------------------------------------------
+% 4. ChemNotes2: красная палитра red1--red12
+% ------------------------------------------------------------
+
+\definecolor{red1}{HTML}{ffccd5}
+\definecolor{red2}{HTML}{ffb3c1}
+\definecolor{red3}{HTML}{ff8fa3}
+\definecolor{red4}{HTML}{ff758f}
+\definecolor{red5}{HTML}{ff4d6d}
+\definecolor{red6}{HTML}{c9184a}
+\definecolor{red7}{HTML}{a4133c}
+\definecolor{red8}{HTML}{800f2f}
+\definecolor{red9}{HTML}{590d22}
+\definecolor{red10}{HTML}{c9181e}
+\definecolor{red11}{HTML}{c91876}
+\definecolor{red12}{HTML}{e5235a}
+
+
+% ------------------------------------------------------------
+% 5. Calc mindmap: оранжево-синяя палитра
+% ------------------------------------------------------------
+
+\definecolor{calcRed1}{HTML}{ff1200}
+\definecolor{calcRed2}{HTML}{ff4f00}
+\definecolor{calcRed3}{HTML}{ff7600}
+\definecolor{calcRed4}{HTML}{ffab00}
+\definecolor{calcRed5}{HTML}{ffca00}
+\definecolor{calcRed6}{HTML}{ffff00}
+\definecolor{calcRed7}{HTML}{bdbd42}
+\definecolor{calcRed8}{HTML}{9e9e61}
+\definecolor{calcRed9}{HTML}{676798}
+\definecolor{calcRed10}{HTML}{3c3cc3}
+\definecolor{calcRed11}{HTML}{0d0ee1}
+
+
+% ------------------------------------------------------------
+% 6. Цвета, сгенерированные в ChemNotes2
+% ------------------------------------------------------------
+%
+% Эти имена выглядят технически, но оставлены без переименования,
+% чтобы не потерять связь с исходной палитрой.
+
+\definecolor{cbada55}{RGB}{186,218,85}
+\definecolor{c2c2c2c}{RGB}{44,44,44}
+\definecolor{cc9184a}{RGB}{201,24,74}
+\definecolor{c8d354e}{RGB}{141,53,78}
+\definecolor{cff4d6d}{RGB}{255,77,109}
+\definecolor{cff758f}{RGB}{255,117,143}
+
+
+% ============================================================
+% 7. Основные смысловые алиасы темы
+% ============================================================
+%
+% Эти цвета лучше использовать в остальных стилевых файлах.
+%
+% Например:
+%   rbg          — основной фон;
+%   rtext        — основной светлый текст;
+%   rframe       — цвет декоративных рамок;
+%   raccentblue  — основной синий акцент;
+%   raccentred   — основной красный акцент.
+%
+% Если потом захочется поменять оформление, достаточно будет заменить
+% цвета здесь, а не искать конкретные p4, red5 и pag по всему проекту.
+
+\colorlet{rbg}{pag}
+\colorlet{rbgsecondary}{pagtwo}
+
+\colorlet{rtext}{white}
+\colorlet{rtextmuted}{white!75}
+
+\colorlet{rframe}{white}
+\colorlet{rframesoft}{white!45}
+
+\colorlet{raccentblue}{p4}
+\colorlet{raccentbluesoft}{p3}
+\colorlet{raccentbluedeep}{p7}
+
+\colorlet{raccentred}{red5}
+\colorlet{raccentredsoft}{red3}
+\colorlet{raccentreddeep}{red6}
+
+\colorlet{rgrid}{pag!95}
+\colorlet{raxis}{pag!80}
+
+
+% ============================================================
+% 8. Быстрые цвета rc1--rc20
+% ============================================================
+%
+% Эти алиасы нужны для быстрых выделений, графиков, декоративных
+% элементов и временных цветовых экспериментов.
+%
+% rc1--rc10  — красная палитра.
+% rc11--rc20 — синяя / голубая / фиолетовая палитра.
+
+% ------------------------------------------------------------
+% rc1--rc10: красная палитра
+% ------------------------------------------------------------
+
+\colorlet{rc1}{red1}
+\colorlet{rc2}{red2}
+\colorlet{rc3}{red3}
+\colorlet{rc4}{red4}
+\colorlet{rc5}{red5}
+\colorlet{rc6}{red6}
+\colorlet{rc7}{red7}
+\colorlet{rc8}{red8}
+\colorlet{rc9}{red9}
+\colorlet{rc10}{red10}
+
+
+% ------------------------------------------------------------
+% rc11--rc20: синяя / голубая / фиолетовая палитра
+% ------------------------------------------------------------
+
+\colorlet{rc11}{p1}
+\colorlet{rc12}{p2}
+\colorlet{rc13}{p3}
+\colorlet{rc14}{p4}
+\colorlet{rc15}{p5}
+\colorlet{rc16}{p6}
+\colorlet{rc17}{p7}
+\colorlet{rc18}{p8}
+\colorlet{rc19}{p9}
+
+% Добивочный фиолетовый цвет, чтобы палитра дошла до 20 цветов.
+\definecolor{rc20}{HTML}{7B2CBF}

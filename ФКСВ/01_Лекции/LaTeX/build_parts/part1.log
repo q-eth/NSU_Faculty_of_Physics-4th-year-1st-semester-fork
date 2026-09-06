@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  6 SEP 2026 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  4 SEP 2026 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2626,33 +2626,19 @@ Package hyperref Info: Link coloring ON on input line 5.
 \@outlinefile=\write4
 \openout4 = `part1.out'.
 
-
-{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
 
 
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 
 
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<../image/invariant_mass_peak.png, id=71, 1541.76pt x 1027.84pt>
-File: ../image/invariant_mass_peak.png Graphic file (type png)
-<use ../image/invariant_mass_peak.png>
-Package pdftex.def Info: ../image/invariant_mass_peak.png  used on input line 4
-9.
-(pdftex.def)             Requested size: 205.63869pt x 137.08995pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 62.
-See the caption package documentation for explanation.
-
 [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
@@ -2681,76 +2667,10 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
-
 {C:/Users/Влад/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/�
 �лад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-} <../image/invariant_mass_peak.png>]
-<../image/delta_electron_scheme.png, id=98, 1541.76pt x 1027.84pt>
-File: ../image/delta_electron_scheme.png Graphic file (type png)
-<use ../image/delta_electron_scheme.png>
-Package pdftex.def Info: ../image/delta_electron_scheme.png  used on input line
- 103.
-(pdftex.def)             Requested size: 329.02315pt x 219.33452pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 115.
-See the caption package documentation for explanation.
-
-[2 <../image/delta_electron_scheme.png>] [3]
-<../image/delta_electron_spectrum.png, id=112, 1541.76pt x 1027.84pt>
-File: ../image/delta_electron_spectrum.png Graphic file (type png)
-<use ../image/delta_electron_spectrum.png>
-Package pdftex.def Info: ../image/delta_electron_spectrum.png  used on input li
-ne 380.
-(pdftex.def)             Requested size: 254.98996pt x 169.97836pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 394.
-See the caption package documentation for explanation.
-
-[4]
-<../image/particle_through_matter.png, id=119, 1780.6525pt x 890.32625pt>
-File: ../image/particle_through_matter.png Graphic file (type png)
-<use ../image/particle_through_matter.png>
-Package pdftex.def Info: ../image/particle_through_matter.png  used on input li
-ne 494.
-(pdftex.def)             Requested size: 296.12021pt x 148.05223pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 506.
-See the caption package documentation for explanation.
-
-[5 <../image/delta_electron_spectrum.png>] [6 <../image/particle_through_matter
-.png>]
-<../image/ionization_losses_curve.png, id=135, 1780.6525pt x 890.32625pt>
-File: ../image/ionization_losses_curve.png Graphic file (type png)
-<use ../image/ionization_losses_curve.png>
-Package pdftex.def Info: ../image/ionization_losses_curve.png  used on input li
-ne 609.
-(pdftex.def)             Requested size: 296.12021pt x 148.05223pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 621.
-See the caption package documentation for explanation.
-
-[7 <../image/ionization_losses_curve.png>]
-<../image/landau_distribution.png, id=144, 1810.765pt x 875.27pt>
-File: ../image/landau_distribution.png Graphic file (type png)
-<use ../image/landau_distribution.png>
-Package pdftex.def Info: ../image/landau_distribution.png  used on input line 7
-50.
-(pdftex.def)             Requested size: 296.12021pt x 143.13118pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 764.
-See the caption package documentation for explanation.
-
-[8 <../image/landau_distribution.png>] [9]
+}{C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-s
+uper-ts1.enc}] [2] [3] [4] [5] [6] [7] [8] [9] [10]
 (c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\01_Лекции
 \LaTeX\build_parts\part1.aux)
  ***********
@@ -2758,44 +2678,34 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `part1.out' has not changed.
-(rerunfilecheck)             Checksum: 7950D16E254799717C8FACDE91B7120F;1529.
+(rerunfilecheck)             Checksum: 2061DECD724AA884D71268A7A2FCE256;1121.
  ) 
 Here is how much of TeX's memory you used:
- 61843 strings out of 467871
- 1458007 string characters out of 5416924
- 2202593 words of memory out of 5000000
- 89443 multiletter control sequences out of 15000+600000
- 649469 words of font info for 97 fonts, out of 8000000 for 9000
+ 61697 strings out of 467871
+ 1454598 string characters out of 5416924
+ 2205593 words of memory out of 5000000
+ 89345 multiletter control sequences out of 15000+600000
+ 638824 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,7n,127p,1336b,1365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,127p,1336b,1159s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Влад/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Влад
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Влад/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Влад/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Влад/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/�
-�лад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
-bx1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-cm-super/sfbx1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/cm-super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/Влад/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/Влад/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/В�
-�ад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1440.pfb>
+cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Влад/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Влад/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/�
+�лад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/cm-super/sfbx1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/Влад/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭ
-Ч\01_Лекции\LaTeX\build_parts\part1.pdf" (9 pages, 5925342 bytes).
+Ч\01_Лекции\LaTeX\build_parts\part1.pdf" (10 pages, 198839 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
