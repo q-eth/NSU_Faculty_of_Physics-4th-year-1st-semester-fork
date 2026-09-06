@@ -4,5 +4,1699 @@
 
 \begin{document}
 
+% ============================================================
+% Практическое занятие 1
+% ============================================================
+
+\practice{1}{03.09.2026}{Кинематика}
+
+
+% ============================================================
+% Релятивистская кинематика
+% ============================================================
+
+\section*{Релятивистская кинематика}
+
+Для релятивистской частицы выпишем основные соотношения между
+энергией, импульсом, массой и скоростью:
+%
+\begin{equation*}
+    E=\gamma mc^2,
+\end{equation*}
+%
+где
+%
+\begin{equation*}
+    \gamma
+    =
+    \frac{1}{\sqrt{1-\beta^2}},
+    \qquad
+    \beta
+    =
+    \frac{v}{c}.
+\end{equation*}
+
+Энергия и импульс связаны соотношением
+%
+\begin{equation*}
+    E^2
+    =
+    (pc)^2+(mc^2)^2.
+\end{equation*}
+
+В дальнейшем удобно использовать четырёхмерный импульс частицы.
+В системе единиц $c=1$ он имеет вид
+%
+\begin{equation*}
+    P
+    =
+    (E,\vec p).
+\end{equation*}
+
+Его квадрат равен
+%
+\begin{equation*}
+    P^2
+    =
+    E^2-p_x^2-p_y^2-p_z^2
+    =
+    m^2.
+\end{equation*}
+
+Величина
+%
+\begin{equation*}
+    P^2=m^2
+\end{equation*}
+%
+является \rtxt{3}{лоренц-инвариантом}, то есть не изменяется
+при переходе из одной инерциальной системы отсчёта в другую.
+
+
+% ------------------------------------------------------------
+% Система из двух частиц
+% ------------------------------------------------------------
+
+\subsection*{Система из двух частиц}
+
+Пусть имеются две частицы с четырёхимпульсами
+%
+\begin{equation*}
+    P_1
+    =
+    (E_1,\vec p_1),
+    \qquad
+    P_2
+    =
+    (E_2,\vec p_2).
+\end{equation*}
+
+Полный четырёхимпульс системы равен
+%
+\begin{equation*}
+    P_1+P_2
+    =
+    (E_1+E_2,\vec p_1+\vec p_2).
+\end{equation*}
+
+Рассмотрим его квадрат:
+%
+\begin{align*}
+    (P_1+P_2)^2
+    &=
+    (E_1+E_2)^2
+    -
+    (\vec p_1+\vec p_2)^2
+    \\[3pt]
+    &=
+    E_1^2
+    +
+    E_2^2
+    +
+    2E_1E_2
+    -
+    p_1^2
+    -
+    p_2^2
+    -
+    2\vec p_1\cdot\vec p_2.
+\end{align*}
+
+Так как
+%
+\begin{equation*}
+    E_1^2-p_1^2=m_1^2,
+    \qquad
+    E_2^2-p_2^2=m_2^2,
+\end{equation*}
+%
+а
+%
+\begin{equation*}
+    \vec p_1\cdot\vec p_2
+    =
+    p_1p_2\cos\theta,
+\end{equation*}
+%
+то
+%
+\begin{equation*}
+    (P_1+P_2)^2
+    =
+    m_1^2+m_2^2
+    +
+    2E_1E_2
+    -
+    2p_1p_2\cos\theta.
+\end{equation*}
+
+Этот же инвариант можно записать через инвариантную массу системы
+двух частиц:
+%
+\begin{equation*}
+    (P_1+P_2)^2
+    =
+    P_{12}^2
+    =
+    m_{12}^2.
+\end{equation*}
+
+Здесь $\theta$ --- угол между импульсами $\vec p_1$ и $\vec p_2$.
+
+
+% ============================================================
+% Преобразования Лоренца
+% ============================================================
+
+\section*{Преобразования Лоренца}
+
+Рассмотрим две системы отсчёта, одна из которых движется относительно
+другой вдоль оси $x$.
+
+Преобразование Лоренца имеет вид
+%
+\begin{equation*}
+    \begin{pmatrix}
+        ct\\
+        x\\
+        y\\
+        z
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \gamma      & \beta\gamma & 0 & 0\\
+        \beta\gamma & \gamma      & 0 & 0\\
+        0           & 0           & 1 & 0\\
+        0           & 0           & 0 & 1
+    \end{pmatrix}
+    \begin{pmatrix}
+        ct'\\
+        x'\\
+        y'\\
+        z'
+    \end{pmatrix}.
+\end{equation*}
+
+Нештрихованные величины относятся к
+\rtxt{3}{лабораторной системе отсчёта},
+а штрихованные --- к
+\rtxt{3}{движущейся системе отсчёта}.
+
+Та же матрица преобразования будет использоваться далее и для
+четырёхимпульса.
+
+
+% ============================================================
+% Задача 1
+% ============================================================
+
+\section*{Задача 1. Двухчастичный распад}
+
+Рассмотрим распад частицы массы $M$ на две частицы масс $m_1$ и $m_2$.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        \coordinate (O) at (0,0);
+
+        \fill[rc3] (O) circle (2.2pt);
+
+        \node[above=5pt] at (O) {$M$};
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (O) -- (-3,0);
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (O) -- (3,0);
+
+        \node[above] at (-1.7,0) {$P_1$};
+        \node[above] at (1.7,0) {$P_2$};
+
+        \node[below] at (-2.7,0) {$m_1$};
+        \node[below] at (2.7,0) {$m_2$};
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Двухчастичный распад частицы массы $M$
+        в её системе покоя.
+    }
+    \label{fig:practice02_decay}
+\end{rbox}
+
+Пусть исходная частица покоится. Закон сохранения четырёхимпульса:
+%
+\begin{equation*}
+    P_0
+    =
+    P_1+P_2.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    P_2
+    =
+    P_0-P_1.
+\end{equation*}
+
+В системе покоя исходной частицы
+%
+\begin{equation*}
+    P_0
+    =
+    (M,\vec 0),
+\end{equation*}
+%
+а для продуктов распада
+%
+\begin{equation*}
+    P_1
+    =
+    (E_1,\vec p_1),
+    \qquad
+    P_2
+    =
+    (E_2,\vec p_2).
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    (M,\vec 0)
+    =
+    (E_1,\vec p_1)
+    +
+    (E_2,\vec p_2).
+\end{equation*}
+
+Чтобы найти энергию первой частицы, воспользуемся равенством
+%
+\begin{equation*}
+    P_2=P_0-P_1
+\end{equation*}
+%
+и возведём обе части в квадрат:
+%
+\begin{equation*}
+    P_2^2
+    =
+    (P_0-P_1)^2.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    P_2^2=m_2^2,
+    \qquad
+    P_0^2=M^2,
+    \qquad
+    P_1^2=m_1^2,
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    m_2^2
+    =
+    M^2+m_1^2-2P_0P_1.
+\end{equation*}
+
+В системе покоя исходной частицы
+%
+\begin{equation*}
+    P_0P_1
+    =
+    ME_1,
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    m_2^2
+    =
+    M^2+m_1^2-2ME_1.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    2ME_1
+    =
+    M^2+m_1^2-m_2^2,
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    E_1
+    =
+    \frac{M^2+m_1^2-m_2^2}{2M}.
+\end{equation*}
+
+Аналогично для второй частицы:
+%
+\begin{equation*}
+    E_2
+    =
+    \frac{M^2+m_2^2-m_1^2}{2M}.
+\end{equation*}
+
+Импульсы продуктов распада находятся из релятивистского соотношения
+%
+\begin{equation*}
+    E_i^2
+    =
+    p_i^2+m_i^2.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    p_{1,2}
+    =
+    \sqrt{
+        E_{1,2}^2-m_{1,2}^2
+    }.
+\end{equation*}
+
+Поскольку исходная частица покоилась,
+%
+\begin{equation*}
+    \vec p_1+\vec p_2=0,
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    \vec p_1=-\vec p_2,
+\end{equation*}
+%
+и модули импульсов совпадают:
+%
+\begin{equation*}
+    p_1=p_2.
+\end{equation*}
+
+
+% ============================================================
+% Задача 2
+% ============================================================
+
+\section*{Задача 2. Неподвижная мишень}
+
+Рассмотрим столкновение налетающей частицы массы $m_1$
+с покоящейся частицей массы $m_2$, в результате которого
+образуется система массы $M$.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        \fill[rc3] (-2.4,0) circle (2.2pt);
+        \fill[rtext] (0.7,0) circle (2.2pt);
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (-2.4,0) -- (-0.3,0);
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (0.7,0) -- (3.0,0);
+
+        \node[above] at (-2.4,0) {$m_1$};
+        \node[below] at (-1.4,0) {$E_1,\vec p_1$};
+
+        \node[above] at (0.7,0) {$m_2$};
+        \node[above] at (2.5,0) {$M$};
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Столкновение налетающей частицы
+        с неподвижной мишенью.
+    }
+    \label{fig:practice02_fixed_target}
+\end{rbox}
+
+Закон сохранения четырёхимпульса:
+%
+\begin{equation*}
+    P_1+P_2=P.
+\end{equation*}
+
+В компонентах:
+%
+\begin{equation*}
+    (E_1,\vec p_1)
+    +
+    (E_2,\vec 0)
+    =
+    (E,\vec p).
+\end{equation*}
+
+Для пространственных компонент
+%
+\begin{equation*}
+    \vec p_1+\vec 0
+    =
+    \vec p.
+\end{equation*}
+
+Так как вторая частица покоится,
+%
+\begin{equation*}
+    E_2=m_2.
+\end{equation*}
+
+Возведём закон сохранения четырёхимпульса в квадрат:
+%
+\begin{equation*}
+    (P_1+P_2)^2
+    =
+    P^2.
+\end{equation*}
+
+Правая часть равна
+%
+\begin{equation*}
+    P^2=M^2.
+\end{equation*}
+
+Для левой части
+%
+\begin{equation*}
+    (P_1+P_2)^2
+    =
+    P_1^2+P_2^2+2P_1P_2.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    P_1^2=m_1^2,
+    \qquad
+    P_2^2=m_2^2,
+\end{equation*}
+%
+а покоящаяся вторая частица имеет четырёхимпульс
+%
+\begin{equation*}
+    P_2=(m_2,\vec 0),
+\end{equation*}
+%
+то
+%
+\begin{equation*}
+    P_1P_2
+    =
+    E_1m_2.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    m_1^2+m_2^2+2E_1m_2
+    =
+    M^2.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    2E_1m_2
+    =
+    M^2-m_1^2-m_2^2,
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    E_1
+    =
+    \frac{
+        M^2-m_1^2-m_2^2
+    }{
+        2m_2
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Частный случай: J/psi
+% ------------------------------------------------------------
+
+\subsection*{Частный случай: рождение $J/\psi$}
+
+Для частицы
+%
+\begin{equation*}
+    J/\psi,
+    \qquad
+    M_{J/\psi}
+    \sim
+    3\,\text{ГэВ},
+\end{equation*}
+%
+рассмотрим столкновение электрона и позитрона:
+%
+\begin{equation*}
+    m_1=m_2=m_e,
+    \qquad
+    m_e\ll M_{J/\psi}.
+\end{equation*}
+
+В случае неподвижной мишени предыдущая формула даёт
+%
+\begin{equation*}
+    E_1
+    =
+    \frac{
+        M_{J/\psi}^2-2m_e^2
+    }{
+        2m_e
+    }.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    m_e\ll M_{J/\psi},
+\end{equation*}
+%
+можно пренебречь членом $2m_e^2$:
+%
+\begin{equation*}
+    E_1
+    \approx
+    \frac{
+        M_{J/\psi}^2
+    }{
+        2m_e
+    }.
+\end{equation*}
+
+Теперь рассмотрим \rtxt{3}{встречные пучки}.
+Если энергии частиц одинаковы, то для рождения частицы массы $M$
+энергия каждой частицы должна быть
+%
+\begin{equation*}
+    E_1'
+    =
+    \frac{M}{2}.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    E_1'
+    =
+    \frac{
+        M_{J/\psi}
+    }{2}.
+\end{equation*}
+
+Сравним требуемые энергии:
+%
+\begin{align*}
+    \frac{E_1}{E_1'}
+    &=
+    \frac{
+        \dfrac{M_{J/\psi}^2}{2m_e}
+    }{
+        \dfrac{M_{J/\psi}}{2}
+    }
+    \\[4pt]
+    &=
+    \frac{
+        M_{J/\psi}
+    }{
+        m_e
+    }
+    \\[4pt]
+    &\approx
+    6000.
+\end{align*}
+
+Таким образом, при использовании встречных пучков требуемая энергия
+одной частицы оказывается примерно в $6000$ раз меньше, чем
+в эксперименте с неподвижной мишенью.
+
+
+% ============================================================
+% Задача 3
+% ============================================================
+
+\section*{Задача 3. Открытие антипротона. BEVATRON}
+
+Рассмотрим порог рождения антипротона при столкновении протона
+с неподвижным протоном.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        \fill[rc3] (-2.5,0) circle (2.2pt);
+        \fill[rtext] (0.5,0) circle (2.2pt);
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (-2.5,0) -- (-0.2,0);
+
+        \node[above] at (-2.5,0) {$p$};
+        \node[below] at (-1.5,0) {$E,\vec p$};
+
+        \node[above] at (0.5,0) {$p$};
+        \node[below] at (0.5,0) {мишень};
+
+        \node[right] at (1.5,0) {
+            $p+p\rightarrow \bar p+p+p+p$
+        };
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Пороговое рождение антипротона
+        на неподвижной протонной мишени.
+    }
+    \label{fig:practice02_antiproton}
+\end{rbox}
+
+Минимальный процесс рождения антипротона имеет вид
+%
+\begin{equation*}
+    p+p
+    \rightarrow
+    \bar p+p+p+p.
+\end{equation*}
+
+В конечном состоянии должны находиться три протона и один антипротон.
+
+В лабораторной системе отсчёта начальный четырёхимпульс:
+%
+\begin{equation*}
+    (E,\vec p)
+    +
+    (m_p,\vec 0).
+\end{equation*}
+
+На пороге рождения в системе центра масс конечные частицы покоятся
+относительно друг друга. Поэтому минимальная инвариантная масса
+конечного состояния равна
+%
+\begin{equation*}
+    M_{\text{кон}}
+    =
+    4m_p.
+\end{equation*}
+
+Для определения пороговой энергии воспользуемся инвариантностью
+квадрата полного четырёхимпульса:
+%
+\begin{equation*}
+    s
+    =
+    \left[
+        (E,\vec p)
+        +
+        (m_p,\vec 0)
+    \right]^2.
+\end{equation*}
+
+Раскрывая квадрат, получаем
+%
+\begin{align*}
+    s
+    &=
+    (E,\vec p)^2
+    +
+    (m_p,\vec 0)^2
+    +
+    2(E,\vec p)(m_p,\vec 0)
+    \\[3pt]
+    &=
+    m_p^2
+    +
+    m_p^2
+    +
+    2Em_p
+    \\[3pt]
+    &=
+    2m_p^2+2Em_p.
+\end{align*}
+
+На пороге рождения
+%
+\begin{equation*}
+    s
+    =
+    (4m_p)^2
+    =
+    16m_p^2.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    2m_p^2+2Em_p
+    =
+    16m_p^2.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    2Em_p
+    =
+    14m_p^2,
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    E
+    =
+    7m_p
+    \approx
+    7\,\text{ГэВ}.
+\end{equation*}
+
+\textbf{Комментарий.}
+В исходной записи в промежуточной строке было записано
+%
+\begin{equation*}
+    2m_p^2+2Em_p
+    =
+    14m_p^2,
+\end{equation*}
+%
+однако следующий результат $E=7m_p$ требует
+%
+\begin{equation*}
+    2m_p^2+2Em_p
+    =
+    16m_p^2.
+\end{equation*}
+
+Число $14$ возникает уже после переноса двух начальных
+$m_p^2$ в правую часть.
+
+
+% ============================================================
+% Задача 4
+% ============================================================
+
+\section*{Задача 4. Релятивистский мюон}
+
+Рассмотрим мюон с энергией
+%
+\begin{equation*}
+    E
+    =
+    1\,\text{ГэВ}.
+\end{equation*}
+
+Требуется определить его время жизни $\tau$ в лабораторной системе
+отсчёта и расстояние $x$, которое он успеет пролететь.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        \fill[rc3] (-2.3,0) circle (2.3pt);
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (-2.3,0) -- (2.8,0);
+
+        \node[above] at (-2.3,0) {$\mu^-$};
+        \node[below] at (0.2,0) {$E=1\,\text{ГэВ}$};
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Релятивистский мюон в лабораторной системе отсчёта.
+    }
+    \label{fig:practice02_muon}
+\end{rbox}
+
+Масса мюона приблизительно равна
+%
+\begin{equation*}
+    m_\mu
+    \approx
+    100\,\text{МэВ}.
+\end{equation*}
+
+Собственное время жизни мюона:
+%
+\begin{equation*}
+    \tau'
+    =
+    2.2\cdot10^{-6}\,\text{с}.
+\end{equation*}
+
+Определим лоренц-фактор:
+%
+\begin{equation*}
+    E
+    =
+    \gamma m_\mu.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \gamma
+    =
+    \frac{E}{m_\mu}.
+\end{equation*}
+
+При
+%
+\begin{equation*}
+    E
+    =
+    1\,\text{ГэВ}
+    =
+    1000\,\text{МэВ}
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    m_\mu
+    \approx
+    100\,\text{МэВ}
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    \gamma
+    \approx
+    10.
+\end{equation*}
+
+Из-за релятивистского замедления времени
+%
+\begin{equation*}
+    c\tau
+    =
+    \gamma c\tau'.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \tau
+    =
+    \gamma\tau'.
+\end{equation*}
+
+Подставляя $\gamma=10$,
+%
+\begin{align*}
+    \tau
+    &=
+    10\cdot2.2\cdot10^{-6}\,\text{с}
+    \\[3pt]
+    &=
+    22\cdot10^{-6}\,\text{с}
+    \\[3pt]
+    &=
+    22\,\text{мкс}.
+\end{align*}
+
+Теперь найдём расстояние, которое пролетит мюон:
+%
+\begin{equation*}
+    x
+    =
+    v\tau.
+\end{equation*}
+
+Поскольку
+%
+\begin{equation*}
+    v=\beta c,
+\end{equation*}
+%
+то
+%
+\begin{equation*}
+    x
+    =
+    \beta c\tau.
+\end{equation*}
+
+Связь между $\beta$ и $\gamma$:
+%
+\begin{equation*}
+    \gamma
+    =
+    \frac{1}{\sqrt{1-\beta^2}}.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    \beta
+    =
+    \sqrt{
+        1-\frac{1}{\gamma^2}
+    }.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    x
+    =
+    \sqrt{
+        1-\frac{1}{\gamma^2}
+    }\,
+    c\tau.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    \tau
+    =
+    \gamma\tau',
+\end{equation*}
+%
+имеем
+%
+\begin{equation*}
+    x
+    =
+    \sqrt{
+        1-\frac{1}{\gamma^2}
+    }\,
+    \gamma c\tau'.
+\end{equation*}
+
+При $\gamma=10$
+%
+\begin{equation*}
+    x
+    \approx
+    10c\tau'.
+\end{equation*}
+
+Подставляя
+%
+\begin{equation*}
+    c
+    \approx
+    3\cdot10^8\,
+    \frac{\text{м}}{\text{с}},
+    \qquad
+    \tau'
+    =
+    2.2\cdot10^{-6}\,\text{с},
+\end{equation*}
+%
+получаем величину порядка нескольких километров:
+%
+\begin{equation*}
+    x
+    \approx
+    6\,\text{км}.
+\end{equation*}
+
+
+% ============================================================
+% Задача 5
+% ============================================================
+
+\section*{Задача 5. Преобразование углов}
+
+Рассмотрим частицу, которая в движущейся системе отсчёта имеет
+импульс $\vec p'$, направленный под углом $\theta'$ к оси $x'$.
+Сама система $x'y'$ движется относительно лабораторной системы
+вдоль оси $x$ со скоростью $v$.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        % =====================================================
+        % ДО СТОЛКНОВЕНИЯ
+        % =====================================================
+
+        % Налетающая частица M
+        \fill[rc3] (-4.2,0) circle (2.2pt);
+        \node[above left=1pt] at (-4.2,0) {$M$};
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (-4.15,0) -- (-2.6,0);
+
+        \node[below] at (-3.4,0) {$\vec p_0$};
+
+        % Мишень m
+        \fill[rtext] (-1.8,0) circle (2.2pt);
+        \node[above right=1pt] at (-1.8,0) {$m$};
+
+        % Стрелка перехода к конечному состоянию
+        \draw[
+            ->,
+            draw=rc3,
+            line width=0.8pt
+        ]
+        (-1.0,0) -- (0.3,0);
+
+        % =====================================================
+        % ПОСЛЕ СТОЛКНОВЕНИЯ
+        % =====================================================
+
+        % Точка разлёта
+        \coordinate (O) at (1.3,0);
+
+        % Горизонтальная опорная линия для угла
+        \draw[
+            draw=rtext,
+            line width=0.7pt
+        ]
+        (O) -- ++(1.2,0);
+
+        % Верхняя частица m с импульсом P2
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (O) -- ++(2.6,1.8);
+
+        \node[above left=2pt] at (2.25,0.72) {$m$};
+        \node[above right=2pt] at (3.75,1.63) {$\vec P_2$};
+
+        % Нижняя частица M с импульсом P1
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (O) -- ++(2.9,-1.15);
+
+        \node[below left=1pt] at (2.35,-0.42) {$M$};
+        \node[below right=2pt] at (3.95,-1.02) {$\vec P_1$};
+
+        % Угол theta между горизонтальной опорой и P2
+        \draw[
+            draw=rtext,
+            line width=0.8pt
+        ]
+        ($(O)+(0.75,0)$)
+        arc[
+            start angle=0,
+            end angle=35,
+            radius=0.75
+        ];
+
+        \node at ($(O)+(0.98,0.34)$) {$\theta$};
+
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Упругое рассеяние частицы массы $M$
+        на покоящейся частице массы $m$.
+    }
+    \label{fig:practice02_scattering}
+\end{rbox}
+
+Нужно определить угол $\theta$ в лабораторной системе отсчёта.
+
+Четырёхимпульс частицы в движущейся системе имеет компоненты
+%
+\begin{equation*}
+    \begin{pmatrix}
+        E'/c\\
+        p_x'\\
+        p_y'\\
+        p_z'
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        E'/c\\
+        p'\cos\theta'\\
+        p'\sin\theta'\\
+        0
+    \end{pmatrix}.
+\end{equation*}
+
+Переход в лабораторную систему выполняется преобразованием Лоренца:
+%
+\begin{equation*}
+    \begin{pmatrix}
+        E/c\\
+        p_x\\
+        p_y\\
+        p_z
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \gamma      & \beta\gamma & 0 & 0\\
+        \beta\gamma & \gamma      & 0 & 0\\
+        0           & 0           & 1 & 0\\
+        0           & 0           & 0 & 1
+    \end{pmatrix}
+    \begin{pmatrix}
+        E'/c\\
+        p'\cos\theta'\\
+        p'\sin\theta'\\
+        0
+    \end{pmatrix}.
+\end{equation*}
+
+В движущейся системе угол определяется как
+%
+\begin{equation*}
+    \tan\theta'
+    =
+    \frac{p_y'}{p_x'}.
+\end{equation*}
+
+В лабораторной системе
+%
+\begin{equation*}
+    \tan\theta
+    =
+    \frac{p_y}{p_x}.
+\end{equation*}
+
+Из преобразования Лоренца для продольной компоненты получаем
+%
+\begin{equation*}
+    p_x
+    =
+    \beta\gamma\frac{E'}{c}
+    +
+    \gamma p'\cos\theta'.
+\end{equation*}
+
+Поперечная компонента не изменяется:
+%
+\begin{equation*}
+    p_y
+    =
+    p'\sin\theta'.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \tan\theta
+    =
+    \frac{
+        p'\sin\theta'
+    }{
+        \beta\gamma\dfrac{E'}{c}
+        +
+        \gamma p'\cos\theta'
+    }.
+\end{equation*}
+
+Вынесем $\gamma p'$ из знаменателя:
+%
+\begin{equation*}
+    \tan\theta
+    =
+    \frac{
+        p'\sin\theta'
+    }{
+        \gamma p'
+        \left(
+            \beta\frac{E'}{cp'}
+            +
+            \cos\theta'
+        \right)
+    }.
+\end{equation*}
+
+Сокращая $p'$, получаем
+%
+\begin{equation*}
+    \tan\theta
+    =
+    \frac{
+        \sin\theta'
+    }{
+        \gamma
+        \left(
+            \beta\frac{E'}{cp'}
+            +
+            \cos\theta'
+        \right)
+    }.
+\end{equation*}
+
+Теперь воспользуемся соотношениями
+%
+\begin{equation*}
+    E'
+    =
+    \gamma' mc^2,
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    p'
+    =
+    \gamma' mv'.
+\end{equation*}
+
+Тогда
+%
+\begin{align*}
+    \frac{E'}{p'}
+    &=
+    \frac{
+        \gamma'mc^2
+    }{
+        \gamma'mv'
+    }
+    \\[3pt]
+    &=
+    \frac{c^2}{v'}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \frac{E'}{cp'}
+    =
+    \frac{c}{v'}.
+\end{equation*}
+
+Окончательно
+%
+\begin{equation*}
+    \tan\theta
+    =
+    \frac{
+        \sin\theta'
+    }{
+        \gamma
+        \left(
+            \beta\frac{c}{v'}
+            +
+            \cos\theta'
+        \right)
+    }.
+\end{equation*}
+
+Эта формула позволяет связать угол вылета частицы в движущейся
+системе отсчёта с углом в лабораторной системе.
+
+В частности, её можно использовать для задачи 1 при переходе
+из системы покоя распадающейся частицы в лабораторную систему.
+
+\textbf{Комментарий.}
+В промежуточной записи появляется лишнее деление на $p'$.
+Последовательное преобразование из выражений для $p_x$ и $p_y$
+приводит к формуле, записанной выше.
+
+
+% ============================================================
+% Задача 6
+% ============================================================
+
+\section*{Задача 6. Упругое рассеяние}
+
+Рассмотрим столкновение частицы массы $M$
+с покоящейся частицей массы $m$.
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+        % Лабораторная система
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.8pt
+        ]
+        (-0.2,0) -- (5.0,0)
+        node[right] {$x$};
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.8pt
+        ]
+        (0,-0.2) -- (0,3.2)
+        node[above] {$y$};
+
+        % Движущаяся система
+        \draw[
+            ->,
+            draw=rc3,
+            line width=0.8pt
+        ]
+        (1.2,0.45) -- (5.1,0.45)
+        node[right,text=rtext] {$x'$};
+
+        \draw[
+            ->,
+            draw=rc3,
+            line width=0.8pt
+        ]
+        (1.2,0.25) -- (1.2,3.1)
+        node[above,text=rtext] {$y'$};
+
+        % Скорость движущейся системы
+        \draw[
+            ->,
+            draw=rc3,
+            line width=1.0pt
+        ]
+        (1.8,-0.55) -- (3.6,-0.55);
+
+        \node[
+            below,
+            text=rtext
+        ] at (2.7,-0.55) {$\vec v$};
+
+        % Импульс частицы
+        \draw[
+            ->,
+            draw=rtext,
+            line width=1pt
+        ]
+        (1.2,0.45) -- (3.7,2.5);
+
+        \node[
+            above right
+        ] at (3.45,2.3) {$\vec p'$};
+
+        % Угол
+        \draw[
+            draw=rtext
+        ]
+        (2.0,0.45)
+        arc[
+            start angle=0,
+            end angle=39,
+            radius=0.8
+        ];
+
+        \node at (2.3,0.85) {$\theta'$};
+
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Переход от движущейся системы отсчёта
+        к лабораторной.
+    }
+    \label{fig:practice02_angle}
+\end{rbox}
+
+Требуется найти кинетическую энергию переданной частице
+как функцию угла:
+%
+\begin{equation*}
+    T(\theta)-?
+\end{equation*}
+
+Закон сохранения четырёхимпульса:
+%
+\begin{equation*}
+    P_0+(m,\vec 0)
+    =
+    P_1+P_2.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    P_1
+    =
+    P_0+(m,\vec 0)-P_2.
+\end{equation*}
+
+Начальная и конечная частицы $P_0$ и $P_1$
+имеют одну и ту же массу $M$, поэтому
+%
+\begin{equation*}
+    P_0^2=P_1^2=M^2.
+\end{equation*}
+
+Для конечной частицы массы $M$
+%
+\begin{equation*}
+    M^2
+    =
+    \left[
+        (E_0,\vec p_0)
+        +
+        (m,\vec 0)
+        -
+        (E_2,\vec p_2)
+    \right]^2.
+\end{equation*}
+
+Раскроем квадрат:
+%
+\begin{align*}
+    M^2
+    &=
+    (E_0,\vec p_0)^2
+    +
+    (m,\vec 0)^2
+    +
+    (E_2,\vec p_2)^2
+    \\[3pt]
+    &\quad
+    +
+    2(E_0,\vec p_0)(m,\vec 0)
+    -
+    2(E_0,\vec p_0)(E_2,\vec p_2)
+    -
+    2(m,\vec 0)(E_2,\vec p_2).
+\end{align*}
+
+Используем
+%
+\begin{equation*}
+    (E_0,\vec p_0)^2=M^2,
+\end{equation*}
+%
+\begin{equation*}
+    (m,\vec 0)^2=m^2,
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    (E_2,\vec p_2)^2=m^2.
+\end{equation*}
+
+Кроме того,
+%
+\begin{equation*}
+    (E_0,\vec p_0)(m,\vec 0)
+    =
+    E_0m,
+\end{equation*}
+%
+\begin{equation*}
+    (m,\vec 0)(E_2,\vec p_2)
+    =
+    mE_2,
+\end{equation*}
+%
+а
+%
+\begin{equation*}
+    (E_0,\vec p_0)(E_2,\vec p_2)
+    =
+    E_0E_2-\vec p_0\cdot\vec p_2.
+\end{equation*}
+
+Если угол между $\vec p_0$ и $\vec p_2$ равен $\theta$, то
+%
+\begin{equation*}
+    \vec p_0\cdot\vec p_2
+    =
+    p_0p_2\cos\theta.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    M^2
+    =
+    M^2
+    +
+    m^2
+    +
+    m^2
+    +
+    2E_0m
+    -
+    2E_0E_2
+    -
+    2E_2m
+    +
+    2p_0p_2\cos\theta.
+\end{equation*}
+
+Введём кинетическую энергию частицы массы $m$:
+%
+\begin{equation*}
+    T
+    =
+    E_2-m.
+\end{equation*}
+
+Её полная энергия равна
+%
+\begin{equation*}
+    E_2
+    =
+    T+m.
+\end{equation*}
+
+Для начальной частицы
+%
+\begin{equation*}
+    E_0
+    =
+    \sqrt{
+        p_0^2+M^2
+    }.
+\end{equation*}
+
+Импульс конечной частицы массы $m$:
+%
+\begin{equation*}
+    p_2
+    =
+    \sqrt{
+        E_2^2-m^2
+    }.
+\end{equation*}
+
+Таким образом, для дальнейшего решения задачи необходимо использовать
+систему
+%
+\begin{equation*}
+    M^2
+    =
+    M^2
+    +
+    2m^2
+    +
+    2E_0m
+    -
+    2E_0E_2
+    -
+    2E_2m
+    +
+    2p_0p_2\cos\theta,
+\end{equation*}
+%
+\begin{equation*}
+    T
+    =
+    E_2-m,
+\end{equation*}
+%
+\begin{equation*}
+    E_0
+    =
+    \sqrt{
+        p_0^2+M^2
+    },
+\end{equation*}
+%
+\begin{equation*}
+    p_2
+    =
+    \sqrt{
+        E_2^2-m^2
+    }.
+\end{equation*}
+
+На этом решение на семинаре остановлено.
 
 \end{document}
