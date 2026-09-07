@@ -865,6 +865,7 @@ INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\
 INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
 INPUT C:\Users\Влад\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0800.tfm
 INPUT C:\Users\Влад\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0600.tfm
+INPUT C:\Users\Влад\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati1200.tfm
 INPUT c:\Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\02_Семинары\LaTeX\build_parts\part1.aux
 INPUT c:\Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\02_Семинары\LaTeX\build_parts\part1.out
 INPUT c:\Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\02_Семинары\LaTeX\build_parts\part1.out
@@ -900,3 +901,5 @@ INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-supe
 INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1095.pfb
 INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1200.pfb
 INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1200.pfb
+INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfti1200.pfb
+INPUT C:\Users\Влад\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfti1200.pfb

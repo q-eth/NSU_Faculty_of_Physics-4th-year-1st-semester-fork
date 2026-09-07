@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 14:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2655,7 +2655,17 @@ Non-PDF special ignored!
 �лад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 }]
 (c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\02_Семина
-ры\LaTeX\build_final\final.toc)
+ры\LaTeX\build_final\final.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>
+>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
 \openout5 = `final.toc'.
 
@@ -2668,66 +2678,52 @@ l.52 \newpage
               [1
 
 ]
-<image/chapter1.png, id=63, 1328.965pt x 1192.455pt>
+<image/chapter1.png, id=103, 1328.965pt x 1192.455pt>
 File: image/chapter1.png Graphic file (type png)
 <use image/chapter1.png>
 Package pdftex.def Info: image/chapter1.png  used on input line 54.
 (pdftex.def)             Requested size: 452.9679pt x 406.43008pt.
  [2
 
- <./image/chapter1.png>] (parts/part1.tex<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<
-omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+ <./image/chapter1.png>] (parts/part1.tex [3
 
-
-(C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
-
-
-(C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-[3
-
-]
+] [4]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 260.
-See the caption package documentation for explanation.
-
-[4]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 469.
+(caption)                particular \caption on input line 261.
 See the caption package documentation for explanation.
 
 [5] [6]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 723.
+(caption)                particular \caption on input line 471.
 See the caption package documentation for explanation.
 
 [7] [8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 892.
+(caption)                particular \caption on input line 726.
 See the caption package documentation for explanation.
 
-[9]
+[9] [10]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1192.
+(caption)                particular \caption on input line 896.
 See the caption package documentation for explanation.
 
-[10] [11]
+[11] [12]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1489.
+(caption)                particular \caption on input line 1197.
 See the caption package documentation for explanation.
 
-[12] [13]) [14]
+[13] [14]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1495.
+See the caption package documentation for explanation.
+
+[15] [16]) [17]
 (c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\02_Семина
 ры\LaTeX\build_final\final.aux)
  ***********
@@ -2735,16 +2731,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: A12B94238C7AA76438217452C8BFA4EF;247.
+(rerunfilecheck)             Checksum: 68DEB44B4B8728EFF89904C7F23678B4;2314.
  ) 
 Here is how much of TeX's memory you used:
- 61933 strings out of 467871
- 1458831 string characters out of 5416924
- 2210501 words of memory out of 5000000
- 89519 multiletter control sequences out of 15000+600000
- 653504 words of font info for 102 fonts, out of 8000000 for 9000
+ 61951 strings out of 467871
+ 1459088 string characters out of 5416924
+ 2211568 words of memory out of 5000000
+ 89530 multiletter control sequences out of 15000+600000
+ 654374 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,11n,110p,1310b,1497s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,11n,110p,1310b,1229s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmmi10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
@@ -2768,11 +2764,13 @@ ype1/public/cm-super/sfrm1000.pfb><C:/Users/Влад/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/Влад/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/Влад/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/В
-лад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1728.pfb>
+лад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><
+C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sft
+i1728.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭ
-Ч\02_Семинары\LaTeX\build_final\final.pdf" (15 pages, 1643535 bytes).
+Ч\02_Семинары\LaTeX\build_final\final.pdf" (18 pages, 1685479 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
