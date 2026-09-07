@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Ле
-кции/LaTeX/final.tex"
+**"c:/Users/Влад/Documents/Курс 4 Семестр 1/ТДиСФ/01_Лек
+ции/LaTeX/final.tex"
 
-(c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лек
-ции/LaTeX/final.tex
+(c:/Users/Влад/Documents/Курс 4 Семестр 1/ТДиСФ/01_Лекц
+ии/LaTeX/final.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -2525,8 +2525,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip136
 ) (style/colors.tex) (style/page-style.tex) (style/boxes.tex)
 (style/figures.tex) (style/headings.tex) (style/commands.tex))
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
-ции\LaTeX\build_final\final.aux
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_final\final.aux
 Package babel Info: 'russian' activates 'russian' shorthands.
 (babel)             Reported on input line 9.
 )
@@ -2611,10 +2611,10 @@ enefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 \c@lstlisting=\count457
 Package hyperref Info: Link coloring ON on input line 8.
 
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
-ции\LaTeX\build_final\final.out)
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
-ции\LaTeX\build_final\final.out)
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_final\final.out)
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_final\final.out)
 \@outlinefile=\write4
 \openout4 = `final.out'.
 
@@ -2654,15 +2654,16 @@ Non-PDF special ignored!
 {C:/Users/Влад/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/�
 �лад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 }]
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
-ции\LaTeX\build_final\final.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cma
-p>>
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_final\final.toc<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>
+>
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
- (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+
+(C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write5
@@ -2677,7 +2678,7 @@ l.52 \newpage
               [1
 
 ]
-<image/chapter1.png, id=88, 1275.76625pt x 1242.6425pt>
+<image/chapter1.png, id=110, 1275.76625pt x 1242.6425pt>
 File: image/chapter1.png Graphic file (type png)
 <use image/chapter1.png>
 Package pdftex.def Info: image/chapter1.png  used on input line 54.
@@ -2689,55 +2690,140 @@ Package pdftex.def Info: image/chapter1.png  used on input line 54.
 [3
 
 
-] [4] [5] [6]) [7]
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
-ции\LaTeX\build_final\final.aux)
+]
+<image/lecture_01/classical_quantum_gas.png, id=130, 1887.05pt x 840.13875pt>
+File: image/lecture_01/classical_quantum_gas.png Graphic file (type png)
+<use image/lecture_01/classical_quantum_gas.png>
+Package pdftex.def Info: image/lecture_01/classical_quantum_gas.png  used on in
+put line 142.
+(pdftex.def)             Requested size: 296.12021pt x 131.8354pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 156.
+See the caption package documentation for explanation.
+
+<image/lecture_01/microcanonical_system.png, id=131, 1541.76pt x 1027.84pt>
+File: image/lecture_01/microcanonical_system.png Graphic file (type png)
+<use image/lecture_01/microcanonical_system.png>
+Package pdftex.def Info: image/lecture_01/microcanonical_system.png  used on in
+put line 195.
+(pdftex.def)             Requested size: 238.54163pt x 159.01556pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 207.
+See the caption package documentation for explanation.
+
+[4 <./image/lecture_01/classical_quantum_gas.png>] [5 <./image/lecture_01/micro
+canonical_system.png>]
+<image/lecture_01/canonical_ensemble.png, id=148, 1541.76pt x 1027.84pt>
+File: image/lecture_01/canonical_ensemble.png Graphic file (type png)
+<use image/lecture_01/canonical_ensemble.png>
+Package pdftex.def Info: image/lecture_01/canonical_ensemble.png  used on input
+ line 332.
+(pdftex.def)             Requested size: 296.12021pt x 197.4089pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 346.
+See the caption package documentation for explanation.
+
+[6 <./image/lecture_01/canonical_ensemble.png>]
+<image/lecture_01/grand_canonical_ensemble.png, id=159, 1541.76pt x 1027.84pt>
+File: image/lecture_01/grand_canonical_ensemble.png Graphic file (type png)
+<use image/lecture_01/grand_canonical_ensemble.png>
+Package pdftex.def Info: image/lecture_01/grand_canonical_ensemble.png  used on
+ input line 538.
+(pdftex.def)             Requested size: 296.12021pt x 197.4089pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 552.
+See the caption package documentation for explanation.
+
+[7] [8 <./image/lecture_01/grand_canonical_ensemble.png>] [9]
+Overfull \hbox (3.06364pt too wide) in paragraph at lines 823--823
+|[]\T2A/cmr/bx/n/17.28 ������������� �����--������ � ����--���������| 
+ []
+
+[10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
+<image/lecture_01/quantum_gas_pressure.png, id=229, 1541.76pt x 1027.84pt>
+File: image/lecture_01/quantum_gas_pressure.png Graphic file (type png)
+<use image/lecture_01/quantum_gas_pressure.png>
+Package pdftex.def Info: image/lecture_01/quantum_gas_pressure.png  used on inp
+ut line 2275.
+(pdftex.def)             Requested size: 296.12021pt x 197.4089pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2290.
+See the caption package documentation for explanation.
+
+[20 <./image/lecture_01/quantum_gas_pressure.png>]
+<image/lecture_01/fermi_dirac_distribution.png, id=236, 1541.76pt x 1027.84pt>
+File: image/lecture_01/fermi_dirac_distribution.png Graphic file (type png)
+<use image/lecture_01/fermi_dirac_distribution.png>
+Package pdftex.def Info: image/lecture_01/fermi_dirac_distribution.png  used on
+ input line 2480.
+(pdftex.def)             Requested size: 296.12021pt x 197.4089pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2495.
+See the caption package documentation for explanation.
+
+[21] [22 <./image/lecture_01/fermi_dirac_distribution.png>]) [23]
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_final\final.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: 02710CA17461136CE2C12485EF54616F;1342.
+(rerunfilecheck)             Checksum: 29CD2254B803C2E3B66A6B1611A23FE9;2602.
  ) 
 Here is how much of TeX's memory you used:
- 61669 strings out of 467871
- 1453530 string characters out of 5416924
- 2202382 words of memory out of 5000000
- 89296 multiletter control sequences out of 15000+600000
- 648370 words of font info for 84 fonts, out of 8000000 for 9000
+ 61919 strings out of 467871
+ 1459093 string characters out of 5416924
+ 2203382 words of memory out of 5000000
+ 89458 multiletter control sequences out of 15000+600000
+ 656906 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,10n,110p,1312b,1284s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,12n,110p,1310b,1565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Us
-ers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Влад/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/В�
-�ад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C
-:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx
-1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm
--super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/cm-super/sfbx3583.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Users/Влад/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/Влад/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/Вл�
-�д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/
-Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti14
-40.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
-uper/sfti1728.pfb>
-Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\Фи
-ХАиМ\01_Лекции\LaTeX\build_final\final.pdf" (8 pages, 2374441 bytes).
+cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Влад/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Влад/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
+s/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Влад/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Влад/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/
+Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx12
+00.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
+uper/sfbx1440.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/cm-super/sfbx1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/cm-super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/cm-super/sfbx3583.pfb><C:/Users/Влад/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Users/Вла�
+�/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Us
+ers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200
+.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-sup
+er/sfrm1440.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/cm-super/sfti1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/cm-super/sfti1440.pfb><C:/Users/Влад/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/cm-super/sfti1728.pfb>
+Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ТД
+иСФ\01_Лекции\LaTeX\build_final\final.pdf" (24 pages, 11998460 bytes).
 
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

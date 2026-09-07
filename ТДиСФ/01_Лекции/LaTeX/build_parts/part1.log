@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  4 SEP 2026 00:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Влад/Documents/Курс 4 Семестр 1/ФЭЧ/01_Лекци
-и/LaTeX/parts/part1.tex"
+**"c:/Users/Влад/Documents/Курс 4 Семестр 1/ТДиСФ/01_Лек
+ции/LaTeX/parts/part1.tex"
 
-(c:/Users/Влад/Documents/Курс 4 Семестр 1/ФЭЧ/01_Лекции
-/LaTeX/parts/part1.tex
+(c:/Users/Влад/Documents/Курс 4 Семестр 1/ТДиСФ/01_Лекц
+ии/LaTeX/parts/part1.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 
@@ -2533,8 +2533,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ) (../style/colors.tex) (../style/page-style.tex)
 (../style/boxes.tex) (../style/figures.tex) (../style/headings.tex)
 (../style/commands.tex))))
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\01_Лекции
-\LaTeX\build_parts\part1.aux
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_parts\part1.aux
 Package babel Info: 'russian' activates 'russian' shorthands.
 (babel)             Reported on input line 9.
 )
@@ -2619,23 +2619,23 @@ enefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 \c@lstlisting=\count457
 Package hyperref Info: Link coloring ON on input line 5.
 
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\01_Лекции
-\LaTeX\build_parts\part1.out)
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\01_Лекции
-\LaTeX\build_parts\part1.out)
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_parts\part1.out)
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_parts\part1.out)
 \@outlinefile=\write4
 \openout4 = `part1.out'.
 
 
 {\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -2672,56 +2672,52 @@ Non-PDF special ignored!
 
 {C:/Users/Влад/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/�
 �лад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}{C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-s
-uper-ts1.enc}] [2] [3]
+}] [2] [3] [4] [5] [6]
+Overfull \hbox (3.06364pt too wide) in paragraph at lines 749--749
+|[]\T2A/cmr/bx/n/17.28 ������������� �����--������ � ����--���������| 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 242.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
-
-[4] [5] [6] [7]
-(c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭЧ\01_Лекции
-\LaTeX\build_parts\part1.aux)
+[7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
+(c:/Users\Влад\Documents\Курс 4 Семестр 1\ТДиСФ\01_Лекц
+ии\LaTeX\build_parts\part1.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `part1.out' has not changed.
-(rerunfilecheck)             Checksum: F342EFAFBCDC00C282EA706AAA366275;3823.
+(rerunfilecheck)             Checksum: 3287698BEA8BC1607F160A6B545187EE;2345.
  ) 
 Here is how much of TeX's memory you used:
- 61714 strings out of 467871
- 1454279 string characters out of 5416924
- 2203591 words of memory out of 5000000
- 89319 multiletter control sequences out of 15000+600000
- 645106 words of font info for 90 fonts, out of 8000000 for 9000
+ 61706 strings out of 467871
+ 1454171 string characters out of 5416924
+ 2203593 words of memory out of 5000000
+ 89309 multiletter control sequences out of 15000+600000
+ 648064 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,7n,127p,1336b,1179s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,127p,1340b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Влад/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Влад/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/�
-�лад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+s/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Влад/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Влад/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
+/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/cm-super/sfbx1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/cm-super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/Влад/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ФЭ
-Ч\01_Лекции\LaTeX\build_parts\part1.pdf" (7 pages, 205394 bytes).
+m/cmsy10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Влад/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/Влад/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/Вла
+д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/U
+sers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm120
+0.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-su
+per/sfti1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/cm-super/sfti1440.pfb>
+Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ТД
+иСФ\01_Лекции\LaTeX\build_parts\part1.pdf" (19 pages, 283082 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
