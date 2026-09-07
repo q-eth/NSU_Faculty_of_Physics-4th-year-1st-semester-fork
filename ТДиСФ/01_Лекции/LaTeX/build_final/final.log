@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 22:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  7 SEP 2026 22:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2783,11 +2783,11 @@ Package rerunfilecheck Info: File `final.out' has not changed.
 (rerunfilecheck)             Checksum: 29CD2254B803C2E3B66A6B1611A23FE9;2602.
  ) 
 Here is how much of TeX's memory you used:
- 61919 strings out of 467871
- 1459093 string characters out of 5416924
+ 61916 strings out of 467871
+ 1459054 string characters out of 5416924
  2203382 words of memory out of 5000000
- 89458 multiletter control sequences out of 15000+600000
- 656906 words of font info for 112 fonts, out of 8000000 for 9000
+ 89457 multiletter control sequences out of 15000+600000
+ 656036 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,12n,110p,1310b,1565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
@@ -2816,14 +2816,13 @@ ocal/Programs/MiKTeX/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Users/Вла�
 ers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200
 .pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-sup
 er/sfrm1440.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/cm-super/sfti1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/cm-super/sfti1440.pfb><C:/Users/Влад/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/cm-super/sfti1728.pfb>
+blic/cm-super/sfti1440.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/cm-super/sfti1728.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ТД
-иСФ\01_Лекции\LaTeX\build_final\final.pdf" (24 pages, 11998460 bytes).
+иСФ\01_Лекции\LaTeX\build_final\final.pdf" (24 pages, 11977100 bytes).
 
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
+ 346 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
  284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
