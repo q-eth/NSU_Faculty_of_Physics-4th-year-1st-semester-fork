@@ -4,5 +4,1678 @@
 
 \begin{document}
 
+% ============================================================
+% Семинар 1
+% ============================================================
+
+\practice{1}{05.09.2026}{Кристаллография}
+
+
+% ============================================================
+% Задача 1
+% ============================================================
+
+\section{Задача 1. ОЦК как решётка Браве}
+
+\textbf{Условие.}
+Показать, что объёмно-центрированная кубическая решётка
+является решёткой Браве.
+
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \includegraphics[
+        width=0.88\linewidth
+    ]{image/practice_01/bcc_lattice.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Объёмно-центрированная кубическая решётка.
+        Слева показана обычная кубическая ячейка с узлами
+        в вершинах и одним узлом в центре.
+        Справа изображены три соседние ячейки,
+        имеющие общий узел; векторы
+        $\mathbf a_1$, $\mathbf a_2$, $\mathbf a_3$
+        направлены из общего узла к объёмно-центрированным узлам
+        соседних ячеек.
+        Также показаны координатные оси $x$, $y$, $z$.
+    }
+
+    \label{fig:bcc_lattice}
+\end{rbox}
+
+
+Рассмотрим объёмно-центрированную кубическую решётку
+с параметром обычной кубической ячейки $a$.
+
+Для того чтобы показать, что это решётка Браве, достаточно
+подобрать три примитивных вектора трансляции так, чтобы любой
+узел решётки можно было получить их целочисленной линейной
+комбинацией.
+
+Выберем
+%
+\begin{equation*}
+    \mathbf a_1
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_x
+        +
+        \mathbf e_y
+        -
+        \mathbf e_z
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_2
+    =
+    \frac{a}{2}
+    \left(
+        -\mathbf e_x
+        +
+        \mathbf e_y
+        +
+        \mathbf e_z
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_3
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_x
+        -
+        \mathbf e_y
+        +
+        \mathbf e_z
+    \right).
+\end{equation*}
+
+Эти векторы направлены из одного узла ОЦК
+в три ближайших соседних узла.
+
+Тогда положение любого узла решётки можно записать в виде
+%
+\begin{equation*}
+    \boxed{
+        \mathbf R
+        =
+        n_1\mathbf a_1
+        +
+        n_2\mathbf a_2
+        +
+        n_3\mathbf a_3
+    },
+\end{equation*}
+%
+где
+%
+\begin{equation*}
+    n_1,n_2,n_3\in\mathbb Z.
+\end{equation*}
+
+Таким образом, вся решётка получается трансляциями
+одного и того же узла.
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \text{ОЦК является решёткой Браве.}
+    }
+\end{equation*}
+
+\textbf{Комментарий.}
+В обычной кубической ячейке ОЦК кажется, что имеются узлы
+двух типов: вершины куба и центр куба. Однако это связано
+только с выбором непримитивной кубической ячейки.
+
+Если перейти к примитивной ячейке с векторами
+$\mathbf a_1$, $\mathbf a_2$, $\mathbf a_3$, все узлы
+оказываются трансляционно эквивалентными.
+
+
+% ============================================================
+% Задача 2
+% ============================================================
+
+\section{Задача 2. ГЦК как решётка Браве}
+
+\textbf{Условие.}
+Показать, что гранецентрированная кубическая решётка
+является решёткой Браве.
+
+
+% ------------------------------------------------------------
+% РИСУНОК 2
+%
+% Вставить здесь рисунок ГЦК из рукописного конспекта:
+% куб с узлами в вершинах и в центрах граней.
+%
+% На рисунке желательно показать:
+%   1) оси x, y, z;
+%   2) три примитивных вектора
+%      \mathbf a_1, \mathbf a_2, \mathbf a_3;
+%   3) центры граней, в которые приходят эти векторы.
+% ------------------------------------------------------------
+
+
+Рассмотрим гранецентрированную кубическую решётку.
+
+В качестве примитивных векторов выберем
+%
+\begin{equation*}
+    \mathbf a_1
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_x+\mathbf e_y
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_2
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_y+\mathbf e_z
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_3
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_z+\mathbf e_x
+    \right).
+\end{equation*}
+
+Геометрически эти векторы направлены из одного узла
+к центрам трёх соседних граней куба.
+
+Любой узел ГЦК можно представить как
+%
+\begin{equation*}
+    \boxed{
+        \mathbf R
+        =
+        n_1\mathbf a_1
+        +
+        n_2\mathbf a_2
+        +
+        n_3\mathbf a_3
+    },
+    \qquad
+    n_1,n_2,n_3\in\mathbb Z.
+\end{equation*}
+
+Следовательно, все узлы решётки получаются из одного узла
+с помощью трансляций.
+
+Поэтому
+%
+\begin{equation*}
+    \boxed{
+        \text{ГЦК является решёткой Браве.}
+    }
+\end{equation*}
+
+\textbf{Комментарий.}
+Как и в случае ОЦК, обычная кубическая ячейка ГЦК
+не является примитивной.
+
+В ней содержится несколько узлов решётки, но это не означает
+наличия нескольких атомов в базисе. После выбора примитивных
+векторов все узлы оказываются эквивалентными.
+
+
+% ============================================================
+% Обратная решётка
+% ============================================================
+
+\section*{Обратная решётка}
+
+
+% ============================================================
+% Задача 3
+% ============================================================
+
+\section{Задача 3. Обратная решётка к ОЦК}
+
+\textbf{Условие.}
+Показать, что обратная решётка к ОЦК является ГЦК.
+
+Для прямой решётки с примитивными векторами
+%
+\begin{equation*}
+    \mathbf a_1,
+    \qquad
+    \mathbf a_2,
+    \qquad
+    \mathbf a_3
+\end{equation*}
+%
+введём примитивные векторы обратной решётки:
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_1
+        =
+        2\pi
+        \frac{
+            \mathbf a_2\times\mathbf a_3
+        }{
+            \mathbf a_1\cdot
+            (\mathbf a_2\times\mathbf a_3)
+        }
+    },
+\end{equation*}
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_2
+        =
+        2\pi
+        \frac{
+            \mathbf a_3\times\mathbf a_1
+        }{
+            \mathbf a_1\cdot
+            (\mathbf a_2\times\mathbf a_3)
+        }
+    },
+\end{equation*}
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_3
+        =
+        2\pi
+        \frac{
+            \mathbf a_1\times\mathbf a_2
+        }{
+            \mathbf a_1\cdot
+            (\mathbf a_2\times\mathbf a_3)
+        }
+    }.
+\end{equation*}
+
+Для этих векторов выполняется условие
+%
+\begin{equation*}
+    \boxed{
+        \mathbf a_i\cdot\mathbf b_j
+        =
+        2\pi\delta_{ij}
+    }.
+\end{equation*}
+
+То есть, например,
+%
+\begin{equation*}
+    \mathbf a_1\cdot\mathbf b_1=2\pi,
+    \qquad
+    \mathbf a_1\cdot\mathbf b_2=0,
+    \qquad
+    \mathbf a_1\cdot\mathbf b_3=0,
+\end{equation*}
+%
+и аналогично для остальных пар.
+
+Для ОЦК имеем
+%
+\begin{equation*}
+    \mathbf a_1
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_x+\mathbf e_y-\mathbf e_z
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_2
+    =
+    \frac{a}{2}
+    \left(
+        -\mathbf e_x+\mathbf e_y+\mathbf e_z
+    \right),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a_3
+    =
+    \frac{a}{2}
+    \left(
+        \mathbf e_x-\mathbf e_y+\mathbf e_z
+    \right).
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Вычисление b_1
+% ------------------------------------------------------------
+
+\subsection*{Вычисление первого вектора обратной решётки}
+
+Найдём сначала числитель для $\mathbf b_1$:
+%
+\begin{equation*}
+    \mathbf a_2\times\mathbf a_3
+    =
+    \frac{a^2}{4}
+    \left[
+        (-\mathbf e_x+\mathbf e_y+\mathbf e_z)
+        \times
+        (\mathbf e_x-\mathbf e_y+\mathbf e_z)
+    \right].
+\end{equation*}
+
+Раскроем векторное произведение по членам:
+%
+\begin{align*}
+    (-\mathbf e_x)\times\mathbf e_x
+    &=
+    0,
+    \\
+    (-\mathbf e_x)\times(-\mathbf e_y)
+    &=
+    \mathbf e_x\times\mathbf e_y
+    =
+    \mathbf e_z,
+    \\
+    (-\mathbf e_x)\times\mathbf e_z
+    &=
+    +\mathbf e_y,
+    \\
+    \mathbf e_y\times\mathbf e_x
+    &=
+    -\mathbf e_z,
+    \\
+    \mathbf e_y\times(-\mathbf e_y)
+    &=
+    0,
+    \\
+    \mathbf e_y\times\mathbf e_z
+    &=
+    \mathbf e_x,
+    \\
+    \mathbf e_z\times\mathbf e_x
+    &=
+    \mathbf e_y,
+    \\
+    \mathbf e_z\times(-\mathbf e_y)
+    &=
+    +\mathbf e_x,
+    \\
+    \mathbf e_z\times\mathbf e_z
+    &=
+    0.
+\end{align*}
+
+Поэтому
+%
+\begin{align*}
+    \mathbf a_2\times\mathbf a_3
+    &=
+    \frac{a^2}{4}
+    \left(
+        \mathbf e_z
+        +
+        \mathbf e_y
+        -
+        \mathbf e_z
+        +
+        \mathbf e_x
+        +
+        \mathbf e_y
+        +
+        \mathbf e_x
+    \right)
+    \\
+    &=
+    \frac{a^2}{4}
+    \left(
+        2\mathbf e_x+2\mathbf e_y
+    \right).
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \mathbf a_2\times\mathbf a_3
+        =
+        \frac{a^2}{2}
+        \left(
+            \mathbf e_x+\mathbf e_y
+        \right)
+    }.
+\end{equation*}
+
+Теперь найдём объём примитивной ячейки:
+%
+\begin{align*}
+    \mathbf a_1\cdot
+    (\mathbf a_2\times\mathbf a_3)
+    &=
+    \frac{a}{2}
+    \left(
+        \mathbf e_x+\mathbf e_y-\mathbf e_z
+    \right)
+    \cdot
+    \frac{a^2}{2}
+    \left(
+        \mathbf e_x+\mathbf e_y
+    \right)
+    \\
+    &=
+    \frac{a^3}{4}
+    (1+1).
+\end{align*}
+
+Здесь использована ортонормированность декартова базиса:
+%
+\begin{equation*}
+    \mathbf e_x\cdot\mathbf e_x
+    =
+    \mathbf e_y\cdot\mathbf e_y
+    =
+    \mathbf e_z\cdot\mathbf e_z
+    =
+    1,
+\end{equation*}
+%
+а смешанные произведения равны нулю.
+
+Поэтому
+%
+\begin{equation*}
+    \boxed{
+        \mathbf a_1\cdot
+        (\mathbf a_2\times\mathbf a_3)
+        =
+        \frac{a^3}{2}
+    }.
+\end{equation*}
+
+Подставляем полученные выражения в определение $\mathbf b_1$:
+%
+\begin{align*}
+    \mathbf b_1
+    &=
+    2\pi
+    \frac{
+        \dfrac{a^2}{2}
+        (\mathbf e_x+\mathbf e_y)
+    }{
+        \dfrac{a^3}{2}
+    }
+    \\
+    &=
+    \frac{2\pi}{a}
+    (\mathbf e_x+\mathbf e_y).
+\end{align*}
+
+Таким образом,
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_1
+        =
+        \frac{2\pi}{a}
+        \left(
+            \mathbf e_x+\mathbf e_y
+        \right)
+    }.
+\end{equation*}
+
+Аналогично получаем
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_2
+        =
+        \frac{2\pi}{a}
+        \left(
+            \mathbf e_y+\mathbf e_z
+        \right)
+    },
+\end{equation*}
+%
+\begin{equation*}
+    \boxed{
+        \mathbf b_3
+        =
+        \frac{2\pi}{a}
+        \left(
+            \mathbf e_x+\mathbf e_z
+        \right)
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Сравнение с ГЦК
+% ------------------------------------------------------------
+
+\subsection*{Сравнение с примитивными векторами ГЦК}
+
+Для ГЦК с параметром обычной кубической ячейки $a'$
+примитивные векторы имеют вид
+%
+\begin{equation*}
+    \mathbf a'_1
+    =
+    \frac{a'}{2}
+    (\mathbf e_x+\mathbf e_y),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a'_2
+    =
+    \frac{a'}{2}
+    (\mathbf e_y+\mathbf e_z),
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf a'_3
+    =
+    \frac{a'}{2}
+    (\mathbf e_x+\mathbf e_z).
+\end{equation*}
+
+Полученные векторы обратной решётки имеют точно такую же
+структуру.
+
+Сравнивая коэффициенты,
+%
+\begin{equation*}
+    \frac{a'}{2}
+    =
+    \frac{2\pi}{a},
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    \boxed{
+        a'
+        =
+        \frac{4\pi}{a}
+    }.
+\end{equation*}
+
+Таким образом,
+%
+\begin{equation*}
+    \boxed{
+        \text{обратная решётка к ОЦК является ГЦК.}
+    }
+\end{equation*}
+
+\textbf{Комментарий.}
+Аналогично можно показать обратное утверждение:
+обратная решётка к ГЦК является ОЦК.
+
+Таким образом, ОЦК и ГЦК являются взаимно обратными
+типами кубических решёток.
+
+
+% ============================================================
+% Задача 4
+% ============================================================
+
+\section{Задача 4. Вектор обратной решётки и плоскости прямой решётки}
+
+\textbf{Условие.}
+Показать, что каждый вектор обратной решётки перпендикулярен
+некоторому семейству плоскостей прямой решётки.
+
+
+% ------------------------------------------------------------
+% РИСУНОК 3
+%
+% Вставить здесь рисунок из рукописного конспекта.
+%
+% На рисунке:
+%   1) из начала координат проведены векторы
+%      n_1\mathbf a_1,
+%      n_2\mathbf a_2,
+%      n_3\mathbf a_3;
+%   2) через их концы проведена плоскость;
+%   3) в этой плоскости показаны два вектора
+%      \mathbf c_2 и \mathbf c_3.
+% ------------------------------------------------------------
+
+
+Пусть плоскость пересекает направления примитивных векторов
+в точках
+%
+\begin{equation*}
+    n_1\mathbf a_1,
+    \qquad
+    n_2\mathbf a_2,
+    \qquad
+    n_3\mathbf a_3.
+\end{equation*}
+
+Построим два независимых вектора, лежащих в этой плоскости:
+%
+\begin{equation*}
+    \boxed{
+        \mathbf c_2
+        =
+        n_2\mathbf a_2
+        -
+        n_1\mathbf a_1
+    },
+\end{equation*}
+%
+\begin{equation*}
+    \boxed{
+        \mathbf c_3
+        =
+        n_3\mathbf a_3
+        -
+        n_1\mathbf a_1
+    }.
+\end{equation*}
+
+Вектор
+%
+\begin{equation*}
+    \mathbf c_2\times\mathbf c_3
+\end{equation*}
+%
+перпендикулярен обоим векторам $\mathbf c_2$ и $\mathbf c_3$,
+а значит, является нормалью к рассматриваемой плоскости.
+
+Раскроем векторное произведение:
+%
+\begin{align*}
+    \mathbf c_2\times\mathbf c_3
+    &=
+    \left(
+        n_2\mathbf a_2-n_1\mathbf a_1
+    \right)
+    \times
+    \left(
+        n_3\mathbf a_3-n_1\mathbf a_1
+    \right)
+    \\
+    &=
+    n_2n_3
+    [\mathbf a_2\times\mathbf a_3]
+    -
+    n_1n_2
+    [\mathbf a_2\times\mathbf a_1]
+    -
+    n_1n_3
+    [\mathbf a_1\times\mathbf a_3]
+    +
+    n_1^2
+    [\mathbf a_1\times\mathbf a_1].
+\end{align*}
+
+Последний член равен нулю:
+%
+\begin{equation*}
+    [\mathbf a_1\times\mathbf a_1]=0.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    \mathbf c_2\times\mathbf c_3
+    =
+    n_2n_3
+    [\mathbf a_2\times\mathbf a_3]
+    -
+    n_1n_2
+    [\mathbf a_2\times\mathbf a_1]
+    -
+    n_1n_3
+    [\mathbf a_1\times\mathbf a_3].
+\end{equation*}
+
+Используем антисимметрию векторного произведения:
+%
+\begin{equation*}
+    [\mathbf a_2\times\mathbf a_1]
+    =
+    -[\mathbf a_1\times\mathbf a_2],
+\end{equation*}
+%
+\begin{equation*}
+    [\mathbf a_1\times\mathbf a_3]
+    =
+    -[\mathbf a_3\times\mathbf a_1].
+\end{equation*}
+
+Тогда
+%
+\begin{equation*}
+    \boxed{
+        \mathbf c_2\times\mathbf c_3
+        =
+        n_2n_3
+        [\mathbf a_2\times\mathbf a_3]
+        +
+        n_1n_2
+        [\mathbf a_1\times\mathbf a_2]
+        +
+        n_1n_3
+        [\mathbf a_3\times\mathbf a_1]
+    }.
+\end{equation*}
+
+Вынесем общий множитель $n_1n_2n_3$:
+%
+\begin{align*}
+    \mathbf c_2\times\mathbf c_3
+    &=
+    n_1n_2n_3
+    \left[
+        \frac{1}{n_1}
+        [\mathbf a_2\times\mathbf a_3]
+        +
+        \frac{1}{n_2}
+        [\mathbf a_3\times\mathbf a_1]
+        +
+        \frac{1}{n_3}
+        [\mathbf a_1\times\mathbf a_2]
+    \right].
+\end{align*}
+
+Введём объём примитивной ячейки
+%
+\begin{equation*}
+    \Omega
+    =
+    \mathbf a_1\cdot
+    [\mathbf a_2\times\mathbf a_3].
+\end{equation*}
+
+Из определения обратных векторов имеем
+%
+\begin{equation*}
+    \mathbf b_1
+    =
+    \frac{2\pi}{\Omega}
+    [\mathbf a_2\times\mathbf a_3],
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf b_2
+    =
+    \frac{2\pi}{\Omega}
+    [\mathbf a_3\times\mathbf a_1],
+\end{equation*}
+%
+\begin{equation*}
+    \mathbf b_3
+    =
+    \frac{2\pi}{\Omega}
+    [\mathbf a_1\times\mathbf a_2].
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    [\mathbf a_2\times\mathbf a_3]
+    =
+    \frac{\Omega}{2\pi}\mathbf b_1,
+\end{equation*}
+%
+\begin{equation*}
+    [\mathbf a_3\times\mathbf a_1]
+    =
+    \frac{\Omega}{2\pi}\mathbf b_2,
+\end{equation*}
+%
+\begin{equation*}
+    [\mathbf a_1\times\mathbf a_2]
+    =
+    \frac{\Omega}{2\pi}\mathbf b_3.
+\end{equation*}
+
+Подставляем:
+%
+\begin{equation*}
+    \mathbf c_2\times\mathbf c_3
+    =
+    \frac{\Omega}{2\pi}
+    n_1n_2n_3
+    \left(
+        \frac{\mathbf b_1}{n_1}
+        +
+        \frac{\mathbf b_2}{n_2}
+        +
+        \frac{\mathbf b_3}{n_3}
+    \right).
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Индексы Миллера
+% ------------------------------------------------------------
+
+\subsection*{Связь с индексами Миллера}
+
+Теперь воспользуемся определением индексов Миллера.
+
+Если плоскость пересекает направления примитивных векторов
+в точках
+%
+\begin{equation*}
+    n_1\mathbf a_1,
+    \qquad
+    n_2\mathbf a_2,
+    \qquad
+    n_3\mathbf a_3,
+\end{equation*}
+%
+то её индексы Миллера пропорциональны обратным величинам:
+%
+\begin{equation*}
+    h:k:l
+    =
+    \frac{1}{n_1}
+    :
+    \frac{1}{n_2}
+    :
+    \frac{1}{n_3}.
+\end{equation*}
+
+Или, что то же самое,
+%
+\begin{equation*}
+    n_1:n_2:n_3
+    =
+    \frac{1}{h}
+    :
+    \frac{1}{k}
+    :
+    \frac{1}{l}.
+\end{equation*}
+
+Поэтому выражение в скобках направлено вдоль
+%
+\begin{equation*}
+    h\mathbf b_1
+    +
+    k\mathbf b_2
+    +
+    l\mathbf b_3.
+\end{equation*}
+
+Введём
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g
+        =
+        h\mathbf b_1
+        +
+        k\mathbf b_2
+        +
+        l\mathbf b_3
+    }.
+\end{equation*}
+
+Тогда
+%
+\begin{equation*}
+    \mathbf c_2\times\mathbf c_3
+    \parallel
+    \mathbf g.
+\end{equation*}
+
+Но $\mathbf c_2\times\mathbf c_3$ является нормалью
+к исходной плоскости.
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g\perp(hkl)
+    }.
+\end{equation*}
+
+Таким образом, вектор обратной решётки
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g_{hkl}
+        =
+        h\mathbf b_1
+        +
+        k\mathbf b_2
+        +
+        l\mathbf b_3
+    }
+\end{equation*}
+%
+перпендикулярен семейству плоскостей прямой решётки
+с индексами Миллера $(hkl)$.
+
+\textbf{Комментарий.}
+Здесь устанавливается геометрический смысл обратной решётки:
+направление $\mathbf g_{hkl}$ задаёт нормаль к плоскостям
+$(hkl)$.
+
+В следующей задаче увидим, что длина этого вектора связана
+с расстоянием между соседними плоскостями данного семейства.
+
+
+% ============================================================
+% Задача 5
+% ============================================================
+
+\section{Задача 5. Расстояние между плоскостями}
+
+\textbf{Условие.}
+Если компоненты вектора $\mathbf g$ не имеют общего множителя,
+показать, что $|\mathbf g|$ обратно пропорционален расстоянию
+между плоскостями прямой решётки, перпендикулярными
+$\mathbf g$.
+
+
+% ------------------------------------------------------------
+% РИСУНОК 4
+%
+% Вставить здесь небольшой геометрический рисунок
+% из рукописного конспекта.
+%
+% На рисунке показать:
+%   1) вектор \mathbf R;
+%   2) направление \mathbf g;
+%   3) проекцию \mathbf R на направление \mathbf g;
+%   4) при перерисовке можно добавить семейство параллельных
+%      плоскостей, перпендикулярных \mathbf g.
+% ------------------------------------------------------------
+
+
+Пусть вектор обратной решётки имеет вид
+%
+\begin{equation*}
+    \mathbf g
+    =
+    h\mathbf b_1
+    +
+    k\mathbf b_2
+    +
+    l\mathbf b_3.
+\end{equation*}
+
+Вектор произвольного узла прямой решётки равен
+%
+\begin{equation*}
+    \mathbf R
+    =
+    n_1\mathbf a_1
+    +
+    n_2\mathbf a_2
+    +
+    n_3\mathbf a_3,
+    \qquad
+    n_i\in\mathbb Z.
+\end{equation*}
+
+Рассмотрим их скалярное произведение:
+%
+\begin{align*}
+    \mathbf g\cdot\mathbf R
+    &=
+    \left(
+        h\mathbf b_1
+        +
+        k\mathbf b_2
+        +
+        l\mathbf b_3
+    \right)
+    \cdot
+    \left(
+        n_1\mathbf a_1
+        +
+        n_2\mathbf a_2
+        +
+        n_3\mathbf a_3
+    \right).
+\end{align*}
+
+Полностью раскрывая скобки,
+%
+\begin{align*}
+    \mathbf g\cdot\mathbf R
+    ={}&
+    hn_1\,\mathbf b_1\cdot\mathbf a_1
+    +
+    hn_2\,\mathbf b_1\cdot\mathbf a_2
+    +
+    hn_3\,\mathbf b_1\cdot\mathbf a_3
+    \\
+    &+
+    kn_1\,\mathbf b_2\cdot\mathbf a_1
+    +
+    kn_2\,\mathbf b_2\cdot\mathbf a_2
+    +
+    kn_3\,\mathbf b_2\cdot\mathbf a_3
+    \\
+    &+
+    ln_1\,\mathbf b_3\cdot\mathbf a_1
+    +
+    ln_2\,\mathbf b_3\cdot\mathbf a_2
+    +
+    ln_3\,\mathbf b_3\cdot\mathbf a_3.
+\end{align*}
+
+Используем основное свойство прямого и обратного базисов:
+%
+\begin{equation*}
+    \mathbf a_i\cdot\mathbf b_j
+    =
+    2\pi\delta_{ij}.
+\end{equation*}
+
+Поэтому все произведения с $i\neq j$ исчезают:
+%
+\begin{equation*}
+    \mathbf b_1\cdot\mathbf a_2
+    =
+    \mathbf b_1\cdot\mathbf a_3
+    =
+    0,
+\end{equation*}
+%
+и аналогично для остальных векторов.
+
+Остаётся
+%
+\begin{equation*}
+    \mathbf g\cdot\mathbf R
+    =
+    2\pi hn_1
+    +
+    2\pi kn_2
+    +
+    2\pi ln_3.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g\cdot\mathbf R
+        =
+        2\pi
+        \left(
+            hn_1+kn_2+ln_3
+        \right)
+    }.
+\end{equation*}
+
+Так как $h,k,l,n_1,n_2,n_3$ --- целые числа, величина
+%
+\begin{equation*}
+    N
+    =
+    hn_1+kn_2+ln_3
+\end{equation*}
+%
+также является целой:
+%
+\begin{equation*}
+    N\in\mathbb Z.
+\end{equation*}
+
+Получаем
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g\cdot\mathbf R
+        =
+        2\pi N
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Геометрический смысл
+% ------------------------------------------------------------
+
+\subsection*{Геометрический смысл}
+
+Уравнение
+%
+\begin{equation*}
+    \mathbf g\cdot\mathbf r
+    =
+    \mathrm{const}
+\end{equation*}
+%
+задаёт плоскость с нормалью $\mathbf g$.
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \mathbf g\cdot\mathbf r
+        =
+        2\pi N
+    }
+\end{equation*}
+%
+задаёт семейство параллельных плоскостей,
+перпендикулярных $\mathbf g$.
+
+Найдём расстояние от начала координат до плоскости
+с номером $N$.
+
+Разложим $\mathbf R$ на составляющую вдоль $\mathbf g$
+и составляющую, лежащую в плоскости.
+
+В скалярное произведение входит только проекция
+$\mathbf R$ на направление $\mathbf g$, поэтому
+%
+\begin{equation*}
+    \mathbf g\cdot\mathbf R
+    =
+    |\mathbf g|\,d_N,
+\end{equation*}
+%
+где $d_N$ --- расстояние от начала координат
+до $N$-й плоскости.
+
+С другой стороны,
+%
+\begin{equation*}
+    \mathbf g\cdot\mathbf R
+    =
+    2\pi N.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    |\mathbf g|d_N
+    =
+    2\pi N.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    \boxed{
+        d_N
+        =
+        \frac{2\pi N}{|\mathbf g|}
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Соседние плоскости
+% ------------------------------------------------------------
+
+\subsection*{Расстояние между соседними плоскостями}
+
+Теперь найдём расстояние именно между соседними плоскостями.
+
+Для соседней плоскости
+%
+\begin{equation*}
+    N\longrightarrow N+1.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    d
+    =
+    d_{N+1}-d_N.
+\end{equation*}
+
+Подставляем:
+%
+\begin{align*}
+    d
+    &=
+    \frac{2\pi(N+1)}{|\mathbf g|}
+    -
+    \frac{2\pi N}{|\mathbf g|}
+    \\
+    &=
+    \frac{2\pi}{|\mathbf g|}.
+\end{align*}
+
+Получаем
+%
+\begin{equation*}
+    \boxed{
+        d
+        =
+        \frac{2\pi}{|\mathbf g|}
+    }.
+\end{equation*}
+
+Или
+%
+\begin{equation*}
+    \boxed{
+        |\mathbf g|
+        =
+        \frac{2\pi}{d}
+    }.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        |\mathbf g|
+        \propto
+        \frac{1}{d}
+    }.
+\end{equation*}
+
+\textbf{Комментарий.}
+Условие о том, что компоненты $h,k,l$ не имеют общего
+множителя, здесь существенно.
+
+Например, если
+%
+\begin{equation*}
+    h=2h',
+    \qquad
+    k=2k',
+    \qquad
+    l=2l',
+\end{equation*}
+%
+то выбранный вектор $\mathbf g$ соответствовал бы не ближайшим
+соседним плоскостям, а каждой второй плоскости этого семейства.
+
+Если же $h,k,l$ взаимно просты, то переход
+%
+\begin{equation*}
+    N\longrightarrow N+1
+\end{equation*}
+%
+действительно переводит нас к ближайшей соседней плоскости.
+
+Поэтому для примитивного вектора данного семейства плоскостей
+%
+\begin{equation*}
+    \boxed{
+        d_{hkl}
+        =
+        \frac{2\pi}{
+            |\mathbf g_{hkl}|
+        }
+    }.
+\end{equation*}
+
+
+% ============================================================
+% Семинар 2
+% ============================================================
+
+\practice{2}{}{Колебания решётки}
+
+
+% ============================================================
+% Задача 1
+% ============================================================
+
+\section{Задача 1. Линейная цепочка с одним атомом в элементарной ячейке}
+
+\textbf{Условие.}
+Определить собственные моды, то есть фононный спектр,
+бесконечной одномерной цепочки, состоящей из одинаковых
+атомов массы $m$, соединённых одинаковыми пружинками
+жёсткости $\alpha$.
+
+
+% ------------------------------------------------------------
+% РИСУНОК 5
+%
+% Вставить здесь рисунок линейной цепочки из рукописного
+% конспекта / рисунок к задаче 4.1 из сборника.
+%
+% На рисунке:
+%   1) бесконечная одномерная цепочка;
+%   2) одинаковые атомы массы m;
+%   3) пружины жёсткости \alpha;
+%   4) расстояние между соседними атомами a;
+%   5) смещение n-го атома u_n.
+% ------------------------------------------------------------
+
+
+Рассмотрим одномерную цепочку одинаковых атомов.
+
+Положение равновесия $n$-го атома можно записать как
+%
+\begin{equation*}
+    x_n=na,
+\end{equation*}
+%
+где $a$ --- период решётки.
+
+Пусть
+%
+\begin{equation*}
+    u_n(t)
+\end{equation*}
+%
+--- смещение $n$-го атома от положения равновесия.
+
+
+% ------------------------------------------------------------
+% Лагранжиан
+% ------------------------------------------------------------
+
+\subsection*{Лагранжиан цепочки}
+
+Кинетическая энергия цепочки равна
+%
+\begin{equation*}
+    T
+    =
+    \sum_n
+    \frac{m}{2}
+    \dot u_n^{\,2}.
+\end{equation*}
+
+При малых колебаниях каждую связь между соседними атомами
+считаем гармонической.
+
+Удлинение пружины между атомами $n$ и $n+1$ равно
+%
+\begin{equation*}
+    u_{n+1}-u_n.
+\end{equation*}
+
+Поэтому потенциальная энергия этой пружины
+%
+\begin{equation*}
+    \frac{\alpha}{2}
+    (u_{n+1}-u_n)^2.
+\end{equation*}
+
+Суммарная потенциальная энергия цепочки имеет вид
+%
+\begin{equation*}
+    U
+    =
+    \sum_n
+    \frac{\alpha}{2}
+    (u_n-u_{n+1})^2.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    L=T-U,
+\end{equation*}
+%
+то есть
+%
+\begin{equation*}
+    \boxed{
+        L
+        =
+        \sum_n
+        \left[
+            \frac{m}{2}\dot u_n^{\,2}
+            -
+            \frac{\alpha}{2}
+            (u_n-u_{n+1})^2
+        \right]
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Уравнение движения
+% ------------------------------------------------------------
+
+\subsection*{Уравнение движения}
+
+Для каждой координаты $u_n$ записываем
+уравнение Эйлера--Лагранжа:
+%
+\begin{equation*}
+    \frac{d}{dt}
+    \frac{\partial L}{\partial\dot u_n}
+    -
+    \frac{\partial L}{\partial u_n}
+    =
+    0.
+\end{equation*}
+
+Сначала вычислим производную по скорости:
+%
+\begin{equation*}
+    \frac{\partial L}{\partial\dot u_n}
+    =
+    m\dot u_n.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    \frac{d}{dt}
+    \frac{\partial L}{\partial\dot u_n}
+    =
+    m\ddot u_n.
+\end{equation*}
+
+Теперь найдём
+%
+\begin{equation*}
+    \frac{\partial L}{\partial u_n}.
+\end{equation*}
+
+Здесь важно учесть, что координата $u_n$ входит
+не в один, а сразу в два соседних упругих члена:
+%
+\begin{equation*}
+    -\frac{\alpha}{2}
+    (u_n-u_{n+1})^2
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    -\frac{\alpha}{2}
+    (u_{n-1}-u_n)^2.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    \frac{\partial L}{\partial u_n}
+    =
+    -\alpha(u_n-u_{n+1})
+    +
+    \alpha(u_{n-1}-u_n).
+\end{equation*}
+
+Раскрываем скобки:
+%
+\begin{align*}
+    \frac{\partial L}{\partial u_n}
+    &=
+    -\alpha u_n
+    +
+    \alpha u_{n+1}
+    +
+    \alpha u_{n-1}
+    -
+    \alpha u_n
+    \\
+    &=
+    \alpha
+    \left(
+        u_{n+1}
+        +
+        u_{n-1}
+        -
+        2u_n
+    \right).
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \frac{\partial L}{\partial u_n}
+        =
+        \alpha
+        \left(
+            u_{n+1}
+            +
+            u_{n-1}
+            -
+            2u_n
+        \right)
+    }.
+\end{equation*}
+
+Получаем уравнение движения
+%
+\begin{equation*}
+    \boxed{
+        m\ddot u_n
+        =
+        \alpha
+        \left(
+            u_{n+1}
+            +
+            u_{n-1}
+            -
+            2u_n
+        \right)
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Физический смысл силы
+% ------------------------------------------------------------
+
+\subsection*{Сила, действующая на атом}
+
+Физически правая часть уравнения движения представляет собой
+результирующую силу от двух соседних пружин.
+
+Сила от правой пружины равна
+%
+\begin{equation*}
+    F_{n,n+1}
+    =
+    \alpha
+    (u_{n+1}-u_n),
+\end{equation*}
+%
+а от левой
+%
+\begin{equation*}
+    F_{n,n-1}
+    =
+    \alpha
+    (u_{n-1}-u_n).
+\end{equation*}
+
+Следовательно,
+%
+\begin{align*}
+    F_n
+    &=
+    F_{n,n+1}
+    +
+    F_{n,n-1}
+    \\
+    &=
+    \alpha
+    (u_{n+1}-u_n)
+    +
+    \alpha
+    (u_{n-1}-u_n)
+    \\
+    &=
+    \alpha
+    \left(
+        u_{n+1}
+        +
+        u_{n-1}
+        -
+        2u_n
+    \right).
+\end{align*}
+
+Таким образом, снова получаем
+%
+\begin{equation*}
+    m\ddot u_n
+    =
+    \alpha
+    \left(
+        u_{n+1}
+        +
+        u_{n-1}
+        -
+        2u_n
+    \right).
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Нормальная мода
+% ------------------------------------------------------------
+
+\subsection*{Нормальная мода}
+
+Ищем нормальное колебание в виде плоской волны:
+%
+\begin{equation*}
+    \boxed{
+        u_n
+        =
+        u
+        e^{-i\omega t+ikna}
+    }.
+\end{equation*}
+
+Здесь $k$ --- волновой вектор колебания,
+$\omega$ --- частота нормальной моды,
+а $a$ --- период цепочки.
+
+\textbf{Комментарий.}
+В представленном рукописном конспекте решение заканчивается
+именно на этом месте --- после записи плоской волны
+%
+\begin{equation*}
+    u_n
+    =
+    u
+    e^{-i\omega t+ikna}.
+\end{equation*}
+
+Дальнейшая подстановка этого выражения в уравнение движения
+и получение дисперсионного соотношения $\omega(k)$ на
+приложенной странице уже не записаны.
+
 
 \end{document}
