@@ -4,5 +4,2046 @@
 
 \begin{document}
 
+% ============================================================
+% Семинар 1
+% ============================================================
+
+\practice{1}{04.09.2026}{Квантовые распределения и вырожденный ферми-газ}
+
+
+% ============================================================
+% Статистические распределения
+% ============================================================
+
+\section*{Статистические распределения}
+
+Будем использовать принятую в статистической физике систему единиц,
+в которой постоянная Больцмана положена равной единице:
+%
+\begin{equation*}
+    k_B=1.
+\end{equation*}
+%
+Поэтому температура $T$ имеет размерность энергии.
+Постоянную Планка при этом сохраняем явно.
+
+
+% ------------------------------------------------------------
+% Микроканоническое распределение
+% ------------------------------------------------------------
+
+\subsection*{Микроканоническое распределение}
+
+Рассмотрим изолированную систему с фиксированной энергией $E_0$.
+Вероятность обнаружить систему в элементе фазового объёма $d\Gamma$
+можно записать в виде
+%
+\begin{equation*}
+    dw
+    \sim
+    \delta(E-E_0)\,d\Gamma.
+\end{equation*}
+
+Дельта-функция показывает, что ненулевой статистический вес
+имеют только состояния, удовлетворяющие условию
+%
+\begin{equation*}
+    E=E_0.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Каноническое распределение
+% ------------------------------------------------------------
+
+\subsection*{Каноническое распределение}
+
+Если система находится в тепловом контакте с термостатом температуры
+$T$, используется каноническое распределение:
+%
+\begin{equation*}
+    w_k
+    =
+    \frac{1}{Z}
+    e^{-E_k/T},
+\end{equation*}
+%
+где $E_k$ --- энергия $k$-го состояния, а
+%
+\begin{equation*}
+    Z
+    =
+    \sum_k
+    e^{-E_k/T}
+\end{equation*}
+%
+--- статистическая сумма.
+
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext}
+    ]
+
+        % Термостат
+        \draw[
+            draw=rc3,
+            line width=1.0pt
+        ]
+        (0,0) circle (2.15);
+
+        % Система
+        \draw[
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (0,0) circle (0.75);
+
+        % Небольшой акцент
+        \fill[rc3] (0,0) circle (2.2pt);
+
+        \node at (0,0.38) {\small система};
+        \node at (0,-0.35) {$E_k$};
+
+        \node at (0,1.55) {$T$};
+        \node at (0,-1.55) {\small термостат};
+
+        % Обмен энергией
+        \draw[
+            <->,
+            draw=rtext,
+            line width=0.8pt
+        ]
+        (0.78,0.2)
+        .. controls (1.15,0.45) and (1.35,0.55) ..
+        (1.55,0.70);
+
+        \node[
+            right
+        ]
+        at (1.18,0.25)
+        {\small $E$};
+
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Система в тепловом контакте с термостатом температуры $T$.
+    }
+    \label{fig:statphys_canonical}
+\end{rbox}
+
+
+% ------------------------------------------------------------
+% Большое каноническое распределение
+% ------------------------------------------------------------
+
+\subsection*{Большое каноническое распределение}
+
+Если система может обмениваться с окружающей средой
+не только энергией, но и частицами, используется большое
+каноническое распределение:
+%
+\begin{equation*}
+    w_{N,k}
+    =
+    \frac{1}{Z}
+    \exp
+    \left(
+        \frac{\mu N-E_k}{T}
+    \right).
+\end{equation*}
+
+Здесь
+%
+\begin{equation*}
+    \mu
+\end{equation*}
+%
+--- химический потенциал, а $N$ --- число частиц в системе.
+
+
+% ============================================================
+% Больцмановский газ
+% ============================================================
+
+\section*{Условие применимости распределения Больцмана}
+
+Для классического, или больцмановского, газа число частиц
+должно быть значительно меньше числа доступных одночастичных
+квантовых состояний.
+
+Пусть характерный разброс импульсов частиц равен $\Delta p$.
+Число квантовых состояний в фазовом объёме порядка
+$V(\Delta p)^3$ оценивается как
+%
+\begin{equation*}
+    N_{\text{сост}}
+    \sim
+    \frac{
+        V(\Delta p)^3
+    }{
+        (2\pi\hbar)^3
+    }.
+\end{equation*}
+
+Поэтому условие невырожденности газа имеет вид
+%
+\begin{equation*}
+    \frac{
+        V(\Delta p)^3
+    }{
+        (2\pi\hbar)^3
+    }
+    \gg
+    N.
+\end{equation*}
+
+Для теплового движения характерный импульс можно оценить как
+%
+\begin{equation*}
+    \Delta p
+    \sim
+    mv_T.
+\end{equation*}
+
+При этом
+%
+\begin{equation*}
+    v_T
+    \sim
+    \sqrt{\frac{T}{m}},
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    \Delta p
+    \sim
+    \sqrt{mT}.
+\end{equation*}
+
+Подставляя эту оценку в условие невырожденности, получаем
+%
+\begin{equation*}
+    \frac{
+        V(mT)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \gg
+    N.
+\end{equation*}
+
+Или
+%
+\begin{equation*}
+    \frac{
+        V m^{3/2}T^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \gg
+    N.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    T^{3/2}
+    \gg
+    \frac{
+        (2\pi\hbar)^3N
+    }{
+        m^{3/2}V
+    }.
+\end{equation*}
+
+Возводя обе части в степень $2/3$, получаем
+%
+\begin{equation*}
+    T
+    \gg
+    \frac{
+        (2\pi\hbar)^2
+    }{
+        mV^{2/3}
+    }
+    N^{2/3}.
+\end{equation*}
+
+Если ввести концентрацию частиц
+%
+\begin{equation*}
+    n
+    =
+    \frac{N}{V},
+\end{equation*}
+%
+то
+%
+\begin{equation*}
+    T
+    \gg
+    \frac{
+        (2\pi\hbar)^2
+    }{
+        m
+    }
+    n^{2/3}.
+\end{equation*}
+
+Таким образом, по порядку величины условие применимости
+больцмановской статистики можно записать как
+%
+\begin{equation*}
+    T
+    \gg
+    T_F,
+\end{equation*}
+%
+где $T_F$ --- температура вырождения газа.
+
+Для больцмановского газа среднее число частиц в состоянии $k$
+имеет экспоненциальную зависимость от энергии:
+%
+\begin{equation*}
+    \overline{n}_k
+    =
+    Nw_k
+    \sim
+    e^{-\varepsilon_k/T}.
+\end{equation*}
+
+
+% ============================================================
+% Распределения Ферми и Бозе
+% ============================================================
+
+\section*{Распределения Ферми и Бозе}
+
+Для идеального квантового газа среднее число частиц
+в одночастичном квантовом состоянии $k$ определяется выражением
+%
+\begin{equation*}
+    n_k
+    =
+    \left(
+        e^{(\varepsilon_k-\mu)/T}
+        \pm 1
+    \right)^{-1}.
+\end{equation*}
+
+Для фермионов выбирается знак ``плюс'':
+%
+\begin{equation*}
+    \boxed{
+        n_k^{F}
+        =
+        \frac{
+            1
+        }{
+            e^{(\varepsilon_k-\mu)/T}+1
+        }
+    }.
+\end{equation*}
+
+Для бозонов выбирается знак ``минус'':
+%
+\begin{equation*}
+    \boxed{
+        n_k^{B}
+        =
+        \frac{
+            1
+        }{
+            e^{(\varepsilon_k-\mu)/T}-1
+        }
+    }.
+\end{equation*}
+
+Для фермионов наличие знака ``плюс'' связано с принципом Паули:
+одно одночастичное квантовое состояние не может быть занято
+более чем одним фермионом.
+
+
+% ------------------------------------------------------------
+% Ферми-газ при T = 0
+% ------------------------------------------------------------
+
+\subsection*{Предел $T\to 0$ для ферми-газа}
+
+Поскольку
+%
+\begin{equation*}
+    C_V
+    =
+    \left(
+        \frac{\partial E}{\partial T}
+    \right)_V
+    >0,
+\end{equation*}
+%
+при уменьшении температуры энергия системы также уменьшается:
+%
+\begin{equation*}
+    T\downarrow
+    \quad\Longrightarrow\quad
+    E\downarrow.
+\end{equation*}
+
+При абсолютном нуле система находится в основном состоянии:
+%
+\begin{equation*}
+    T=0
+    \quad\Longrightarrow\quad
+    E=E_{\min}.
+\end{equation*}
+
+Для невырожденного основного состояния статистический вес равен
+%
+\begin{equation*}
+    \Gamma=1,
+\end{equation*}
+%
+поэтому
+%
+\begin{equation*}
+    S
+    =
+    \ln\Gamma
+    =
+    0.
+\end{equation*}
+
+
+Рассмотрим теперь распределение Ферми--Дирака:
+%
+\begin{equation*}
+    n_k
+    =
+    \frac{
+        1
+    }{
+        e^{(\varepsilon_k-\mu)/T}+1
+    }.
+\end{equation*}
+
+Если
+%
+\begin{equation*}
+    \varepsilon_k<\mu,
+\end{equation*}
+%
+то при $T\to0$
+%
+\begin{equation*}
+    \frac{
+        \varepsilon_k-\mu
+    }{
+        T
+    }
+    \to
+    -\infty.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    e^{(\varepsilon_k-\mu)/T}
+    \to
+    0
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    n_k
+    \to
+    1.
+\end{equation*}
+
+Если же
+%
+\begin{equation*}
+    \varepsilon_k>\mu,
+\end{equation*}
+%
+то
+%
+\begin{equation*}
+    \frac{
+        \varepsilon_k-\mu
+    }{
+        T
+    }
+    \to
+    +\infty,
+\end{equation*}
+%
+следовательно,
+%
+\begin{equation*}
+    e^{(\varepsilon_k-\mu)/T}
+    \to
+    \infty
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    n_k
+    \to
+    0.
+\end{equation*}
+
+Таким образом, при $T=0$
+%
+\begin{equation*}
+    n_k
+    =
+    \begin{cases}
+        1,
+        &
+        \varepsilon_k<\mu,
+        \\[4pt]
+        0,
+        &
+        \varepsilon_k>\mu.
+    \end{cases}
+\end{equation*}
+
+Граничная энергия между заполненными и свободными состояниями
+называется \rtxt{3}{энергией Ферми}:
+%
+\begin{equation*}
+    \mu(T=0)
+    =
+    \varepsilon_F.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    n_k
+    =
+    \begin{cases}
+        1,
+        &
+        \varepsilon_k<\varepsilon_F,
+        \\[4pt]
+        0,
+        &
+        \varepsilon_k>\varepsilon_F.
+    \end{cases}
+\end{equation*}
+
+
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \begin{tikzpicture}[
+        >=Latex,
+        every node/.style={text=rtext},
+        x=1.15cm,
+        y=2.0cm
+    ]
+
+        % Оси
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (0,0) -- (5.1,0)
+        node[
+            right
+        ]
+        {$\varepsilon$};
+
+        \draw[
+            ->,
+            draw=rtext,
+            line width=0.9pt
+        ]
+        (0,0) -- (0,1.45)
+        node[
+            above
+        ]
+        {$n(\varepsilon)$};
+
+        % Ступенька Ферми
+        \draw[
+            draw=rc3,
+            line width=1.5pt
+        ]
+        (0,1)
+        -- (3.25,1)
+        -- (3.25,0)
+        -- (4.75,0);
+
+        % Вспомогательная линия epsilon_F
+        \draw[
+            draw=rtext,
+            line width=0.6pt,
+            dashed
+        ]
+        (3.25,0)
+        -- (3.25,1.05);
+
+        % Метки
+        \node[
+            left
+        ]
+        at (0,1)
+        {$1$};
+
+        \node[
+            below
+        ]
+        at (3.25,0)
+        {$\varepsilon_F$};
+
+        \node[
+            above right
+        ]
+        at (1.55,1)
+        {$T=0$};
+
+    \end{tikzpicture}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Распределение Ферми--Дирака при $T=0$:
+        все состояния до энергии Ферми заполнены,
+        а состояния выше $\varepsilon_F$ свободны.
+    }
+    \label{fig:statphys_fermi_step}
+\end{rbox}
+
+
+% ============================================================
+% Задача 1
+% ============================================================
+
+\newpage
+\section{Задача 1. Вырожденный электронный газ}
+
+В объёме $V$ находятся $N$ электронов.
+Найдём среднюю энергию и давление электронного газа в пределе
+%
+\begin{equation*}
+    T\to0.
+\end{equation*}
+
+Электрон имеет две возможные проекции спина, поэтому
+спиновая кратность равна
+%
+\begin{equation*}
+    g=2.
+\end{equation*}
+
+Для свободного нерелятивистского электрона закон дисперсии имеет вид
+%
+\begin{equation*}
+    \varepsilon
+    =
+    \frac{p^2}{2m}.
+\end{equation*}
+
+При $T=0$ распределение по состояниям представляет собой ступеньку:
+%
+\begin{equation*}
+    n(\varepsilon)
+    =
+    \begin{cases}
+        1,
+        &
+        \varepsilon<\varepsilon_F,
+        \\[4pt]
+        0,
+        &
+        \varepsilon>\varepsilon_F.
+    \end{cases}
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Число частиц и энергия Ферми
+% ------------------------------------------------------------
+
+\subsection*{Число частиц и энергия Ферми}
+
+Число электронов записывается как интеграл по фазовому пространству:
+%
+\begin{equation*}
+    N
+    =
+    2
+    \int
+    \frac{
+        d^3p\,d^3r
+    }{
+        (2\pi\hbar)^3
+    }
+    n(\varepsilon).
+\end{equation*}
+
+Поскольку газ однородный,
+%
+\begin{equation*}
+    \int d^3r
+    =
+    V,
+\end{equation*}
+%
+и поэтому
+%
+\begin{equation*}
+    N
+    =
+    2V
+    \int
+    \frac{
+        d^3p
+    }{
+        (2\pi\hbar)^3
+    }
+    n(\varepsilon).
+\end{equation*}
+
+Перейдём от импульса к энергии.
+Из
+%
+\begin{equation*}
+    \varepsilon
+    =
+    \frac{p^2}{2m}
+\end{equation*}
+%
+следует
+%
+\begin{equation*}
+    p
+    =
+    \sqrt{2m\varepsilon}.
+\end{equation*}
+
+В сферических координатах в импульсном пространстве
+%
+\begin{equation*}
+    d^3p
+    =
+    4\pi p^2\,dp.
+\end{equation*}
+
+Дифференцируя
+%
+\begin{equation*}
+    p
+    =
+    \sqrt{2m\varepsilon},
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    dp
+    =
+    \frac{m}{p}\,d\varepsilon.
+\end{equation*}
+
+Следовательно,
+%
+\begin{align*}
+    p^2\,dp
+    &=
+    mp\,d\varepsilon
+    \\[3pt]
+    &=
+    m\sqrt{2m\varepsilon}\,d\varepsilon
+    \\[3pt]
+    &=
+    \frac{
+        (2m)^{3/2}
+    }{
+        2
+    }
+    \sqrt{\varepsilon}\,d\varepsilon.
+\end{align*}
+
+Поэтому
+%
+\begin{align*}
+    d^3p
+    &=
+    4\pi p^2\,dp
+    \\[3pt]
+    &=
+    2\pi(2m)^{3/2}
+    \sqrt{\varepsilon}\,d\varepsilon.
+\end{align*}
+
+Таким образом,
+%
+\begin{equation*}
+    \frac{
+        d^3p
+    }{
+        (2\pi\hbar)^3
+    }
+    =
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    2\pi
+    \sqrt{\varepsilon}\,d\varepsilon.
+\end{equation*}
+
+При $T=0$ состояния заполнены только до энергии Ферми,
+поэтому
+%
+\begin{equation*}
+    N
+    =
+    2V
+    \int_0^{\varepsilon_F}
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    2\pi
+    \sqrt{\varepsilon}\,d\varepsilon.
+\end{equation*}
+
+Вынося постоянные множители,
+%
+\begin{equation*}
+    N
+    =
+    4\pi V
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \int_0^{\varepsilon_F}
+    \varepsilon^{1/2}\,d\varepsilon.
+\end{equation*}
+
+Интеграл равен
+%
+\begin{equation*}
+    \int_0^{\varepsilon_F}
+    \varepsilon^{1/2}\,d\varepsilon
+    =
+    \frac{2}{3}
+    \varepsilon_F^{3/2}.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    N
+    =
+    4\pi V
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \frac{2}{3}
+    \varepsilon_F^{3/2}.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    \varepsilon_F^{3/2}
+    =
+    \frac{
+        3N
+    }{
+        8\pi V
+    }
+    \frac{
+        (2\pi\hbar)^3
+    }{
+        (2m)^{3/2}
+    }.
+\end{equation*}
+
+Возводя обе части в степень $2/3$, получаем
+%
+\begin{equation*}
+    \varepsilon_F
+    =
+    \left(
+        \frac{
+            3N
+        }{
+            8\pi V
+        }
+    \right)^{2/3}
+    \frac{
+        (2\pi\hbar)^2
+    }{
+        2m
+    }.
+\end{equation*}
+
+После упрощения численного коэффициента:
+%
+\begin{equation*}
+    \boxed{
+        \varepsilon_F
+        =
+        \frac{
+            \hbar^2
+        }{
+            2m
+        }
+        \left(
+            3\pi^2
+            \frac{N}{V}
+        \right)^{2/3}
+    }.
+\end{equation*}
+
+Вводя концентрацию
+%
+\begin{equation*}
+    n
+    =
+    \frac{N}{V},
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    \boxed{
+        \varepsilon_F
+        =
+        \frac{
+            \hbar^2
+        }{
+            2m
+        }
+        (3\pi^2n)^{2/3}
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Импульс Ферми
+% ------------------------------------------------------------
+
+\subsection*{Импульс Ферми}
+
+По определению
+%
+\begin{equation*}
+    \varepsilon_F
+    =
+    \frac{
+        p_F^2
+    }{
+        2m
+    }.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    p_F
+    =
+    \sqrt{
+        2m\varepsilon_F
+    }.
+\end{equation*}
+
+Подставляя найденную энергию Ферми,
+%
+\begin{align*}
+    p_F
+    &=
+    \sqrt{
+        2m
+        \frac{\hbar^2}{2m}
+        (3\pi^2n)^{2/3}
+    }
+    \\[3pt]
+    &=
+    \hbar
+    (3\pi^2n)^{1/3}.
+\end{align*}
+
+Таким образом,
+%
+\begin{equation*}
+    \boxed{
+        p_F
+        =
+        \hbar
+        (3\pi^2n)^{1/3}
+    }.
+\end{equation*}
+
+Или через $N$ и $V$:
+%
+\begin{equation*}
+    \boxed{
+        p_F
+        =
+        (3\pi^2)^{1/3}
+        \hbar
+        \left(
+            \frac{N}{V}
+        \right)^{1/3}
+    }.
+\end{equation*}
+
+По порядку величины
+%
+\begin{equation*}
+    p_F
+    \sim
+    \hbar n^{1/3}.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Средняя энергия
+% ------------------------------------------------------------
+
+\subsection*{Средняя энергия электронов}
+
+Полная энергия электронного газа равна
+%
+\begin{equation*}
+    E
+    =
+    2
+    \int
+    \frac{
+        d^3p\,d^3r
+    }{
+        (2\pi\hbar)^3
+    }
+    \varepsilon
+    n(\varepsilon).
+\end{equation*}
+
+Для однородного газа
+%
+\begin{equation*}
+    E
+    =
+    2V
+    \int
+    \frac{
+        d^3p
+    }{
+        (2\pi\hbar)^3
+    }
+    \varepsilon
+    n(\varepsilon).
+\end{equation*}
+
+При $T=0$
+%
+\begin{equation*}
+    E
+    =
+    2V
+    \int_0^{\varepsilon_F}
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    2\pi
+    \varepsilon^{3/2}\,d\varepsilon.
+\end{equation*}
+
+Следовательно,
+%
+\begin{equation*}
+    E
+    =
+    4\pi V
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \int_0^{\varepsilon_F}
+    \varepsilon^{3/2}\,d\varepsilon.
+\end{equation*}
+
+Интегрируя,
+%
+\begin{equation*}
+    \int_0^{\varepsilon_F}
+    \varepsilon^{3/2}\,d\varepsilon
+    =
+    \frac{2}{5}
+    \varepsilon_F^{5/2},
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    E
+    =
+    4\pi V
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \frac{2}{5}
+    \varepsilon_F^{5/2}.
+\end{equation*}
+
+Для числа частиц ранее было найдено
+%
+\begin{equation*}
+    N
+    =
+    4\pi V
+    \frac{
+        (2m)^{3/2}
+    }{
+        (2\pi\hbar)^3
+    }
+    \frac{2}{3}
+    \varepsilon_F^{3/2}.
+\end{equation*}
+
+Поэтому
+%
+\begin{align*}
+    \frac{E}{N}
+    &=
+    \frac{
+        \dfrac{2}{5}
+        \varepsilon_F^{5/2}
+    }{
+        \dfrac{2}{3}
+        \varepsilon_F^{3/2}
+    }
+    \\[5pt]
+    &=
+    \frac{3}{5}
+    \varepsilon_F.
+\end{align*}
+
+Таким образом, средняя энергия одного электрона равна
+%
+\begin{equation*}
+    \boxed{
+        \overline{\varepsilon}
+        =
+        \frac{E}{N}
+        =
+        \frac{3}{5}
+        \varepsilon_F
+    }.
+\end{equation*}
+
+Полная энергия газа:
+%
+\begin{equation*}
+    \boxed{
+        E
+        =
+        \frac{3}{5}
+        N\varepsilon_F
+    }.
+\end{equation*}
+
+Подставляя выражение для энергии Ферми,
+%
+\begin{equation*}
+    E
+    =
+    \frac{3}{5}
+    N
+    \frac{
+        \hbar^2
+    }{
+        2m
+    }
+    \left(
+        3\pi^2
+        \frac{N}{V}
+    \right)^{2/3}.
+\end{equation*}
+
+Раскрывая степени,
+%
+\begin{equation*}
+    \boxed{
+        E
+        =
+        \frac{
+            \hbar^2
+        }{
+            2m
+        }
+        \frac{
+            3^{5/3}\pi^{4/3}
+        }{
+            5
+        }
+        \frac{
+            N^{5/3}
+        }{
+            V^{2/3}
+        }
+    }.
+\end{equation*}
+
+Таким образом,
+%
+\begin{equation*}
+    E
+    \propto
+    V^{-2/3}
+\end{equation*}
+%
+при фиксированном числе частиц $N$.
+
+
+% ------------------------------------------------------------
+% Давление
+% ------------------------------------------------------------
+
+\subsection*{Давление вырожденного электронного газа}
+
+Для классического идеального газа
+%
+\begin{equation*}
+    pV
+    =
+    NT.
+\end{equation*}
+
+Если формально положить $T=0$, эта формула дала бы
+%
+\begin{equation*}
+    p=0.
+\end{equation*}
+
+Однако для ферми-газа это неверно.
+Даже при абсолютном нуле электроны не могут находиться
+в одном и том же одночастичном состоянии из-за принципа Паули.
+Поэтому они заполняют состояния с ненулевыми импульсами вплоть
+до $p_F$, что приводит к \rtxt{3}{давлению вырождения}.
+
+Используем термодинамическое соотношение
+%
+\begin{equation*}
+    dE
+    =
+    T\,dS
+    -
+    p\,dV
+    +
+    \mu\,dN.
+\end{equation*}
+
+Отсюда
+%
+\begin{equation*}
+    p
+    =
+    -
+    \left(
+        \frac{
+            \partial E
+        }{
+            \partial V
+        }
+    \right)_{S,N}.
+\end{equation*}
+
+При $T=0$
+%
+\begin{equation*}
+    S=0.
+\end{equation*}
+
+Поскольку
+%
+\begin{equation*}
+    E
+    =
+    C
+    N^{5/3}
+    V^{-2/3},
+\end{equation*}
+%
+где $C$ не зависит от $V$, имеем
+%
+\begin{align*}
+    \left(
+        \frac{
+            \partial E
+        }{
+            \partial V
+        }
+    \right)_{S,N}
+    &=
+    -
+    \frac{2}{3}
+    C
+    N^{5/3}
+    V^{-5/3}
+    \\[3pt]
+    &=
+    -
+    \frac{2}{3}
+    \frac{E}{V}.
+\end{align*}
+
+Поэтому
+%
+\begin{equation*}
+    \boxed{
+        p
+        =
+        \frac{2}{3}
+        \frac{E}{V}
+    }.
+\end{equation*}
+
+Так как
+%
+\begin{equation*}
+    E
+    =
+    \frac{3}{5}
+    N\varepsilon_F,
+\end{equation*}
+%
+то
+%
+\begin{align*}
+    p
+    &=
+    \frac{2}{3}
+    \frac{1}{V}
+    \frac{3}{5}
+    N\varepsilon_F
+    \\[3pt]
+    &=
+    \frac{2}{5}
+    \frac{N}{V}
+    \varepsilon_F.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        p
+        =
+        \frac{2}{5}
+        n\varepsilon_F
+    }.
+\end{equation*}
+
+Подставляя энергию Ферми,
+%
+\begin{align*}
+    p
+    &=
+    \frac{2}{5}
+    n
+    \frac{
+        \hbar^2
+    }{
+        2m
+    }
+    (3\pi^2n)^{2/3}
+    \\[3pt]
+    &=
+    \frac{
+        \hbar^2
+    }{
+        5m
+    }
+    (3\pi^2)^{2/3}
+    n^{5/3}.
+\end{align*}
+
+Итак,
+%
+\begin{equation*}
+    \boxed{
+        p
+        =
+        \frac{
+            \hbar^2
+        }{
+            5m
+        }
+        (3\pi^2)^{2/3}
+        n^{5/3}
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Ответ задачи 1
+% ------------------------------------------------------------
+
+\subsection*{Ответ}
+
+Для полностью вырожденного электронного газа
+%
+\begin{equation*}
+    \boxed{
+        \varepsilon_F
+        =
+        \frac{
+            \hbar^2
+        }{
+            2m
+        }
+        (3\pi^2n)^{2/3}
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \boxed{
+        \overline{\varepsilon}
+        =
+        \frac{3}{5}
+        \varepsilon_F
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \boxed{
+        p
+        =
+        \frac{2}{5}
+        n\varepsilon_F
+        =
+        \frac{2}{3}
+        \frac{E}{V}
+    }.
+\end{equation*}
+
+
+% ============================================================
+% Задача 2
+% ============================================================
+
+\newpage
+\section{Задача 2. Электроны проводимости в меди}
+
+Найти химический потенциал, среднюю энергию и давление
+электронов проводимости в меди, если
+%
+\begin{equation*}
+    A
+    \simeq
+    64\,
+    \frac{
+        \text{г}
+    }{
+        \text{моль}
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \rho
+    \simeq
+    9\,
+    \frac{
+        \text{г}
+    }{
+        \text{см}^3
+    },
+\end{equation*}
+%
+и каждый атом меди поставляет один электрон проводимости.
+
+В рамках рассматриваемого приближения считаем электронный газ
+полностью вырожденным:
+%
+\begin{equation*}
+    T\to0.
+\end{equation*}
+
+Поэтому
+%
+\begin{equation*}
+    \mu
+    =
+    \varepsilon_F.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Концентрация электронов
+% ------------------------------------------------------------
+
+\subsection*{Концентрация электронов проводимости}
+
+В одном моле меди находится число Авогадро атомов:
+%
+\begin{equation*}
+    N_A
+    =
+    6.022\times10^{23}\,
+    \text{моль}^{-1}.
+\end{equation*}
+
+Число молей меди в единице объёма равно
+%
+\begin{equation*}
+    \frac{\rho}{A}.
+\end{equation*}
+
+Поскольку каждый атом поставляет один электрон проводимости,
+концентрация электронов равна
+%
+\begin{equation*}
+    n
+    =
+    N_A
+    \frac{\rho}{A}.
+\end{equation*}
+
+Подставляя численные значения,
+%
+\begin{align*}
+    n
+    &=
+    6.022\times10^{23}
+    \frac{
+        9
+    }{
+        64
+    }
+    \text{см}^{-3}
+    \\[3pt]
+    &=
+    6.022\times10^{23}
+    \cdot
+    0.140625
+    \text{см}^{-3}
+    \\[3pt]
+    &\simeq
+    8.47\times10^{22}
+    \text{см}^{-3}.
+\end{align*}
+
+Так как
+%
+\begin{equation*}
+    1\,\text{см}^3
+    =
+    10^{-6}\,\text{м}^3,
+\end{equation*}
+%
+получаем
+%
+\begin{equation*}
+    \boxed{
+        n
+        \simeq
+        8.47\times10^{28}
+        \text{м}^{-3}
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Импульс Ферми
+% ------------------------------------------------------------
+
+\subsection*{Импульс Ферми}
+
+Используем выражение
+%
+\begin{equation*}
+    p_F
+    =
+    \hbar
+    (3\pi^2n)^{1/3}.
+\end{equation*}
+
+Сначала найдём
+%
+\begin{align*}
+    3\pi^2n
+    &\simeq
+    29.61
+    \cdot
+    8.47\times10^{28}
+    \\[3pt]
+    &\simeq
+    2.51\times10^{30}
+    \text{м}^{-3}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    (3\pi^2n)^{1/3}
+    \simeq
+    1.36\times10^{10}
+    \text{м}^{-1}.
+\end{equation*}
+
+Таким образом, ферми-волновое число равно
+%
+\begin{equation*}
+    k_F
+    =
+    (3\pi^2n)^{1/3}
+    \simeq
+    1.36\times10^{10}
+    \text{м}^{-1}.
+\end{equation*}
+
+Используя
+%
+\begin{equation*}
+    \hbar
+    =
+    1.055\times10^{-34}
+    \text{Дж}\cdot\text{с},
+\end{equation*}
+%
+получаем
+%
+\begin{align*}
+    p_F
+    &=
+    \hbar k_F
+    \\[3pt]
+    &\simeq
+    1.055\times10^{-34}
+    \cdot
+    1.36\times10^{10}
+    \\[3pt]
+    &\simeq
+    1.43\times10^{-24}
+    \frac{
+        \text{кг}\cdot\text{м}
+    }{
+        \text{с}
+    }.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        p_F
+        \simeq
+        1.43\times10^{-24}
+        \frac{
+            \text{кг}\cdot\text{м}
+        }{
+            \text{с}
+        }
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Химический потенциал
+% ------------------------------------------------------------
+
+\subsection*{Химический потенциал}
+
+При $T=0$
+%
+\begin{equation*}
+    \mu
+    =
+    \varepsilon_F.
+\end{equation*}
+
+Энергия Ферми равна
+%
+\begin{equation*}
+    \varepsilon_F
+    =
+    \frac{
+        p_F^2
+    }{
+        2m_e
+    }.
+\end{equation*}
+
+Используем массу электрона
+%
+\begin{equation*}
+    m_e
+    =
+    9.109\times10^{-31}
+    \text{кг}.
+\end{equation*}
+
+Тогда
+%
+\begin{align*}
+    \varepsilon_F
+    &=
+    \frac{
+        (1.43\times10^{-24})^2
+    }{
+        2\cdot9.109\times10^{-31}
+    }
+    \\[5pt]
+    &\simeq
+    \frac{
+        2.05\times10^{-48}
+    }{
+        1.822\times10^{-30}
+    }
+    \\[5pt]
+    &\simeq
+    1.13\times10^{-18}
+    \text{Дж}.
+\end{align*}
+
+Для перевода в электронвольты используем
+%
+\begin{equation*}
+    1\,\text{эВ}
+    =
+    1.602\times10^{-19}
+    \text{Дж}.
+\end{equation*}
+
+Поэтому
+%
+\begin{align*}
+    \varepsilon_F
+    &=
+    \frac{
+        1.13\times10^{-18}
+    }{
+        1.602\times10^{-19}
+    }
+    \text{эВ}
+    \\[3pt]
+    &\simeq
+    7.03\,\text{эВ}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \mu(T=0)
+        =
+        \varepsilon_F
+        \simeq
+        7.0\,\text{эВ}
+    }.
+\end{equation*}
+
+
+% ------------------------------------------------------------
+% Средняя энергия
+% ------------------------------------------------------------
+
+\subsection*{Средняя энергия электронов}
+
+Для полностью вырожденного газа
+%
+\begin{equation*}
+    \overline{\varepsilon}
+    =
+    \frac{3}{5}
+    \varepsilon_F.
+\end{equation*}
+
+Поэтому
+%
+\begin{align*}
+    \overline{\varepsilon}
+    &=
+    \frac{3}{5}
+    \cdot
+    7.03\,\text{эВ}
+    \\[3pt]
+    &\simeq
+    4.22\,\text{эВ}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        \overline{\varepsilon}
+        \simeq
+        4.22\,\text{эВ}
+    }.
+\end{equation*}
+
+В джоулях
+%
+\begin{align*}
+    \overline{\varepsilon}
+    &=
+    \frac{3}{5}
+    \cdot
+    1.13\times10^{-18}
+    \\[3pt]
+    &\simeq
+    6.76\times10^{-19}
+    \text{Дж}.
+\end{align*}
+
+То есть
+%
+\begin{equation*}
+    \boxed{
+        \overline{\varepsilon}
+        \simeq
+        6.76\times10^{-19}
+        \text{Дж}
+    }.
+\end{equation*}
+
+Средняя энергия меньше энергии Ферми, поскольку $\varepsilon_F$
+является энергией верхнего заполненного состояния, тогда как электроны
+занимают все состояния от $0$ до $\varepsilon_F$.
+
+
+% ------------------------------------------------------------
+% Давление
+% ------------------------------------------------------------
+
+\subsection*{Давление электронного газа}
+
+Используем найденное в первой задаче соотношение
+%
+\begin{equation*}
+    p
+    =
+    \frac{2}{5}
+    n\varepsilon_F.
+\end{equation*}
+
+Подставляя
+%
+\begin{equation*}
+    n
+    =
+    8.47\times10^{28}
+    \text{м}^{-3}
+\end{equation*}
+%
+и
+%
+\begin{equation*}
+    \varepsilon_F
+    =
+    1.13\times10^{-18}
+    \text{Дж},
+\end{equation*}
+%
+получаем
+%
+\begin{align*}
+    p
+    &=
+    \frac{2}{5}
+    \cdot
+    8.47\times10^{28}
+    \cdot
+    1.13\times10^{-18}
+    \\[3pt]
+    &\simeq
+    \frac{2}{5}
+    \cdot
+    9.54\times10^{10}
+    \\[3pt]
+    &\simeq
+    3.82\times10^{10}
+    \text{Па}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        p
+        \simeq
+        3.82\times10^{10}
+        \text{Па}
+    }.
+\end{equation*}
+
+Это соответствует давлению порядка
+%
+\begin{equation*}
+    p
+    \sim
+    3.8\times10^5
+    \text{атм}.
+\end{equation*}
+
+Таким образом, даже при $T\to0$ давление электронного газа
+не обращается в нуль.
+
+
+% ------------------------------------------------------------
+% Температура Ферми
+% ------------------------------------------------------------
+
+\subsection*{Температура Ферми}
+
+Для оценки степени вырождения электронов меди найдём температуру Ферми:
+%
+\begin{equation*}
+    T_F
+    =
+    \frac{
+        \varepsilon_F
+    }{
+        k_B
+    }.
+\end{equation*}
+
+Используя
+%
+\begin{equation*}
+    k_B
+    =
+    1.381\times10^{-23}
+    \frac{
+        \text{Дж}
+    }{
+        \text{К}
+    },
+\end{equation*}
+%
+получаем
+%
+\begin{align*}
+    T_F
+    &=
+    \frac{
+        1.13\times10^{-18}
+    }{
+        1.381\times10^{-23}
+    }
+    \\[3pt]
+    &\simeq
+    8.2\times10^4
+    \text{К}.
+\end{align*}
+
+Следовательно,
+%
+\begin{equation*}
+    \boxed{
+        T_F
+        \simeq
+        8.2\times10^4
+        \text{К}
+    }.
+\end{equation*}
+
+Даже при комнатной температуре $T\simeq300\,\text{К}$
+%
+\begin{equation*}
+    \frac{T}{T_F}
+    \simeq
+    \frac{
+        300
+    }{
+        8.2\times10^4
+    }
+    \sim
+    4\times10^{-3}
+    \ll
+    1.
+\end{equation*}
+
+Поэтому электроны проводимости меди при обычных температурах
+представляют собой сильно вырожденный ферми-газ.
+
+
+% ------------------------------------------------------------
+% Ответ задачи 2
+% ------------------------------------------------------------
+
+\subsection*{Ответ}
+
+Для меди в модели свободных электронов получаем
+%
+\begin{equation*}
+    \boxed{
+        n
+        \simeq
+        8.47\times10^{28}
+        \text{м}^{-3}
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \boxed{
+        \mu
+        \simeq
+        \varepsilon_F
+        \simeq
+        7.03\,\text{эВ}
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \boxed{
+        \overline{\varepsilon}
+        \simeq
+        4.22\,\text{эВ}
+    },
+\end{equation*}
+%
+%
+\begin{equation*}
+    \boxed{
+        p
+        \simeq
+        3.82\times10^{10}
+        \text{Па}
+    }.
+\end{equation*}
+
 
 \end{document}
