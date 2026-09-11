@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788362220.13565 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.pdf" "part1" 1788362229.89571 0
+["pdflatex"] 1788971758.45807 "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.pdf" "part1" 1788971767.37482 0
   "../final.tex" 1788272903 1189 44210e454ff527b4a03e5070d930591b ""
   "../style/boxes.tex" 1780326361 4811 f347a5095aaeb94a48954b5d16cba9b7 ""
   "../style/colors.tex" 1787747667 7009 5dbc675840dc8eba7aeb12469a17c8d7 ""
@@ -437,9 +437,9 @@
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/packages.tex" 1780331028 9305 b7c23d3ad8b15e19c32f9a0eb37b6674 ""
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/page-style.tex" 1780217322 3848 9d58d3d31cb8dabfa9f55fffb260ffbb ""
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/../style/style.tex" 1780225090 369 355ddbe6eab2d953f16c6f1e0883cf2f ""
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux" 1788362229 1938 8eaae5101ccbd26443c9903b582015c4 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.out" 1788362229 1085 553b7be30c73e35104650be29b8f17a6 "pdflatex"
-  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" 1788362209 13032 a23e99b38252ac1f7982f85046c437f6 ""
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux" 1788971766 1938 8eaae5101ccbd26443c9903b582015c4 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.out" 1788971766 1085 553b7be30c73e35104650be29b8f17a6 "pdflatex"
+  "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/parts/part1.tex" 1788971753 12971 ba8b8d0735cfd0dc72997d83bf8be7f9 ""
   (generated)
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.aux"
   "c:/Users/Влад/Documents/Курс 4 Семестр 1/ФиХАиМ/01_Лекции/LaTeX/build_parts/part1.log"

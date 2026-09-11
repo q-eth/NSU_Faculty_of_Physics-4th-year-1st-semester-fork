@@ -1,0 +1,148 @@
+% ============================================================
+% style/boxes.tex
+%
+% Универсальные декоративные рамки для документа.
+% ============================================================
+
+% ------------------------------------------------------------
+% 1. Основные параметры рамок
+% ------------------------------------------------------------
+
+\newcommand{\rboxlinewidth}{0.75pt}
+\newcommand{\rboxlinecolor}{rframe}
+
+
+% ------------------------------------------------------------
+% 2. Рисование декоративной рамки
+% ------------------------------------------------------------
+%
+% Типы:
+%   {[}    рамка без правой стороны
+%   {[]}   полный прямоугольник
+%   {^}    рамка без нижней стороны
+%   {v}    рамка без верхней стороны
+%
+%   {<u}   левый верхний угловой контур
+%   {<d}   левый нижний угловой контур
+%   {<}    то же самое, что {<d}
+%
+%   {>u}   правый верхний угловой контур
+%   {>d}   правый нижний угловой контур
+%   {>}    то же самое, что {>d}
+
+\newcommand{\rboxdraw}[1]{%
+    \ifstrequal{#1}{[}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north east)
+            -- (frame.north west)
+            -- (frame.south west)
+            -- (frame.south east);%
+    }{}%
+    \ifstrequal{#1}{[]}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north west)
+            rectangle
+            (frame.south east);%
+    }{}%
+    \ifstrequal{#1}{^}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.south west)
+            -- (frame.north west)
+            -- (frame.north east)
+            -- (frame.south east);%
+    }{}%
+    \ifstrequal{#1}{v}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north west)
+            -- (frame.south west)
+            -- (frame.south east)
+            -- (frame.north east);%
+    }{}%
+
+    % Левый верхний угол: левая сторона + верхняя сторона
+    \ifstrequal{#1}{<u}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.south west)
+            -- (frame.north west)
+            -- (frame.north east);%
+    }{}%
+
+    % Левый нижний угол: левая сторона + нижняя сторона
+    \ifstrequal{#1}{<d}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north west)
+            -- (frame.south west)
+            -- (frame.south east);%
+    }{}%
+
+    % Старый вариант: то же самое, что <d
+    \ifstrequal{#1}{<}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north west)
+            -- (frame.south west)
+            -- (frame.south east);%
+    }{}%
+
+    % Правый верхний угол: верхняя сторона + правая сторона
+    \ifstrequal{#1}{>u}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.north west)
+            -- (frame.north east)
+            -- (frame.south east);%
+    }{}%
+
+    % Правый нижний угол: нижняя сторона + правая сторона
+    \ifstrequal{#1}{>d}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.south west)
+            -- (frame.south east)
+            -- (frame.north east);%
+    }{}%
+
+    % Старый вариант: то же самое, что >d
+    \ifstrequal{#1}{>}{%
+        \draw[\rboxlinecolor,line width=\rboxlinewidth]
+            (frame.south west)
+            -- (frame.south east)
+            -- (frame.north east);%
+    }{}%
+}
+
+
+% ------------------------------------------------------------
+% 3. Универсальная среда rbox
+% ------------------------------------------------------------
+%
+% Использование:
+%
+%   \begin{rbox}{[]}
+%       Текст внутри блока.
+%   \end{rbox}
+%
+% С дополнительными настройками:
+%
+%   \begin{rbox}[left=24pt,right=24pt]{^}
+%       Текст внутри блока.
+%   \end{rbox}
+
+\NewTColorBox{rbox}{O{} m}{%
+    enhanced,%
+    breakable,%
+    width=\linewidth,%
+    colback=rbg,%
+    colframe=rbg,%
+    coltext=rtext,%
+    boxrule=0pt,%
+    frame hidden,%
+    sharp corners,%
+    left=10pt,%
+    right=10pt,%
+    top=10pt,%
+    bottom=10pt,%
+    before skip=1.1em,%
+    after skip=1.1em,%
+    overlay={%
+        \rboxdraw{#2}%
+    },%
+    #1%
+}

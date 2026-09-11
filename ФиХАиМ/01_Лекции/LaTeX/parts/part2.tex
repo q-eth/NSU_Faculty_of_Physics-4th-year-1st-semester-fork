@@ -1,0 +1,1231 @@
+% !TeX root = part02.tex
+
+\documentclass[../final.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Спектр атома щелочного металла}
+
+\rsubtitle{Атомы щелочных металлов}
+
+\section{Одноэлектронная модель щелочного атома}
+
+Рассмотрим многоэлектронный атом с зарядом ядра \(+Ze\), содержащий
+\(N\) электронов. Потенциальную энергию такой системы можно записать в виде
+\begin{equation*}
+    U
+    =
+    -\sum_{i=1}^{N}\frac{Ze^2}{r_i}
+    +
+    \frac{1}{2}
+    \sum_{\substack{i,k=1\\ i\neq k}}^{N}
+    \frac{e^2}{r_{ik}}.
+\end{equation*}
+
+Первое слагаемое описывает кулоновское притяжение электронов к ядру,
+а второе --- кулоновское отталкивание электронов друг от друга.
+
+Для атомов щелочных металлов все внутренние электронные оболочки замкнуты,
+а на внешней оболочке находится один валентный электрон. Например, для натрия
+\begin{equation*}
+    \mathrm{Na}:
+    1s^2\,2s^2\,2p^6\,3s.
+\end{equation*}
+
+Поэтому щелочной атом удобно рассматривать как систему из атомного остова
+и одного внешнего электрона.
+
+Обозначим через \(\mathbf r\) радиус-вектор внешнего электрона,
+а через \(\mathbf r_k\) --- координаты \(N-1\) внутренних электронов.
+Отбрасывая постоянную энергию самого атомного остова, для внешнего электрона
+получим гамильтониан
+\begin{equation*}
+    \hat H
+    =
+    \frac{\hat{\mathbf p}^{\,2}}{2m}
+    -
+    \frac{Ze^2}{r}
+    +
+    \sum_{k=1}^{N-1}
+    \frac{e^2}{|\mathbf r-\mathbf r_k|}.
+\end{equation*}
+
+% ============================================================
+% РИСУНОК:
+% Схематическое изображение атома щелочного металла:
+% ядро +Ze, внутренние N-1 электронов, образующие атомный остов,
+% и внешний электрон на расстоянии r.
+% ============================================================
+
+\section{Поле атомного остова}
+
+Рассмотрим внешний электрон на расстоянии, значительно превышающем
+характерный размер атомного остова:
+\begin{equation*}
+    r\gg r_k.
+\end{equation*}
+
+Тогда взаимодействие внешнего электрона с каждым внутренним электроном
+можно разложить по малому параметру \(r_k/r\):
+\begin{align}
+    \frac{1}{|\mathbf r-\mathbf r_k|}
+    &=
+    \frac{1}
+    {\sqrt{r^2+r_k^2-2\mathbf r\cdot\mathbf r_k}}
+    \\
+    &=
+    \frac{1}{r}
+    \frac{1}
+    {\sqrt{
+        1+\dfrac{r_k^2}{r^2}
+        -2\dfrac{\mathbf r\cdot\mathbf r_k}{r^2}
+    }}.
+\end{align}
+
+В первом приближении
+\begin{equation*}
+    \frac{1}{|\mathbf r-\mathbf r_k|}
+    \simeq
+    \frac{1}{r}
+    \left(
+        1+
+        \frac{\mathbf r\cdot\mathbf r_k}{r^2}
+        +\ldots
+    \right).
+\end{equation*}
+
+Подставляя это разложение в гамильтониан, получаем
+\begin{align}
+    \hat H
+    \simeq
+    \frac{\hat p^2}{2m}
+    &-
+    \frac{Ze^2}{r}
+    +
+    (N-1)\frac{e^2}{r}
+    \nonumber\\
+    &+
+    \frac{e^2}{r^3}
+    \mathbf r\cdot
+    \sum_{k=1}^{N-1}\mathbf r_k
+    +\ldots
+\end{align}
+
+Нулевой член разложения даёт
+\begin{align}
+    -\frac{Ze^2}{r}
+    +(N-1)\frac{e^2}{r}
+    &=
+    -\frac{(Z-N+1)e^2}{r}.
+\end{align}
+
+Введём эффективный заряд атомного остова
+\begin{equation*}
+    \boxed{
+        Z_a=Z-N+1
+    }.
+\end{equation*}
+
+Для нейтрального щелочного атома
+\begin{equation*}
+    N=Z,
+\end{equation*}
+поэтому
+\begin{equation*}
+    \boxed{
+        Z_a=1
+    }.
+\end{equation*}
+
+Таким образом, на больших расстояниях внешний электрон видит атомный остов
+как объект с единичным положительным зарядом. В нулевом приближении
+\begin{equation*}
+    U_0(r)
+    =
+    -\frac{Z_a e^2}{r}.
+\end{equation*}
+
+\subsection{Поляризация атомного остова}
+
+Следующая поправка связана с поляризацией атомного остова полем внешнего
+электрона. В используемом приближении её запишем как
+\begin{equation*}
+    U_1(r)
+    =
+    -C_1\frac{Z_a e^2}{r^2},
+\end{equation*}
+где \(C_1\) характеризует величину поляризационного эффекта.
+
+В результате эффективная потенциальная энергия внешнего электрона имеет вид
+\begin{equation*}
+    \boxed{
+        U(r)
+        =
+        -\frac{Z_a e^2}{r}
+        -
+        C_1\frac{Z_a e^2}{r^2}
+    }.
+\end{equation*}
+
+Именно наличие второго слагаемого отличает движение внешнего электрона
+щелочного атома от движения электрона в чистом кулоновском поле.
+
+\section{Уравнение Шрёдингера для внешнего электрона}
+
+Запишем стационарное уравнение Шрёдингера
+\begin{equation*}
+    \hat H\psi=E\psi.
+\end{equation*}
+
+Гамильтониан имеет вид
+\begin{equation*}
+    \hat H
+    =
+    -\frac{\hbar^2}{2m}\Delta
+    -
+    \frac{Z_a e^2}{r}
+    -
+    C_1\frac{Z_a e^2}{r^2}.
+\end{equation*}
+
+В сферических координатах
+\begin{equation*}
+    \Delta
+    =
+    \frac{1}{r^2}
+    \frac{\partial}{\partial r}
+    \left(
+        r^2\frac{\partial}{\partial r}
+    \right)
+    +
+    \frac{1}{r^2}\Delta_\Omega,
+\end{equation*}
+где \(\Delta_\Omega\) --- угловая часть оператора Лапласа.
+
+Поэтому
+\begin{align}
+    -\frac{\hbar^2}{2mr^2}
+    \frac{\partial}{\partial r}
+    \left(
+        r^2\frac{\partial\psi}{\partial r}
+    \right)
+    &-
+    \frac{\hbar^2}{2mr^2}
+    \Delta_\Omega\psi
+    -
+    \frac{Z_a e^2}{r}\psi
+    \nonumber\\
+    &-
+    C_1\frac{Z_a e^2}{r^2}\psi
+    =
+    E\psi.
+\end{align}
+
+Так как потенциал центрально-симметричен, разделим переменные:
+\begin{equation*}
+    \psi(r,\theta,\varphi)
+    =
+    R(r)Y_{\ell m}(\theta,\varphi).
+\end{equation*}
+
+Для сферических функций
+\begin{equation*}
+    \Delta_\Omega Y_{\ell m}
+    =
+    -\ell(\ell+1)Y_{\ell m}.
+\end{equation*}
+
+Следовательно, радиальное уравнение принимает вид
+\begin{align}
+    -\frac{\hbar^2}{2mr^2}
+    \frac{d}{dr}
+    \left(
+        r^2\frac{dR}{dr}
+    \right)
+    &+
+    \frac{\hbar^2\ell(\ell+1)}{2mr^2}R
+    -
+    C_1\frac{Z_a e^2}{r^2}R
+    \nonumber\\
+    &-
+    \frac{Z_a e^2}{r}R
+    =
+    ER.
+\end{align}
+
+Соберём вместе слагаемые, пропорциональные \(1/r^2\):
+\begin{align}
+    -\frac{\hbar^2}{2mr^2}
+    \frac{d}{dr}
+    \left(
+        r^2\frac{dR}{dr}
+    \right)
+    &+
+    \frac{\hbar^2}{2mr^2}
+    \left[
+        \ell(\ell+1)
+        -
+        C_1\frac{2mZ_a e^2}{\hbar^2}
+    \right]R
+    \nonumber\\
+    &-
+    \frac{Z_a e^2}{r}R
+    =
+    ER.
+\end{align}
+
+\section{Квантовый дефект}
+
+Чтобы привести радиальное уравнение к водородоподобному виду,
+введём эффективное орбитальное квантовое число \(\tilde\ell\):
+\begin{equation*}
+    \boxed{
+        \tilde\ell(\tilde\ell+1)
+        =
+        \ell(\ell+1)
+        -
+        C_1\frac{2mZ_a e^2}{\hbar^2}
+    }.
+\end{equation*}
+
+Это квадратное уравнение относительно \(\tilde\ell\):
+\begin{equation*}
+    \tilde\ell^2+\tilde\ell
+    -
+    \ell(\ell+1)
+    +
+    C_1\frac{2mZ_a e^2}{\hbar^2}
+    =
+    0.
+\end{equation*}
+
+Отсюда
+\begin{equation*}
+    \tilde\ell
+    =
+    -\frac12
+    +
+    \frac12
+    \sqrt{
+        1+4\ell(\ell+1)
+        -
+        C_1\frac{8mZ_a e^2}{\hbar^2}
+    }.
+\end{equation*}
+
+Так как
+\begin{equation*}
+    1+4\ell(\ell+1)
+    =
+    (2\ell+1)^2,
+\end{equation*}
+можно переписать
+\begin{equation*}
+    \tilde\ell
+    =
+    -\frac12
+    +
+    \frac12(2\ell+1)
+    \sqrt{
+        1
+        -
+        C_1
+        \frac{8mZ_a e^2}
+        {\hbar^2(2\ell+1)^2}
+    }.
+\end{equation*}
+
+Считаем поправку малой и используем разложение
+\begin{equation*}
+    \sqrt{1-x}
+    \simeq
+    1-\frac{x}{2}.
+\end{equation*}
+
+Тогда
+\begin{align}
+    \tilde\ell
+    &\simeq
+    -\frac12
+    +
+    \frac12(2\ell+1)
+    \left[
+        1
+        -
+        C_1
+        \frac{4mZ_a e^2}
+        {\hbar^2(2\ell+1)^2}
+    \right]
+    \\
+    &=
+    \ell
+    -
+    C_1
+    \frac{mZ_a e^2}
+    {\hbar^2(\ell+1/2)}.
+\end{align}
+
+Введём величину
+\begin{equation*}
+    \boxed{
+        \Delta_\ell
+        =
+        C_1
+        \frac{mZ_a e^2}
+        {\hbar^2(\ell+1/2)}
+    }.
+\end{equation*}
+
+Тогда
+\begin{equation*}
+    \boxed{
+        \tilde\ell
+        =
+        \ell-\Delta_\ell
+    }.
+\end{equation*}
+
+Величина \(\Delta_\ell\) называется \textbf{квантовым дефектом}
+или \textbf{поправкой Ридберга}.
+
+\subsection{Эффективное главное квантовое число}
+
+Для водородоподобной задачи главное квантовое число имеет вид
+\begin{equation*}
+    n=n_r+\ell+1.
+\end{equation*}
+
+После замены
+\begin{equation*}
+    \ell\rightarrow\tilde\ell
+\end{equation*}
+получаем
+\begin{equation*}
+    \tilde n
+    =
+    n_r+\tilde\ell+1.
+\end{equation*}
+
+Так как
+\begin{equation*}
+    \tilde\ell=\ell-\Delta_\ell,
+\end{equation*}
+то
+\begin{align}
+    \tilde n
+    &=
+    n_r+\ell+1-\Delta_\ell
+    \\
+    &=
+    n-\Delta_\ell.
+\end{align}
+
+Таким образом,
+\begin{equation*}
+    \boxed{
+        \tilde n=n-\Delta_\ell
+    }.
+\end{equation*}
+
+Формула Бора для водородоподобного уровня
+\begin{equation*}
+    E_n
+    =
+    -\frac{Z_a^2Ry}{n^2}
+\end{equation*}
+переходит в
+\begin{rbox}{[]}
+\begin{equation*}
+    \boxed{
+        E_{n\ell}
+        =
+        -\frac{Z_a^2Ry}
+        {(n-\Delta_\ell)^2}
+    }.
+\end{equation*}
+\end{rbox}
+
+Для нейтрального щелочного атома \(Z_a=1\):
+\begin{equation*}
+    \boxed{
+        E_{n\ell}
+        =
+        -\frac{Ry}
+        {(n-\Delta_\ell)^2}
+    }.
+\end{equation*}
+
+\section{Физический смысл квантового дефекта}
+
+Для атома водорода
+\begin{equation*}
+    E_n
+    =
+    -\frac{Ry}{n^2},
+\end{equation*}
+то есть энергия зависит только от главного квантового числа \(n\).
+
+Поэтому состояния
+\begin{equation*}
+    ns,\qquad
+    np,\qquad
+    nd,\qquad
+    nf,\ldots
+\end{equation*}
+с одинаковым значением \(n\) имеют одинаковую энергию.
+
+Это называется случайным, или кулоновским, вырождением.
+
+Для щелочного атома
+\begin{equation*}
+    E_{n\ell}
+    =
+    -\frac{Ry}{(n-\Delta_\ell)^2},
+\end{equation*}
+поэтому энергия уже зависит от \(\ell\).
+
+Следовательно,
+\begin{equation*}
+    \boxed{
+        \text{кулоновское вырождение по }\ell
+        \text{ снимается}.
+    }
+\end{equation*}
+
+Из выражения для квантового дефекта
+\begin{equation*}
+    \Delta_\ell
+    \propto
+    \frac{1}{\ell+1/2}
+\end{equation*}
+следует, что наиболее сильно возмущаются состояния с малыми
+значениями \(\ell\).
+
+Качественно
+\begin{equation*}
+    \Delta_s
+    >
+    \Delta_p
+    >
+    \Delta_d
+    >
+    \Delta_f
+    >\ldots
+\end{equation*}
+
+При больших \(\ell\)
+\begin{equation*}
+    \Delta_\ell\rightarrow0.
+\end{equation*}
+
+Причина состоит в различной способности электронов проникать внутрь
+атомного остова.
+
+Для \(s\)-состояния
+\begin{equation*}
+    \ell=0,
+\end{equation*}
+поэтому центробежный барьер отсутствует, и электрон способен глубоко
+проникать внутрь остова. Там экранирование ядра внутренними электронами
+уменьшается, поэтому валентный электрон ощущает более сильное
+кулоновское притяжение.
+
+С ростом \(\ell\) увеличивается центробежный потенциал
+\begin{equation*}
+    U_{\text{цб}}(r)
+    =
+    \frac{\hbar^2\ell(\ell+1)}{2mr^2}.
+\end{equation*}
+
+Поэтому электрон всё хуже проникает внутрь атомного остова,
+и его движение становится всё ближе к движению электрона в чистом
+кулоновском поле.
+
+При фиксированном \(n\) получаем порядок уровней
+\begin{equation*}
+    \boxed{
+        E_{ns}
+        <
+        E_{np}
+        <
+        E_{nd}
+        <
+        E_{nf}
+    }.
+\end{equation*}
+
+\section{Квантовые дефекты щелочных металлов}
+
+Для основных состояний ряда щелочных металлов:
+
+\begin{center}
+\begin{tabular}{c|c|c}
+    \hline
+    Элемент & \(n\) & \(\Delta\) \\
+    \hline
+    Li & \(2\) & \(0.41\) \\
+    Na & \(3\) & \(1.37\) \\
+    K  & \(4\) & \(2.23\) \\
+    Rb & \(5\) & \(3.20\) \\
+    Cs & \(6\) & \(4.13\) \\
+    \hline
+\end{tabular}
+\end{center}
+
+Для данного элемента и фиксированного \(\ell\) квантовый дефект
+слабо меняется при изменении \(n\), поэтому целую последовательность
+возбуждённых уровней можно приближённо описывать одной формулой
+\begin{equation*}
+    E_{n\ell}
+    =
+    -\frac{Ry}{(n-\Delta_\ell)^2}.
+\end{equation*}
+
+% ============================================================
+% РИСУНОК:
+% График зависимости квантового дефекта Delta_l от l
+% для Li, Na, K, Rb, Cs.
+%
+% По горизонтали l = 0,1,2,3.
+% По вертикали Delta_l.
+%
+% Все кривые быстро стремятся к нулю с ростом l.
+% Самые большие значения у Cs, затем Rb, K, Na, Li.
+% ============================================================
+
+\section{Энергетические уровни атома натрия}
+
+Рассмотрим атом натрия
+\begin{equation*}
+    \mathrm{Na}:
+    1s^2\,2s^2\,2p^6\,3s.
+\end{equation*}
+
+Основное состояние внешнего электрона соответствует уровню
+\begin{equation*}
+    3s.
+\end{equation*}
+
+Энергия ионизации натрия равна приблизительно
+\begin{equation*}
+    I_{\mathrm{Na}}
+    \simeq
+    5.13\ \text{эВ}.
+\end{equation*}
+
+Поэтому относительно границы ионизации
+\begin{equation*}
+    E_{3s}
+    \simeq
+    -5.13\ \text{эВ}.
+\end{equation*}
+
+Для следующих уровней из схемы получаем приблизительно
+\begin{equation*}
+    E_{3p}
+    \simeq
+    -2.0\ \text{эВ},
+\end{equation*}
+\begin{equation*}
+    E_{3d}
+    \simeq
+    -1.6\ \text{эВ}.
+\end{equation*}
+
+Для сравнения, в атоме водорода все состояния с \(n=3\) имеют одну энергию:
+\begin{equation*}
+    E_3^{(H)}
+    =
+    -\frac{Ry}{3^2}
+    \simeq
+    -1.5\ \text{эВ}.
+\end{equation*}
+
+Таким образом, состояние \(3d\) натрия уже близко к водородоподобному
+уровню, тогда как состояние \(3s\) сильно смещено вниз.
+
+Это связано с тем, что \(s\)-электрон значительно глубже проникает
+внутрь атомного остова.
+
+% ============================================================
+% РИСУНОК:
+% Энергетические уровни Na и H.
+%
+% Слева четыре столбца S, P, D, F для натрия.
+% Справа уровни водорода n=2,3,4,5,6,... и граница n=infinity.
+%
+% Для Na отметить:
+% 3s ~ -5.13 эВ
+% 3p ~ -2.0 эВ
+% 3d ~ -1.6 эВ
+%
+% Показать, что при росте l уровни Na приближаются к
+% соответствующим водородным уровням.
+% ============================================================
+
+\section{Диаграмма Гротриана}
+
+Для систематизации спектральных уровней и переходов удобно использовать
+диаграмму Гротриана.
+
+Уровни располагают в столбцах в соответствии с орбитальным квантовым
+числом:
+\begin{equation*}
+    \begin{array}{c|cccc}
+        \ell & 0 & 1 & 2 & 3 \\
+        \hline
+        & S & P & D & F
+    \end{array}.
+\end{equation*}
+
+Для электрических дипольных переходов действует правило отбора
+\begin{equation*}
+    \boxed{
+        \Delta\ell=\pm1
+    }.
+\end{equation*}
+
+Поэтому разрешены переходы
+\begin{equation*}
+    S\leftrightarrow P,
+    \qquad
+    P\leftrightarrow D,
+    \qquad
+    D\leftrightarrow F.
+\end{equation*}
+
+Например, прямой дипольный переход
+\begin{equation*}
+    S\leftrightarrow D
+\end{equation*}
+запрещён.
+
+% ============================================================
+% РИСУНОК:
+% Диаграмма Гротриана для атома Na.
+%
+% Столбцы S, P, D, F.
+% Основное состояние 3s.
+% Показать уровни 3p, 4s, 4p, 3d, 4d, 4f, ...
+% Показать разрешённые стрелками переходы Delta l = +/- 1.
+%
+% Подписать серии:
+% главная,
+% резкая,
+% диффузная,
+% фундаментальная.
+% ============================================================
+
+\subsection{Главная серия}
+
+Главная серия соответствует переходам
+\begin{equation*}
+    nP\rightarrow3S.
+\end{equation*}
+
+Нижний уровень здесь является основным состоянием атома натрия.
+
+Головная линия главной серии:
+\begin{equation*}
+    3P\rightarrow3S.
+\end{equation*}
+
+\subsection{Резкая серия}
+
+Резкая серия соответствует переходам
+\begin{equation*}
+    nS\rightarrow3P.
+\end{equation*}
+
+\subsection{Диффузная серия}
+
+Диффузная серия соответствует переходам
+\begin{equation*}
+    nD\rightarrow3P.
+\end{equation*}
+
+\subsection{Фундаментальная серия}
+
+Фундаментальная серия соответствует переходам
+\begin{equation*}
+    nF\rightarrow3D.
+\end{equation*}
+
+Названия \emph{резкая} и \emph{диффузная} являются историческими
+и связаны с внешним видом спектральных линий.
+
+\section{Тонкая структура щелочного атома}
+
+До сих пор спин-орбитальное взаимодействие не учитывалось.
+
+Для внешнего электрона
+\begin{equation*}
+    s=\frac12.
+\end{equation*}
+
+Полный момент импульса
+\begin{equation*}
+    \mathbf J
+    =
+    \mathbf L+\mathbf S.
+\end{equation*}
+
+По правилу сложения моментов при \(\ell\neq0\)
+\begin{equation*}
+    \boxed{
+        j
+        =
+        \ell\pm\frac12
+    }.
+\end{equation*}
+
+Поэтому каждый уровень при \(\ell\neq0\) расщепляется на два подуровня.
+
+Например,
+\begin{equation*}
+    P
+    \longrightarrow
+    P_{1/2},
+    \ P_{3/2},
+\end{equation*}
+\begin{equation*}
+    D
+    \longrightarrow
+    D_{3/2},
+    \ D_{5/2},
+\end{equation*}
+\begin{equation*}
+    F
+    \longrightarrow
+    F_{5/2},
+    \ F_{7/2}.
+\end{equation*}
+
+Для \(S\)-состояния
+\begin{equation*}
+    \ell=0,
+\end{equation*}
+поэтому возможно только
+\begin{equation*}
+    \boxed{
+        j=\frac12
+    }.
+\end{equation*}
+
+Следовательно, \(S\)-терм на два значения \(j\) не расщепляется.
+
+Таким образом:
+
+\begin{itemize}
+    \item вырождения по \(\ell\) в щелочном атоме уже нет;
+    \item каждый уровень при \(\ell\neq0\) дополнительно расщепляется
+    за счёт спин-орбитального взаимодействия.
+\end{itemize}
+
+% ============================================================
+% РИСУНОК:
+% Диаграмма Гротриана Na с тонкой структурой.
+%
+% Для P, D, F показать расщепление на два уровня:
+% j = l-1/2 и j = l+1/2.
+%
+% Для S только j=1/2.
+% ============================================================
+
+\subsection{Поправка тонкой структуры}
+
+Для водородоподобного уровня поправка тонкой структуры записывается
+в виде
+\begin{equation*}
+    \boxed{
+        \delta E_{\mathrm{fs}}
+        =
+        -\frac{\alpha^2Z_a^4Ry}{n^3}
+        \left[
+            \frac{1}{j+1/2}
+            -
+            \frac{3}{4n}
+        \right]
+    }.
+\end{equation*}
+
+Здесь
+\begin{equation*}
+    \alpha
+    =
+    \frac{e^2}{\hbar c}
+    \simeq
+    \frac{1}{137}
+\end{equation*}
+--- постоянная тонкой структуры.
+
+Так как энергия зависит от \(j\), состояния
+\begin{equation*}
+    j=\ell-\frac12
+\end{equation*}
+и
+\begin{equation*}
+    j=\ell+\frac12
+\end{equation*}
+имеют немного различные энергии.
+
+Поэтому спектральные линии могут расщепляться на дублеты.
+
+Для главной линии натрия переход
+\begin{equation*}
+    3P\rightarrow3S
+\end{equation*}
+с учётом тонкой структуры превращается в два перехода:
+\begin{equation*}
+    3P_{1/2}
+    \rightarrow
+    3S_{1/2},
+\end{equation*}
+\begin{equation*}
+    3P_{3/2}
+    \rightarrow
+    3S_{1/2}.
+\end{equation*}
+
+Поэтому знаменитая жёлтая линия натрия вблизи
+\begin{equation*}
+    \lambda\simeq589\ \text{нм}
+\end{equation*}
+при достаточном спектральном разрешении наблюдается как дублет.
+
+\section{Рентгеновские спектры}
+
+До сих пор рассматривались главным образом переходы внешнего электрона.
+
+Теперь рассмотрим ситуацию, когда из атома удаляется внутренний электрон.
+При этом на одной из внутренних оболочек возникает вакансия.
+
+Электрон с более высокой оболочки может перейти на освободившийся уровень,
+а разность энергий выделяется в виде рентгеновского фотона:
+\begin{equation*}
+    \hbar\omega
+    =
+    E_i-E_f.
+\end{equation*}
+
+Внутренние электронные оболочки обозначаются буквами
+\begin{equation*}
+    K,\quad L,\quad M,\quad N,\ldots
+\end{equation*}
+в соответствии с
+\begin{equation*}
+    K\leftrightarrow n=1,
+\end{equation*}
+\begin{equation*}
+    L\leftrightarrow n=2,
+\end{equation*}
+\begin{equation*}
+    M\leftrightarrow n=3,
+\end{equation*}
+\begin{equation*}
+    N\leftrightarrow n=4.
+\end{equation*}
+
+Характерные энергии удаления различных электронов могут отличаться
+на порядки. Для натрия валентный \(3s\)-электрон связан с энергией
+порядка нескольких электрон-вольт, тогда как удаление \(1s\)-электрона
+требует энергии порядка \(10^3\) эВ.
+
+Поэтому переходы между внутренними оболочками лежат в рентгеновском
+диапазоне.
+
+% ============================================================
+% РИСУНОК:
+% Спектры рентгеновского излучения.
+%
+% Концентрические оболочки:
+% K: n=1
+% L: n=2
+% M: n=3
+% N: n=4
+% далее n=5
+%
+% Показать переходы:
+% L -> K : K_alpha
+% M -> K : K_beta
+% N -> K : K_gamma
+%
+% M -> L : L_alpha
+% N -> L : L_beta
+% и т.д.
+% ============================================================
+
+\subsection{Рентгеновские серии}
+
+Если переход заканчивается на \(K\)-оболочке, соответствующие линии
+образуют \(K\)-серию.
+
+Переход
+\begin{equation*}
+    L\rightarrow K
+\end{equation*}
+обозначается
+\begin{equation*}
+    K_\alpha.
+\end{equation*}
+
+Переход
+\begin{equation*}
+    M\rightarrow K
+\end{equation*}
+обозначается
+\begin{equation*}
+    K_\beta.
+\end{equation*}
+
+Переход
+\begin{equation*}
+    N\rightarrow K
+\end{equation*}
+обозначается
+\begin{equation*}
+    K_\gamma.
+\end{equation*}
+
+Аналогично, переход
+\begin{equation*}
+    M\rightarrow L
+\end{equation*}
+даёт линию
+\begin{equation*}
+    L_\alpha.
+\end{equation*}
+
+\section{Экранирование внутренних электронов}
+
+Для внутреннего электрона энергию приближённо можно записать
+в водородоподобной форме, заменив заряд ядра \(Z\) эффективным зарядом
+\begin{equation*}
+    Z_{\mathrm{eff}}
+    =
+    Z-a_n,
+\end{equation*}
+где \(a_n\) --- постоянная экранирования для соответствующей оболочки.
+
+Тогда
+\begin{equation*}
+    \boxed{
+        E_n
+        =
+        -\frac{Ry}{n^2}
+        (Z-a_n)^2
+    }.
+\end{equation*}
+
+\section{Закон Мозли}
+
+Пусть электрон переходит из состояния с главным квантовым числом
+\(n_i\) в состояние с \(n_f\), причём
+\begin{equation*}
+    n_i>n_f.
+\end{equation*}
+
+Энергия испущенного фотона равна
+\begin{equation*}
+    \hbar\omega
+    =
+    E_i-E_f.
+\end{equation*}
+
+Для начального состояния
+\begin{equation*}
+    E_i
+    =
+    -Ry
+    \frac{(Z-a_i)^2}{n_i^2},
+\end{equation*}
+а для конечного
+\begin{equation*}
+    E_f
+    =
+    -Ry
+    \frac{(Z-a_f)^2}{n_f^2}.
+\end{equation*}
+
+Следовательно,
+\begin{equation*}
+    \boxed{
+        \hbar\omega
+        =
+        Ry
+        \left[
+            \frac{(Z-a_f)^2}{n_f^2}
+            -
+            \frac{(Z-a_i)^2}{n_i^2}
+        \right]
+    }.
+\end{equation*}
+
+Для данной рентгеновской серии можно приближённо заменить
+\begin{equation*}
+    a_i\simeq a_f\simeq a,
+\end{equation*}
+где \(a\) --- средняя постоянная экранирования.
+
+Тогда
+\begin{equation*}
+    \hbar\omega
+    \simeq
+    Ry(Z-a)^2
+    \left(
+        \frac{1}{n_f^2}
+        -
+        \frac{1}{n_i^2}
+    \right).
+\end{equation*}
+
+Отсюда
+\begin{rbox}{[]}
+\begin{equation*}
+    \boxed{
+        \sqrt{\frac{\hbar\omega}{Ry}}
+        =
+        (Z-a)
+        \sqrt{
+            \frac{1}{n_f^2}
+            -
+            \frac{1}{n_i^2}
+        }
+    }.
+\end{equation*}
+\end{rbox}
+
+Для фиксированной спектральной линии \(n_i\) и \(n_f\) постоянны,
+поэтому
+\begin{equation*}
+    \boxed{
+        \sqrt{\omega}
+        \propto
+        Z-a
+    }.
+\end{equation*}
+
+Это соотношение называется \textbf{законом Мозли}.
+
+Таким образом, квадратный корень из частоты характеристического
+рентгеновского излучения линейно зависит от атомного номера элемента.
+
+\subsection{Линия \(K_\alpha\)}
+
+Для линии \(K_\alpha\)
+\begin{equation*}
+    n_i=2,
+    \qquad
+    n_f=1.
+\end{equation*}
+
+Поэтому
+\begin{align}
+    \hbar\omega_{K_\alpha}
+    &=
+    Ry(Z-a)^2
+    \left(
+        1-\frac14
+    \right)
+    \\
+    &=
+    \frac34
+    Ry(Z-a)^2.
+\end{align}
+
+Следовательно,
+\begin{equation*}
+    \boxed{
+        \hbar\omega_{K_\alpha}
+        =
+        \frac34
+        Ry(Z-a)^2
+    }.
+\end{equation*}
+
+Или
+\begin{equation*}
+    \boxed{
+        \sqrt{
+            \frac{\hbar\omega_{K_\alpha}}{Ry}
+        }
+        =
+        \frac{\sqrt3}{2}(Z-a)
+    }.
+\end{equation*}
+
+Для линии \(K_\alpha\) на лекции приводилось эмпирическое значение
+\begin{equation*}
+    a\simeq1.17,
+    \qquad
+    Z<30.
+\end{equation*}
+
+Для линии \(L_\alpha\)
+\begin{equation*}
+    a\simeq7.9,
+    \qquad
+    Z>62.
+\end{equation*}
+
+% ============================================================
+% РИСУНОК:
+% Закон Мозли.
+%
+% По горизонтали Z.
+% По вертикали sqrt(E/Ry) или sqrt(omega).
+%
+% Прямая линия с ненулевым пересечением оси Z,
+% соответствующим постоянной экранирования a.
+% ============================================================
+
+\section{Итоговая структура уровней}
+
+Для чистого кулоновского поля энергия зависит только от главного
+квантового числа:
+\begin{equation*}
+    E=E(n).
+\end{equation*}
+
+Учёт взаимодействия валентного электрона с атомным остовом приводит
+к появлению квантового дефекта:
+\begin{equation*}
+    E=E(n,\ell).
+\end{equation*}
+
+При этом снимается случайное кулоновское вырождение по \(\ell\):
+\begin{equation*}
+    E_{n\ell}
+    =
+    -\frac{Z_a^2Ry}
+    {(n-\Delta_\ell)^2}.
+\end{equation*}
+
+После учёта спин-орбитального взаимодействия энергия зависит также
+от полного момента электрона:
+\begin{equation*}
+    E=E(n,\ell,j).
+\end{equation*}
+
+Таким образом, последовательность уточнений имеет вид
+\begin{equation*}
+    \boxed{
+        E(n)
+        \longrightarrow
+        E(n,\ell)
+        \longrightarrow
+        E(n,\ell,j)
+    }.
+\end{equation*}
+
+Для внутренних электронов удобно пользоваться моделью экранированного
+заряда
+\begin{equation*}
+    E_n
+    =
+    -\frac{Ry}{n^2}(Z-a_n)^2,
+\end{equation*}
+которая приводит к закону Мозли для характеристического
+рентгеновского спектра.
+
+\end{document}

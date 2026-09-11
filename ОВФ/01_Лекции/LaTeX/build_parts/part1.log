@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  2 SEP 2026 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  11 SEP 2026 18:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2675,13 +2675,13 @@ Non-PDF special ignored!
 }] [2] [3{C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-su
 per/cm-super-ts1.enc}]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-358.
+392.
 
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/cyrillic\t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 358.
+(Font)              Font shape `T2A/cmtt/m/n' tried instead on input line 392.
 [4] [5] [6] [7]
 (c:/Users\Влад\Documents\Курс 4 Семестр 1\ОВФ\01_Лекции
 \LaTeX\build_parts\part1.aux)
@@ -2695,11 +2695,11 @@ Package rerunfilecheck Info: File `part1.out' has not changed.
 Here is how much of TeX's memory you used:
  61692 strings out of 467871
  1454329 string characters out of 5416924
- 2203593 words of memory out of 5000000
+ 2205593 words of memory out of 5000000
  89320 multiletter control sequences out of 15000+600000
  645536 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,13n,127p,1336b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,13n,127p,1336b,1194s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
@@ -2723,7 +2723,7 @@ e1/public/cm-super/sfti1440.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/cm-super/sftt0800.pfb><C:/Users/Влад/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/cm-super/sftt1200.pfb>
 Output written on "c:/Users\Влад\Documents\Курс 4 Семестр 1\ОВ
-Ф\01_Лекции\LaTeX\build_parts\part1.pdf" (7 pages, 284512 bytes).
+Ф\01_Лекции\LaTeX\build_parts\part1.pdf" (7 pages, 286823 bytes).
 PDF statistics:
  195 PDF objects out of 1000 (max. 8388607)
  25 named destinations out of 1000 (max. 500000)

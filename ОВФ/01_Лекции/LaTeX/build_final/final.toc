@@ -37,5 +37,24 @@
 \contentsline {subsection}{Формат IEEE 754}{12}{subsection*.29}%
 \contentsline {subsection}{Одинарная точность: \texttt {float}}{13}{subsection*.30}%
 \contentsline {subsection}{Денормализованные числа}{14}{subsection*.31}%
-\contentsline {subsection}{Специальные значения}{14}{subsection*.32}%
+\contentsline {subsection}{Специальные значения}{15}{subsection*.32}%
 \contentsline {subsection}{Машинная точность}{15}{subsection*.33}%
+\contentsline {chapter}{\numberline {2}Решение нелинейных уравнений}{17}{chapter.2}%
+\contentsline {section}{\numberline {1}Постановка задачи}{17}{section.2.1}%
+\contentsline {section}{\numberline {2}Изоляция корня}{18}{section.2.2}%
+\contentsline {section}{\numberline {3}Метод дихотомии}{19}{section.2.3}%
+\contentsline {subsection}{Построение последовательности отрезков}{19}{subsection*.34}%
+\contentsline {subsection}{Число шагов}{21}{subsection*.35}%
+\contentsline {subsection}{Сходимость метода}{21}{subsection*.36}%
+\contentsline {section}{\numberline {4}Метод простых итераций}{22}{section.2.4}%
+\contentsline {subsection}{Переход к уравнению на неподвижную точку}{22}{subsection*.37}%
+\contentsline {subsection}{Условие сходимости}{23}{subsection*.38}%
+\contentsline {subsection}{Сходящийся и расходящийся процессы}{24}{subsection*.39}%
+\contentsline {subsection}{Скорость сходимости}{24}{subsection*.40}%
+\contentsline {subsection}{Переход к обратной функции}{25}{subsection*.41}%
+\contentsline {subsection}{Корректирующий множитель}{26}{subsection*.42}%
+\contentsline {section}{\numberline {5}Метод Ньютона}{27}{section.2.5}%
+\contentsline {subsection}{Формула метода}{27}{subsection*.43}%
+\contentsline {subsection}{Квадратичная сходимость}{28}{subsection*.44}%
+\contentsline {subsection}{Недостатки метода}{29}{subsection*.45}%
+\contentsline {section}{\numberline {6}Метод секущих}{30}{section.2.6}%
