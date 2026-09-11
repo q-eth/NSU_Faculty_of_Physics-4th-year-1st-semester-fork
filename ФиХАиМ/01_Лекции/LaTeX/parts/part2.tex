@@ -50,14 +50,29 @@
     \frac{e^2}{|\mathbf r-\mathbf r_k|}.
 \end{equation*}
 
-% ============================================================
-% РИСУНОК:
-% Схематическое изображение атома щелочного металла:
-% ядро +Ze, внутренние N-1 электронов, образующие атомный остов,
-% и внешний электрон на расстоянии r.
-% ============================================================
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
 
-\section{Поле атомного остова}
+    \includegraphics[
+        width=0.58\linewidth
+    ]{image/lecture_02/alkali_atom_model.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Одноэлектронная модель атома щелочного металла.
+        Внутренние $N-1$ электронов вместе с ядром образуют
+        атомный остов, во внешнем поле которого движется
+        валентный электрон.
+    }
+    \label{fig:alkali_atom_model}
+\end{rbox}
+
+\subsection{Поле атомного остова}
 
 Рассмотрим внешний электрон на расстоянии, значительно превышающем
 характерный размер атомного остова:
@@ -67,7 +82,7 @@
 
 Тогда взаимодействие внешнего электрона с каждым внутренним электроном
 можно разложить по малому параметру \(r_k/r\):
-\begin{align}
+\begin{align*}
     \frac{1}{|\mathbf r-\mathbf r_k|}
     &=
     \frac{1}
@@ -80,7 +95,7 @@
         1+\dfrac{r_k^2}{r^2}
         -2\dfrac{\mathbf r\cdot\mathbf r_k}{r^2}
     }}.
-\end{align}
+\end{align*}
 
 В первом приближении
 \begin{equation*}
@@ -95,7 +110,7 @@
 \end{equation*}
 
 Подставляя это разложение в гамильтониан, получаем
-\begin{align}
+\begin{align*}
     \hat H
     \simeq
     \frac{\hat p^2}{2m}
@@ -103,21 +118,21 @@
     \frac{Ze^2}{r}
     +
     (N-1)\frac{e^2}{r}
-    \nonumber\\
+    \\
     &+
     \frac{e^2}{r^3}
     \mathbf r\cdot
     \sum_{k=1}^{N-1}\mathbf r_k
     +\ldots
-\end{align}
+\end{align*}
 
 Нулевой член разложения даёт
-\begin{align}
+\begin{equation*}
     -\frac{Ze^2}{r}
     +(N-1)\frac{e^2}{r}
-    &=
+    =
     -\frac{(Z-N+1)e^2}{r}.
-\end{align}
+\end{equation*}
 
 Введём эффективный заряд атомного остова
 \begin{equation*}
@@ -145,7 +160,7 @@
     -\frac{Z_a e^2}{r}.
 \end{equation*}
 
-\subsection{Поляризация атомного остова}
+\subsubsection{Поляризация атомного остова}
 
 Следующая поправка связана с поляризацией атомного остова полем внешнего
 электрона. В используемом приближении её запишем как
@@ -170,7 +185,7 @@
 Именно наличие второго слагаемого отличает движение внешнего электрона
 щелочного атома от движения электрона в чистом кулоновском поле.
 
-\section{Уравнение Шрёдингера для внешнего электрона}
+\subsection{Уравнение Шрёдингера для внешнего электрона}
 
 Запишем стационарное уравнение Шрёдингера
 \begin{equation*}
@@ -203,7 +218,7 @@
 где \(\Delta_\Omega\) --- угловая часть оператора Лапласа.
 
 Поэтому
-\begin{align}
+\begin{align*}
     -\frac{\hbar^2}{2mr^2}
     \frac{\partial}{\partial r}
     \left(
@@ -214,12 +229,12 @@
     \Delta_\Omega\psi
     -
     \frac{Z_a e^2}{r}\psi
-    \nonumber\\
+    \\
     &-
     C_1\frac{Z_a e^2}{r^2}\psi
     =
     E\psi.
-\end{align}
+\end{align*}
 
 Так как потенциал центрально-симметричен, разделим переменные:
 \begin{equation*}
@@ -236,43 +251,40 @@
 \end{equation*}
 
 Следовательно, радиальное уравнение принимает вид
-\begin{align}
+\begin{equation*}
     -\frac{\hbar^2}{2mr^2}
     \frac{d}{dr}
     \left(
         r^2\frac{dR}{dr}
     \right)
-    &+
+    +
     \frac{\hbar^2\ell(\ell+1)}{2mr^2}R
     -
     C_1\frac{Z_a e^2}{r^2}R
-    \nonumber\\
-    &-
+    -
     \frac{Z_a e^2}{r}R
     =
     ER.
-\end{align}
+\end{equation*}
 
 Соберём вместе слагаемые, пропорциональные \(1/r^2\):
-\begin{align}
+\begin{equation*}
     -\frac{\hbar^2}{2mr^2}
     \frac{d}{dr}
     \left(
         r^2\frac{dR}{dr}
     \right)
-    &+
+    +
     \frac{\hbar^2}{2mr^2}
     \left[
         \ell(\ell+1)
         -
         C_1\frac{2mZ_a e^2}{\hbar^2}
-    \right]R
-    \nonumber\\
-    &-
+    \right]R-
     \frac{Z_a e^2}{r}R
     =
     ER.
-\end{align}
+\end{equation*}
 
 \section{Квантовый дефект}
 
@@ -343,7 +355,7 @@
 \end{equation*}
 
 Тогда
-\begin{align}
+\begin{align*}
     \tilde\ell
     &\simeq
     -\frac12
@@ -363,7 +375,7 @@
     C_1
     \frac{mZ_a e^2}
     {\hbar^2(\ell+1/2)}.
-\end{align}
+\end{align*}
 
 Введём величину
 \begin{equation*}
@@ -411,14 +423,14 @@
     \tilde\ell=\ell-\Delta_\ell,
 \end{equation*}
 то
-\begin{align}
+\begin{align*}
     \tilde n
     &=
     n_r+\ell+1-\Delta_\ell
     \\
     &=
     n-\Delta_\ell.
-\end{align}
+\end{align*}
 
 Таким образом,
 \begin{equation*}
@@ -434,7 +446,7 @@
     -\frac{Z_a^2Ry}{n^2}
 \end{equation*}
 переходит в
-\begin{rbox}{[]}
+
 \begin{equation*}
     \boxed{
         E_{n\ell}
@@ -443,7 +455,7 @@
         {(n-\Delta_\ell)^2}
     }.
 \end{equation*}
-\end{rbox}
+
 
 Для нейтрального щелочного атома \(Z_a=1\):
 \begin{equation*}
@@ -455,7 +467,7 @@
     }.
 \end{equation*}
 
-\section{Физический смысл квантового дефекта}
+\subsection{Физический смысл квантового дефекта}
 
 Для атома водорода
 \begin{equation*}
@@ -554,7 +566,7 @@
     }.
 \end{equation*}
 
-\section{Квантовые дефекты щелочных металлов}
+\subsection{Квантовые дефекты щелочных металлов}
 
 Для основных состояний ряда щелочных металлов:
 
@@ -581,19 +593,31 @@
     -\frac{Ry}{(n-\Delta_\ell)^2}.
 \end{equation*}
 
-% ============================================================
-% РИСУНОК:
-% График зависимости квантового дефекта Delta_l от l
-% для Li, Na, K, Rb, Cs.
-%
-% По горизонтали l = 0,1,2,3.
-% По вертикали Delta_l.
-%
-% Все кривые быстро стремятся к нулю с ростом l.
-% Самые большие значения у Cs, затем Rb, K, Na, Li.
-% ============================================================
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
 
-\section{Энергетические уровни атома натрия}
+    \includegraphics[
+        width=0.72\linewidth
+    ]{image/lecture_02/quantum_defect_alkali_metals.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Зависимость квантового дефекта $\Delta_\ell$
+        от орбитального квантового числа $\ell$
+        для атомов щелочных металлов.
+        С ростом $\ell$ квантовый дефект быстро уменьшается.
+    }
+    \label{fig:quantum_defect_alkali_metals}
+\end{rbox}
+
+\section{Спектр атома натрия}
+
+\subsection{Энергетические уровни}
 
 Рассмотрим атом натрия
 \begin{equation*}
@@ -663,7 +687,7 @@
 % соответствующим водородным уровням.
 % ============================================================
 
-\section{Диаграмма Гротриана}
+\subsection{Диаграмма Гротриана}
 
 Для систематизации спектральных уровней и переходов удобно использовать
 диаграмму Гротриана.
@@ -700,23 +724,29 @@
 \end{equation*}
 запрещён.
 
-% ============================================================
-% РИСУНОК:
-% Диаграмма Гротриана для атома Na.
-%
-% Столбцы S, P, D, F.
-% Основное состояние 3s.
-% Показать уровни 3p, 4s, 4p, 3d, 4d, 4f, ...
-% Показать разрешённые стрелками переходы Delta l = +/- 1.
-%
-% Подписать серии:
-% главная,
-% резкая,
-% диффузная,
-% фундаментальная.
-% ============================================================
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
 
-\subsection{Главная серия}
+    \includegraphics[
+        width=0.78\linewidth
+    ]{image/lecture_02/sodium_grotrian_diagram.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Диаграмма Гротриана для атома натрия.
+        Стрелками показаны разрешённые дипольные переходы,
+        удовлетворяющие правилу отбора
+        $\Delta\ell=\pm1$.
+    }
+    \label{fig:sodium_grotrian_diagram}
+\end{rbox}
+
+\subsubsection{Главная серия}
 
 Главная серия соответствует переходам
 \begin{equation*}
@@ -730,21 +760,21 @@
     3P\rightarrow3S.
 \end{equation*}
 
-\subsection{Резкая серия}
+\subsubsection{Резкая серия}
 
 Резкая серия соответствует переходам
 \begin{equation*}
     nS\rightarrow3P.
 \end{equation*}
 
-\subsection{Диффузная серия}
+\subsubsection{Диффузная серия}
 
 Диффузная серия соответствует переходам
 \begin{equation*}
     nD\rightarrow3P.
 \end{equation*}
 
-\subsection{Фундаментальная серия}
+\subsubsection{Фундаментальная серия}
 
 Фундаментальная серия соответствует переходам
 \begin{equation*}
@@ -893,7 +923,7 @@
 \end{equation*}
 при достаточном спектральном разрешении наблюдается как дублет.
 
-\section{Рентгеновские спектры}
+\section{Рентгеновские спектры и закон Мозли}
 
 До сих пор рассматривались главным образом переходы внешнего электрона.
 
@@ -934,26 +964,27 @@
 Поэтому переходы между внутренними оболочками лежат в рентгеновском
 диапазоне.
 
-% ============================================================
-% РИСУНОК:
-% Спектры рентгеновского излучения.
-%
-% Концентрические оболочки:
-% K: n=1
-% L: n=2
-% M: n=3
-% N: n=4
-% далее n=5
-%
-% Показать переходы:
-% L -> K : K_alpha
-% M -> K : K_beta
-% N -> K : K_gamma
-%
-% M -> L : L_alpha
-% N -> L : L_beta
-% и т.д.
-% ============================================================
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \includegraphics[
+        width=0.72\linewidth
+    ]{image/lecture_02/xray_shell_transitions.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Схема характеристических рентгеновских переходов
+        между внутренними электронными оболочками атома.
+        Переходы на $K$-, $L$- и $M$-оболочки образуют
+        соответствующие серии рентгеновского спектра.
+    }
+    \label{fig:xray_shell_transitions}
+\end{rbox}
 
 \subsection{Рентгеновские серии}
 
@@ -996,7 +1027,7 @@
     L_\alpha.
 \end{equation*}
 
-\section{Экранирование внутренних электронов}
+\subsection{Экранирование внутренних электронов}
 
 Для внутреннего электрона энергию приближённо можно записать
 в водородоподобной форме, заменив заряд ядра \(Z\) эффективным зарядом
@@ -1017,7 +1048,7 @@
     }.
 \end{equation*}
 
-\section{Закон Мозли}
+\subsection{Закон Мозли}
 
 Пусть электрон переходит из состояния с главным квантовым числом
 \(n_i\) в состояние с \(n_f\), причём
@@ -1080,7 +1111,7 @@
 \end{equation*}
 
 Отсюда
-\begin{rbox}{[]}
+
 \begin{equation*}
     \boxed{
         \sqrt{\frac{\hbar\omega}{Ry}}
@@ -1093,7 +1124,7 @@
         }
     }.
 \end{equation*}
-\end{rbox}
+
 
 Для фиксированной спектральной линии \(n_i\) и \(n_f\) постоянны,
 поэтому
@@ -1110,7 +1141,7 @@
 Таким образом, квадратный корень из частоты характеристического
 рентгеновского излучения линейно зависит от атомного номера элемента.
 
-\subsection{Линия \(K_\alpha\)}
+\subsubsection{Линия \(K_\alpha\)}
 
 Для линии \(K_\alpha\)
 \begin{equation*}
@@ -1120,7 +1151,7 @@
 \end{equation*}
 
 Поэтому
-\begin{align}
+\begin{align*}
     \hbar\omega_{K_\alpha}
     &=
     Ry(Z-a)^2
@@ -1131,7 +1162,7 @@
     &=
     \frac34
     Ry(Z-a)^2.
-\end{align}
+\end{align*}
 
 Следовательно,
 \begin{equation*}
@@ -1168,16 +1199,27 @@
     Z>62.
 \end{equation*}
 
-% ============================================================
-% РИСУНОК:
-% Закон Мозли.
-%
-% По горизонтали Z.
-% По вертикали sqrt(E/Ry) или sqrt(omega).
-%
-% Прямая линия с ненулевым пересечением оси Z,
-% соответствующим постоянной экранирования a.
-% ============================================================
+\begin{rbox}[left=18pt,right=18pt,top=14pt,bottom=10pt]{[]}
+    \centering
+
+    \includegraphics[
+        width=0.72\linewidth
+    ]{image/lecture_02/moseley_law.png}
+
+    \captionsetup{
+        font=footnotesize,
+        labelfont=bf,
+        skip=5pt
+    }
+
+    \captionof{figure}{
+        Закон Мозли.
+        Для фиксированной серии характеристического
+        рентгеновского излучения величина $\sqrt{\omega}$
+        линейно зависит от эффективного заряда $Z-a$.
+    }
+    \label{fig:moseley_law}
+\end{rbox}
 
 \section{Итоговая структура уровней}
 

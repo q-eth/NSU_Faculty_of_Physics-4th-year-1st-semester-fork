@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  9 SEP 2026 23:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.31)  11 SEP 2026 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2641,6 +2641,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
 (C:\Users\Влад\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<../image/lecture_02/alkali_atom_model.png, id=75, 472.164pt x 339.669pt>
+File: ../image/lecture_02/alkali_atom_model.png Graphic file (type png)
+<use ../image/lecture_02/alkali_atom_model.png>
+Package pdftex.def Info: ../image/lecture_02/alkali_atom_model.png  used on inp
+ut line 58.
+(pdftex.def)             Requested size: 238.54163pt x 171.60146pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 71.
+See the caption package documentation for explanation.
+
 [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
@@ -2672,8 +2684,64 @@ Non-PDF special ignored!
 
 {C:/Users/Влад/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/�
 �лад/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}] [2] [3] [4] [5] [6] [7] [8] [9{C:/Users/Влад/AppData/Local/Programs/MiKT
-eX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [10] [11] [12] [13]
+}] [2 <../image/lecture_02/alkali_atom_model.png>] [3] [4] [5] [6]
+<../image/lecture_02/quantum_defect_alkali_metals.png, id=128, 530.9436pt x 382
+.7901pt>
+File: ../image/lecture_02/quantum_defect_alkali_metals.png Graphic file (type p
+ng)
+<use ../image/lecture_02/quantum_defect_alkali_metals.png>
+Package pdftex.def Info: ../image/lecture_02/quantum_defect_alkali_metals.png  
+used on input line 601.
+(pdftex.def)             Requested size: 296.12021pt x 213.49069pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 614.
+See the caption package documentation for explanation.
+
+[7 <../image/lecture_02/quantum_defect_alkali_metals.png>]
+<../image/lecture_02/sodium_grotrian_diagram.png, id=139, 565.6332pt x 395.3169
+pt>
+File: ../image/lecture_02/sodium_grotrian_diagram.png Graphic file (type png)
+<use ../image/lecture_02/sodium_grotrian_diagram.png>
+Package pdftex.def Info: ../image/lecture_02/sodium_grotrian_diagram.png  used 
+on input line 732.
+(pdftex.def)             Requested size: 320.79584pt x 224.19894pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 745.
+See the caption package documentation for explanation.
+
+[8] [9 <../image/lecture_02/sodium_grotrian_diagram.png>] [10{C:/Users/Влад
+/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<../image/lecture_02/xray_shell_transitions.png, id=161, 450.78412pt x 450.7841
+2pt>
+File: ../image/lecture_02/xray_shell_transitions.png Graphic file (type png)
+<use ../image/lecture_02/xray_shell_transitions.png>
+Package pdftex.def Info: ../image/lecture_02/xray_shell_transitions.png  used o
+n input line 972.
+(pdftex.def)             Requested size: 296.12021pt x 296.11523pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 985.
+See the caption package documentation for explanation.
+
+[11] [12 <../image/lecture_02/xray_shell_transitions.png>] [13]
+<../image/lecture_02/moseley_law.png, id=180, 553.3473pt x 382.7901pt>
+File: ../image/lecture_02/moseley_law.png Graphic file (type png)
+<use ../image/lecture_02/moseley_law.png>
+Package pdftex.def Info: ../image/lecture_02/moseley_law.png  used on input lin
+e 1207.
+(pdftex.def)             Requested size: 296.12021pt x 204.84616pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1220.
+See the caption package documentation for explanation.
+
+[14] [15 <../image/lecture_02/moseley_law.png>]
 (C:/Users\Влад\Documents\Курс 4 Семестр 1\ФиХАиМ\01_Лек
 ции\LaTeX\build_parts\part2.aux)
  ***********
@@ -2681,40 +2749,46 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `part2.out' has not changed.
-(rerunfilecheck)             Checksum: D7E085380C86DE448CA97E93D1FA0E6F;3914.
+(rerunfilecheck)             Checksum: 2C85B2C23A1517D4FBAB902338CDACF1;1935.
  ) 
 Here is how much of TeX's memory you used:
- 61765 strings out of 467871
- 1455680 string characters out of 5416924
+ 61870 strings out of 467871
+ 1458860 string characters out of 5416924
  2206593 words of memory out of 5000000
- 89378 multiletter control sequences out of 15000+600000
- 643736 words of font info for 79 fonts, out of 8000000 for 9000
+ 89452 multiletter control sequences out of 15000+600000
+ 650676 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,12n,127p,1342b,1179s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,127p,1342b,1422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmex10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Влад/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Влад/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Влад/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/Влад/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Users/Вл�
-�д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx2488.pfb><C:/
-Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm08
-00.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
-uper/sfrm1200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/cm-super/sfti1440.pfb>
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Влад/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Влад/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Влад
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
+rs/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Влад/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Влад/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Влад/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:
+/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1
+200.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-
+super/sfbx1728.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/cm-super/sfbx2488.pfb><C:/Users/Влад/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/cm-super/sfrm0800.pfb><C:/Users/Влад/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/Влад/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/Вла
+д/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti1200.pfb><C:/U
+sers/Влад/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfti144
+0.pfb>
 Output written on "C:/Users\Влад\Documents\Курс 4 Семестр 1\Фи
-ХАиМ\01_Лекции\LaTeX\build_parts\part2.pdf" (13 pages, 262558 bytes).
-
+ХАиМ\01_Лекции\LaTeX\build_parts\part2.pdf" (15 pages, 1206427 bytes)
+.
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
